@@ -52,6 +52,8 @@ function handleFormSubmit(event) {
   selectedIngredientsArray.push(selectedNode3);
   return selectedIngredientsArray;
 }
+
+// Sad attempt at a logical operator
 var cocktailBox = cocktailRecipeBox;
 for (var i in selectedIngredientsArray) {
   if (cocktailBox.Cocktail.hasOwnProperty(selectedIngredientsArray[0]) && ocktailRecipeBox[i].Cocktail.hasOwnProperty(selectedIngredientsArray[1]) && ocktailRecipeBox[i].Cocktail.hasOwnProperty(selectedIngredientsArray[2])){
