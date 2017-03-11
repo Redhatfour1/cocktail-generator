@@ -55,11 +55,11 @@ function handleFormSubmit(event) {
 
 console.log(handleFormSubmit());
 
-for (var i in selectedIngredientsArray) {
-  if (selectedIngredientsArray[0].Cocktail.indexOf(cocktailRecipeBox) === -1 && selectedIngredientsArray[1].Cocktail.indexOf(cocktailRecipeBox) === -1 && selectedIngredientsArray[2].Cocktail.indexOf(cocktailRecipeBox) === -1){
-    console.log('foo');
-  }
-};
+// for (var i in selectedIngredientsArray) {
+//   if (selectedIngredientsArray[0].Cocktail.indexOf(cocktailRecipeBox) === -1 && selectedIngredientsArray[1].Cocktail.indexOf(cocktailRecipeBox) === -1 && selectedIngredientsArray[2].Cocktail.indexOf(cocktailRecipeBox) === -1){
+//     console.log('foo');
+//   }
+// };
 
 
 document.getElementById('submit').addEventListener('click', handleFormSubmit);
