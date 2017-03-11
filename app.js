@@ -123,6 +123,22 @@ cocktailRecipeBox[1].link = 'http://www.telegraph.co.uk/food-and-drink/cocktails
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 var selectedIngredientsArray = [];
 
 // ingredients that were selected get push into an array
@@ -153,26 +169,22 @@ console.log(Object.values(cocktailRecipeBox[1]));
 // Sad attempt at a logical operator
 
 
-function crap() {
+function selectDrinkRecipeRenderToDom() {
   handleFormSubmit();
 
-
+  var classicMartini = Object.values(cocktailRecipeBox[0]);
   var manhattan = Object.values(cocktailRecipeBox[1]);
-
-  console.log("User: " + selectedIngredientsArray[0]);
-  console.log("User: " + selectedIngredientsArray[1]);
-  console.log("User: " + selectedIngredientsArray[2]);
-
-
-  console.log("drinkobj1: " + manhattan[2]);
-  console.log("drinkobj1: " + manhattan[3]);
-  console.log("drinkobj1: " + manhattan[4]);
 
 
   for (var i in selectedIngredientsArray){
     if(selectedIngredientsArray[0] === manhattan[2] && selectedIngredientsArray[1] === manhattan[3] && selectedIngredientsArray[2] === manhattan[4]) {
-      console.log("win: " + selectedIngredientsArray[i]);
-      console.log("win: " + manhattan[2]);
+      console.log("manhattan");
+    }
+
+    else if (selectedIngredientsArray[0] === classicMartini[2] && selectedIngredientsArray[1] === classicMartini[3] && selectedIngredientsArray[2] === classicMartini[4]) {
+
+      console.log("martini");
+
     }
     else{
       console.log("fail");
@@ -188,6 +200,6 @@ function crap() {
 
 
 
-document.getElementById('submit').addEventListener('click', crap);
+document.getElementById('submit').addEventListener('click', selectDrinkRecipeRenderToDom);
 console.log(selectedIngredientsArray);
 console.log(event);
