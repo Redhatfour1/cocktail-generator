@@ -20,8 +20,8 @@ function Cocktail(name, imagePath, ingredient1, ingredient2, ingredient3){
 })()
 
 // Classic Martini
-cocktailRecipeBox[0].ingredient1 = 'Vermouth';
-cocktailRecipeBox[0].ingredient2 = 'Gin';
+cocktailRecipeBox[0].ingredient1 = 'Gin';
+cocktailRecipeBox[0].ingredient2 = 'Vermouth';
 cocktailRecipeBox[0].ingredient3 = 'None';
 cocktailRecipeBox[0].link = 'http://www.telegraph.co.uk/food-and-drink/cocktails/10-classic-mad-men-era-cocktails/whiskey-sour/';
 
@@ -37,6 +37,7 @@ var selectedIngredientsArray = [];
 
 function handleFormSubmit(event) {
   selectedIngredientsArray = [];
+  // user^
   console.log(selectedIngredientsArray);
 
   var getIngredientOne = document.getElementById("ing1");
@@ -53,17 +54,37 @@ function handleFormSubmit(event) {
   return selectedIngredientsArray;
 }
 
+
+console.log(Object.values(cocktailRecipeBox[1]));
+//
+// console.log(Object.values(cocktailRecipeBox[1]));
 // Sad attempt at a logical operator
-var cocktailBox = cocktailRecipeBox;
-for (var i in selectedIngredientsArray) {
-  if (cocktailBox.Cocktail.hasOwnProperty(selectedIngredientsArray[0]) && ocktailRecipeBox[i].Cocktail.hasOwnProperty(selectedIngredientsArray[1]) && ocktailRecipeBox[i].Cocktail.hasOwnProperty(selectedIngredientsArray[2])){
-    console.log('foo');
+
+
+function crap() {
+  handleFormSubmit();
+
+
+  var manhattan = Object.values(cocktailRecipeBox[1]);
+
+  console.log("USer: " + selectedIngredientsArray[0]);
+  console.log("drinkobj: " + manhattan[2]);
+
+
+  if(selectedIngredientsArray[0] === manhattan[2]){
+    console.log("drunk");
+  }
+  else{
+    console.log("poop");
   }
 };
 
 
 
 
-document.getElementById('submit').addEventListener('click', handleFormSubmit);
+
+
+
+document.getElementById('submit').addEventListener('click', crap);
 console.log(selectedIngredientsArray);
 console.log(event);
