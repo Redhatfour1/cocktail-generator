@@ -176,40 +176,62 @@ function selectDrinkRecipeRenderToDom() {
   //this creates arrays based on objects
   var classicMartini = Object.values(cocktailRecipeBox[0]);
   var manhattan = Object.values(cocktailRecipeBox[1]);
-  var margarita
-  var japaneseCocktail
-  var greatGatsby
-  var dark&Stormy
-  var campariSpritz
-  var adriatique
-  var mintJulep
-  var brandyAlexander
-  var adultHotChocolate
-  var whiteSangria
+  var margarita = Object.values(cocktailRecipeBox[2]);
+  var japaneseCocktail = Object.values(cocktailRecipeBox[3]);
+  var greatGatsby = Object.values(cocktailRecipeBox[4]);
+  // var darkAndStormy = Object.values(cocktailRecipeBox[5]);
+  // var campariSpritz = Object.values(cocktailRecipeBox[6]);
+  // var adriatique = Object.values(cocktailRecipeBox[7]);
+  // var mintJulep = Object.values(cocktailRecipeBox[8]);
+  // var brandyAlexander = Object.values(cocktailRecipeBox[9]);
+  // var adultHotChocolate = Object.values(cocktailRecipeBox[10]);
+  // var whiteSangria = Object.values(cocktailRecipeBox[11]);
 
 
 
   // for (var i in selectedIngredientsArray){
-    if(selectedIngredientsArray[0] === manhattan[2] && selectedIngredientsArray[1] === manhattan[3] && selectedIngredientsArray[2] === manhattan[4]) {
-      console.log("manhattan");
-    }
-    else if (selectedIngredientsArray[0] === classicMartini[2] && selectedIngredientsArray[1] === classicMartini[3] && selectedIngredientsArray[2] === classicMartini[4]) {
-      console.log("martini");
-    }
-    else{
-      console.log("fail");
-      console.log(selectedIngredientsArray[i]);
+  if(selectedIngredientsArray[0] === manhattan[2] && selectedIngredientsArray[1] === manhattan[3] && selectedIngredientsArray[2] === manhattan[4]) {
+    console.log("manhattan");
+  }
+  else if (selectedIngredientsArray[0] === classicMartini[2] && selectedIngredientsArray[1] === classicMartini[3] && selectedIngredientsArray[2] === classicMartini[4]) {
+    console.log("martini");
+  }
+  else if (selectedIngredientsArray[0] === margarita[2] && selectedIngredientsArray[1] === margarita[3] && selectedIngredientsArray[2] === margarita[4]) {
+    console.log("margarita");
+  }
+  else if (selectedIngredientsArray[0] === japaneseCocktail[2] && selectedIngredientsArray[1] === japaneseCocktail[3] && selectedIngredientsArray[2] === japaneseCocktail[4]) {
+    console.log("japaneseCocktail");
+  }
+  else if (selectedIngredientsArray[0] === greatGatsby[2] && selectedIngredientsArray[1] === greatGatsby[3] && selectedIngredientsArray[2] === greatGatsby[4]) {
+    console.log("greatGatsby");
+  }
+  // else if (selectedIngredientsArray[0] === darkAndStormy[2] && selectedIngredientsArray[1] === darkAndStormy[3] && selectedIngredientsArray[2] === darkAndStormy[4]) {
+  //   console.log("darkAndStormy");
+  // }
+  // else if (selectedIngredientsArray[0] === campariSpritz[2] && selectedIngredientsArray[1] === campariSpritz[3] && selectedIngredientsArray[2] === campariSpritz[4]) {
+  //   console.log("campariSpritz");
+  // }
+  // else if (selectedIngredientsArray[0] === adriatique[2] && selectedIngredientsArray[1] === adriatique[3] && selectedIngredientsArray[2] === adriatique[4]) {
+  //   console.log("adriatique");
+  // }
+  // else if (selectedIngredientsArray[0] === mintJulep[2] && selectedIngredientsArray[1] === mintJulep[3] && selectedIngredientsArray[2] === mintJulep[4]) {
+  //   console.log("mintJulep");
+  // }
+  // else if (selectedIngredientsArray[0] === brandyAlexander[2] && selectedIngredientsArray[1] === brandyAlexander[3] && selectedIngredientsArray[2] === brandyAlexander[4]) {
+  //   console.log("brandyAlexander");
+  // }
+  // else if (selectedIngredientsArray[0] === adultHotChocolate[2] && selectedIngredientsArray[1] === adultHotChocolate[3] && selectedIngredientsArray[2] === adultHotChocolate[4]) {
+  //   console.log("adultHotChocolate");
+  // }
+  // else if (selectedIngredientsArray[0] === whiteSangria[2] && selectedIngredientsArray[1] === whiteSangria[3] && selectedIngredientsArray[2] === whiteSangria[4]) {
+  //   console.log("whiteSangria");
+  // }
+
+  else{
+    console.log("fail");
     // }
   };
 
-}
+};
 
-
-
-
-
-
-
-document.getElementById('submit').addEventListener('click' selectDrinkRecipeRenderToDom);
-console.log(selectedIngredientsArray);
-console.log(event);
+document.getElementById('submit').addEventListener('click', selectDrinkRecipeRenderToDom);
