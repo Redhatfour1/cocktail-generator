@@ -52,9 +52,9 @@ function handleFormSubmit(event) {
   selectedIngredientsArray.push(selectedNode3);
   return selectedIngredientsArray;
 }
-var cocktailBox = cocktailRecipeBox;
+
 for (var i in selectedIngredientsArray) {
-  if (cocktailBox.Cocktail.hasOwnProperty(selectedIngredientsArray[0]) && ocktailRecipeBox[i].Cocktail.hasOwnProperty(selectedIngredientsArray[1]) && ocktailRecipeBox[i].Cocktail.hasOwnProperty(selectedIngredientsArray[2])){
+  if (selectedIngredientsArray[0].indexOf(cocktailRecipeBox) === -1 && selectedIngredientsArray[1].indexOf(cocktailRecipeBox) === -1 && selectedIngredientsArray[2].indexOf(cocktailRecipeBox) === -1){
     console.log('foo');
   }
 };
