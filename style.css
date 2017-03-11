@@ -27,7 +27,12 @@ footer{
     font-size: 16px;
     border: none;
     cursor: pointer;
+    width: 151px;
+    height: 51px;
+    border-radius: 5px;
 }
+
+
 
 
 /* The container <div> - needed to position the dropdown content */
@@ -47,7 +52,7 @@ footer{
 }
 
 /* Links inside the dropdown */
-.dropdown-content a {
+.dropdown-content option {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
@@ -55,7 +60,9 @@ footer{
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown-content option:hover {
+  background-color: #f1f1f1
+}
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
@@ -63,6 +70,10 @@ footer{
 }
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {
+.dropdown:hover .dropbtn{
     background-color: grey;
+}
+
+.dropdown:hover .submit {
+  background-color: grey;
 }

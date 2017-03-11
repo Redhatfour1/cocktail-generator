@@ -28,3 +28,5 @@ cocktailRecipeBox[1].ingredient1 = 'Whiskey';
 cocktailRecipeBox[1].ingredient2 = 'Red Vermouth';
 cocktailRecipeBox[1].ingredient3 = 'Bitters';
 cocktailRecipeBox[1].link = 'http://www.telegraph.co.uk/food-and-drink/cocktails/10-classic-mad-men-era-cocktails/manhattan/';
+
+form.addEventListener('submit')
