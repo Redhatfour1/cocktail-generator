@@ -31,6 +31,98 @@ cocktailRecipeBox[1].ingredient2 = 'Red Vermouth';
 cocktailRecipeBox[1].ingredient3 = 'Bitters';
 cocktailRecipeBox[1].link = 'http://www.telegraph.co.uk/food-and-drink/cocktails/10-classic-mad-men-era-cocktails/manhattan/';
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 var selectedIngredientsArray = [];
 
 // ingredients that were selected get push into an array
@@ -67,9 +159,9 @@ function crap() {
 
   var manhattan = Object.values(cocktailRecipeBox[1]);
 
-  console.log("USer: " + selectedIngredientsArray[0]);
-  console.log("USer: " + selectedIngredientsArray[1]);
-  console.log("USer: " + selectedIngredientsArray[2]);
+  console.log("User: " + selectedIngredientsArray[0]);
+  console.log("User: " + selectedIngredientsArray[1]);
+  console.log("User: " + selectedIngredientsArray[2]);
 
 
   console.log("drinkobj1: " + manhattan[2]);
@@ -78,7 +170,7 @@ function crap() {
 
 
   for (var i in selectedIngredientsArray){
-    if(selectedIngredientsArray[i] === manhattan[2] && selectedIngredientsArray[i] === manhattan[3] && selectedIngredientsArray[i] === manhattan[4]) {
+    if(selectedIngredientsArray[0] === manhattan[2] && selectedIngredientsArray[1] === manhattan[3] && selectedIngredientsArray[2] === manhattan[4]) {
       console.log("win: " + selectedIngredientsArray[i]);
       console.log("win: " + manhattan[2]);
     }
