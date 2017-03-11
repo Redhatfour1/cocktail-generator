@@ -1,6 +1,9 @@
+<<<<<<< HEAD
+=======
 /** {
   border-style: dashed;
 }*/
+>>>>>>> 1ef420285a2014bfb0c4b01e1be6c90278e50298
 
 .codefellows{
   height:25px;
@@ -15,6 +18,8 @@ footer{
 .footer-logo{
   text-decoration: none;
 }
+<<<<<<< HEAD
+=======
 
 .form {
 
@@ -54,3 +59,4 @@ footer{
 .dropdown:hover .submit {
   background-color: grey;
 }
+>>>>>>> 1ef420285a2014bfb0c4b01e1be6c90278e50298

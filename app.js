@@ -1,10 +1,13 @@
 
 'use strict'
 // Object stored in an array.
+
+
 var cocktailNames = ['Classic Martini', 'Manhattan', 'Margarita', 'Japanese Cocktail', 'Great Gatsby', 'Dark and Stormy', 'Campari Spritz', 'Adriatique', 'Mint Julep', 'Brandy Alexander'];
 
 var cocktailRecipeBox = [];
 console.log(cocktailRecipeBox);
+// >>>>>>> 1ef420285a2014bfb0c4b01e1be6c90278e50298
 
 // Constructor Function
 function Cocktail(name, imagePath, ingredient1, ingredient2, ingredient3){
@@ -19,6 +22,7 @@ function Cocktail(name, imagePath, ingredient1, ingredient2, ingredient3){
   };
 })()
 
+
 // 1.Classic Martini
 cocktailRecipeBox[0].ingredient1 = 'Gin';
 cocktailRecipeBox[0].ingredient2 = 'White Vermouth';
@@ -26,10 +30,12 @@ cocktailRecipeBox[0].ingredient3 = 'None';
 cocktailRecipeBox[0].link = 'http://www.telegraph.co.uk/food-and-drink/cocktails/10-classic-mad-men-era-cocktails/whiskey-sour/';
 
 // 2.Manhattan
+ // 1ef420285a2014bfb0c4b01e1be6c90278e50298
 cocktailRecipeBox[1].ingredient1 = 'Whiskey';
 cocktailRecipeBox[1].ingredient2 = 'Red Vermouth';
 cocktailRecipeBox[1].ingredient3 = 'Bitters';
 cocktailRecipeBox[1].link = 'http://www.telegraph.co.uk/food-and-drink/cocktails/10-classic-mad-men-era-cocktails/manhattan/';
+
 
 // 3.Margarita
 cocktailRecipeBox[2].ingredient1 = 'White Tequila';
@@ -205,3 +211,4 @@ function selectDrinkRecipeRenderToDom() {
 document.getElementById('submit').addEventListener('click', selectDrinkRecipeRenderToDom);
 console.log(selectedIngredientsArray);
 console.log(event);
+// >>>>>>> 1ef420285a2014bfb0c4b01e1be6c90278e50298
