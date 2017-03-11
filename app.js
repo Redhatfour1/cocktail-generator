@@ -32,113 +32,6 @@ cocktailRecipeBox[1].ingredient3 = 'Bitters';
 cocktailRecipeBox[1].link = 'http://www.telegraph.co.uk/food-and-drink/cocktails/10-classic-mad-men-era-cocktails/manhattan/';
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 var selectedIngredientsArray = [];
 
 // ingredients that were selected get push into an array
@@ -172,6 +65,7 @@ console.log(Object.values(cocktailRecipeBox[1]));
 function selectDrinkRecipeRenderToDom() {
   handleFormSubmit();
 
+ //this creates arrays based on objects
   var classicMartini = Object.values(cocktailRecipeBox[0]);
   var manhattan = Object.values(cocktailRecipeBox[1]);
 
