@@ -68,16 +68,27 @@ function crap() {
   var manhattan = Object.values(cocktailRecipeBox[1]);
 
   console.log("USer: " + selectedIngredientsArray[0]);
-  console.log("drinkobj: " + manhattan[2]);
+  console.log("USer: " + selectedIngredientsArray[1]);
+  console.log("USer: " + selectedIngredientsArray[2]);
 
 
-  if(selectedIngredientsArray[0] === manhattan[2]){
-    console.log("drunk");
+  console.log("drinkobj1: " + manhattan[2]);
+  console.log("drinkobj1: " + manhattan[3]);
+  console.log("drinkobj1: " + manhattan[4]);
+
+
+  for (var i in selectedIngredientsArray){
+    if(selectedIngredientsArray[i] === manhattan[2] && selectedIngredientsArray[i] === manhattan[3] && selectedIngredientsArray[i] === manhattan[4]) {
+      console.log("win: " + selectedIngredientsArray[i]);
+      console.log("win: " + manhattan[2]);
+    }
+    else{
+      console.log("fail");
+      console.log(selectedIngredientsArray[i]);
+    }
+  };
+
   }
-  else{
-    console.log("poop");
-  }
-};
 
 
 
