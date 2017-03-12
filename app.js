@@ -190,11 +190,21 @@ function selectDrinkRecipeRenderToDom() {
 
 
   // for (var i in selectedIngredientsArray){
-  if(selectedIngredientsArray[0] === manhattan[2] && selectedIngredientsArray[1] === manhattan[3] && selectedIngredientsArray[2] === manhattan[4]) {
-    console.log("manhattan");
-  }
-  else if (selectedIngredientsArray[0] === classicMartini[2] && selectedIngredientsArray[1] === classicMartini[3] && selectedIngredientsArray[2] === classicMartini[4]) {
+  if (selectedIngredientsArray[0] === classicMartini[2] && selectedIngredientsArray[1] === classicMartini[3] && selectedIngredientsArray[2] === classicMartini[4]) {
     console.log("martini");
+    var getRenderId = document.getElementById('render');
+    var makeDiv = document.createElement('div');
+    var makeH1 = document.createElement('h1');
+    makeH1.id =
+    makeH1 = document.createTextNode(cocktailRecipeBox[0].name);
+    makeDiv.appendChild(makeH1);
+    getRenderId.appendChild(makeDiv);
+
+  }
+  else if(selectedIngredientsArray[0] === manhattan[2] && selectedIngredientsArray[1] === manhattan[3] && selectedIngredientsArray[2] === manhattan[4]) {
+
+
+    console.log("manhattan");
   }
   else if (selectedIngredientsArray[0] === margarita[2] && selectedIngredientsArray[1] === margarita[3] && selectedIngredientsArray[2] === margarita[4]) {
     console.log("margarita");
