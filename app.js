@@ -1,9 +1,8 @@
 
 'use strict'
 // Object stored in an array.
+var cocktailNames = ['Classic Martini', 'Manhattan', 'Margarita', 'Japanese Cocktail', 'Great Gatsby', 'Dark & Stormy', 'Campari Spritz', 'Adriatique', 'Mint Julep', 'Brandy Alexander', 'Adult Hot Chocolate', 'White Sangria'];
 
-
-var cocktailNames = ['Classic Martini', 'Manhattan', 'Margarita', 'Japanese Cocktail', 'Great Gatsby', 'Dark and Stormy', 'Campari Spritz', 'Adriatique', 'Mint Julep', 'Brandy Alexander'];
 
 var cocktailRecipeBox = [];
 console.log(cocktailRecipeBox);
@@ -27,7 +26,7 @@ function Cocktail(name, imagePath, ingredient1, ingredient2, ingredient3){
 cocktailRecipeBox[0].ingredient1 = 'Gin';
 cocktailRecipeBox[0].ingredient2 = 'White Vermouth';
 cocktailRecipeBox[0].ingredient3 = 'None';
-cocktailRecipeBox[0].link = 'http://www.telegraph.co.uk/food-and-drink/cocktails/10-classic-mad-men-era-cocktails/whiskey-sour/';
+cocktailRecipeBox[0].link = 'http://www.telegraph.co.uk/food-and-drink/cocktails/10-classic-mad-men-era-cocktails/martini/';
 
 // 2.Manhattan
 
@@ -55,95 +54,95 @@ cocktailRecipeBox[4].ingredient2 = 'Lillet Blanc';
 cocktailRecipeBox[4].ingredient3 = 'Grapefruit Juice';
 cocktailRecipeBox[4].link = 'http://www.seriouseats.com/recipes/2012/01/frank-stitts-great-gatsby-vodka-grapefruit-cocktail-recipe.html';
 
-// 6.Dark and Stormy
-cocktailRecipeBox[5].ingredient1 = 'Rum';
-cocktailRecipeBox[5].ingredient2 = 'Ginger Beer';
-cocktailRecipeBox[5].ingredient3 = 'Lime';
-cocktailRecipeBox[5].link = 'http://www.seriouseats.com/recipes/2011/06/dark-and-stormy-cocktail-the-spotted-pig-recipe.html';
+// // 6.Dark and Stormy
+// cocktailRecipeBox[5].ingredient1 = 'Rum';
+// cocktailRecipeBox[5].ingredient2 = 'Ginger Beer';
+// cocktailRecipeBox[5].ingredient3 = 'Lime';
+// cocktailRecipeBox[5].link = 'http://www.seriouseats.com/recipes/2011/06/dark-and-stormy-cocktail-the-spotted-pig-recipe.html';
+//
+// // 7.Campari Spritz
+// cocktailRecipeBox[6].ingredient1 = 'Sparkling Wine';
+// cocktailRecipeBox[6].ingredient2 = 'Campari';
+// cocktailRecipeBox[6].ingredient3 = 'Club Soda';
+// cocktailRecipeBox[6].link = 'http://www.seriouseats.com/recipes/2011/06/campari-spritz-recipe.html';
+//
+// // 8.Adriatique
+// cocktailRecipeBox[7].ingredient1 = 'Amaro Montenegro';
+// cocktailRecipeBox[7].ingredient2 = 'Aperol';
+// cocktailRecipeBox[7].ingredient3 = 'Orange Juice';
+// cocktailRecipeBox[7].link = 'http://www.seriouseats.com/recipes/2012/01/jackson-cannons-adriatique-aperitif-aperol-orange-juice-amaro-cocktail-recipe.html';
+//
+// // 9.Mint Julep
+// cocktailRecipeBox[8].ingredient1 = 'Bourbon';
+// cocktailRecipeBox[8].ingredient2 = 'Mint Leaves';
+// cocktailRecipeBox[8].ingredient3 = 'Sugar';
+// cocktailRecipeBox[8].link = 'http://www.telegraph.co.uk/food-and-drink/cocktails/10-classic-mad-men-era-cocktails/mint-julep/';
+//
+// // 10.Brandy Alexander
+// cocktailRecipeBox[9].ingredient1 = 'Brandy';
+// cocktailRecipeBox[9].ingredient2 = 'Dark Créme De Liquer';
+// cocktailRecipeBox[9].ingredient3 = 'Single Cream';
+// cocktailRecipeBox[9].link = 'http://www.telegraph.co.uk/food-and-drink/cocktails/10-classic-mad-men-era-cocktails/brandy-alexander/';
+//
+// // 11.Adult Hot Chocolate
+// cocktailRecipeBox[10].ingredient1 = 'Peppermint Snapps';
+// cocktailRecipeBox[10].ingredient2 = 'Hot Chocolate';
+// cocktailRecipeBox[10].ingredient3 = 'Whip Cream';
+// cocktailRecipeBox[10].link = 'http://www.drinksmixer.com/drinkn1m2540.html';
+//
+// // 12.White Sangria
+// cocktailRecipeBox[11].ingredient1 = 'White Wine';
+// cocktailRecipeBox[11].ingredient2 = 'Calvados';
+// cocktailRecipeBox[11].ingredient3 = 'Fruit';
+// cocktailRecipeBox[11].link = 'http://www.foodnetwork.com/recipes/rachael-ray/white-sangria-recipe';
 
-// 7.Campari Spritz
-cocktailRecipeBox[6].ingredient1 = 'Sparkling Wine';
-cocktailRecipeBox[6].ingredient2 = 'Campari';
-cocktailRecipeBox[6].ingredient3 = 'Club Soda';
-cocktailRecipeBox[6].link = 'http://www.seriouseats.com/recipes/2011/06/campari-spritz-recipe.html';
-
-// 8.Adriatique
-cocktailRecipeBox[7].ingredient1 = 'Amaro Montenegro';
-cocktailRecipeBox[7].ingredient2 = 'Aperol';
-cocktailRecipeBox[7].ingredient3 = 'Orange Juice';
-cocktailRecipeBox[7].link = 'http://www.seriouseats.com/recipes/2012/01/jackson-cannons-adriatique-aperitif-aperol-orange-juice-amaro-cocktail-recipe.html';
-
-// 9.Mint Julep
-cocktailRecipeBox[8].ingredient1 = 'Bourbon';
-cocktailRecipeBox[8].ingredient2 = 'Mint Leaves';
-cocktailRecipeBox[8].ingredient3 = 'Sugar';
-cocktailRecipeBox[8].link = 'http://www.telegraph.co.uk/food-and-drink/cocktails/10-classic-mad-men-era-cocktails/mint-julep/';
-
-// 10.Brandy Alexander
-cocktailRecipeBox[9].ingredient1 = 'Brandy';
-cocktailRecipeBox[9].ingredient2 = 'Dark Créme De Liquer';
-cocktailRecipeBox[9].ingredient3 = 'Single Cream';
-cocktailRecipeBox[9].link = 'http://www.telegraph.co.uk/food-and-drink/cocktails/10-classic-mad-men-era-cocktails/brandy-alexander/';
-
-// 11.Adult Hot Chocolate
-cocktailRecipeBox[10].ingredient1 = 'Peppermint Snapps';
-cocktailRecipeBox[10].ingredient2 = 'Hot Chocolate';
-cocktailRecipeBox[10].ingredient3 = 'Whip Cream';
-cocktailRecipeBox[10].link = 'http://www.drinksmixer.com/drinkn1m2540.html';
-
-// 12.White Sangria
-cocktailRecipeBox[11].ingredient1 = 'White Wine';
-cocktailRecipeBox[11].ingredient2 = 'Calvados';
-cocktailRecipeBox[11].ingredient3 = 'Fruit';
-cocktailRecipeBox[11].link = 'http://www.foodnetwork.com/recipes/rachael-ray/white-sangria-recipe';
-
-// 13.Raspberry Prosecco Bellini
-cocktailRecipeBox[12].ingredient1 = 'Prosecco';
-cocktailRecipeBox[12].ingredient2 = 'Raspberry liqueur';
-cocktailRecipeBox[12].ingredient3 = 'Basil';
-cocktailRecipeBox[12].link = 'http://www.liquidgolddrinks.com/cocktails/prosecco-cocktails/raspberry-prosecco-bellini/';
-
-// 14.Almond Joy
-cocktailRecipeBox[13].ingredient1 = 'Coconut Rum';
-cocktailRecipeBox[13].ingredient2 = 'Amaretto';
-cocktailRecipeBox[13].ingredient3 = 'Crème de cacao';
-cocktailRecipeBox[13].link = 'http://allrecipes.com/recipe/234754/almond-joy-cocktail/';
-
-// 15.Sparkling Suze
-cocktailRecipeBox[14].ingredient1 = 'Suze';
-cocktailRecipeBox[14].ingredient2 = 'St Germain\'s';
-cocktailRecipeBox[14].ingredient3 = 'Cava';
-cocktailRecipeBox[14].link = 'http://www.seriouseats.com/recipes/2014/08/suze-cava-st-germain-cocktail-aperitif-drink.html';
-
-// 16.Man About Town 
-cocktailRecipeBox[15].ingredient1 = 'Rye Whiskey';
-cocktailRecipeBox[15].ingredient2 = 'Cynar';
-cocktailRecipeBox[15].ingredient3 = 'Sweet Vermouth';
-cocktailRecipeBox[15].link = 'http://www.seriouseats.com/recipes/2012/10/gramercy-tavern-man-about-town-cocktail-rye-boulevardier-cynar-recipe.html';
-
-// 17.Bahia Breeze
-cocktailRecipeBox[16].ingredient1 = 'Gold Tequila';
-cocktailRecipeBox[16].ingredient2 = 'Pineapple Juice';
-cocktailRecipeBox[16].ingredient3 = 'Cranberry';
-cocktailRecipeBox[16].link = 'http://www.drinksmixer.com/drink7265.html';
-
-// 18.The Spitfire
-cocktailRecipeBox[17].ingredient1 = 'Mezcal';
-cocktailRecipeBox[17].ingredient2 = 'Green Chartreuse';
-cocktailRecipeBox[17].ingredient3 = 'Tabasco Sauce';
-cocktailRecipeBox[17].link = 'http://www.barnonedrinks.com/drinks/t/the-spitfire-7751.html';
-
-// 19.Angry Balls
-cocktailRecipeBox[18].ingredient1 = 'Fireball Whiskey';
-cocktailRecipeBox[18].ingredient2 = 'Hard Cider';
-cocktailRecipeBox[18].ingredient3 = 'None';
-cocktailRecipeBox[18].link = 'http://fireballwhisky.com/recipes/angry-balls/';
-
-// 20.Chrysanthemum Cocktail
-cocktailRecipeBox[19].ingredient1 = 'Bénédictine';
-cocktailRecipeBox[19].ingredient2 = 'Absinthe';
-cocktailRecipeBox[19].ingredient3 = 'Dry Vermouth';
-cocktailRecipeBox[19].link = 'http://imbibemagazine.com/chrysanthemum-cocktail-recipe/';
+// // 13.Raspberry Prosecco Bellini
+// cocktailRecipeBox[12].ingredient1 = 'Prosecco';
+// cocktailRecipeBox[12].ingredient2 = 'Raspberry liqueur';
+// cocktailRecipeBox[12].ingredient3 = 'Basil';
+// cocktailRecipeBox[12].link = 'http://www.liquidgolddrinks.com/cocktails/prosecco-cocktails/raspberry-prosecco-bellini/';
+//
+// // 14.Almond Joy
+// cocktailRecipeBox[13].ingredient1 = 'Coconut Rum';
+// cocktailRecipeBox[13].ingredient2 = 'Amaretto';
+// cocktailRecipeBox[13].ingredient3 = 'Crème de cacao';
+// cocktailRecipeBox[13].link = 'http://allrecipes.com/recipe/234754/almond-joy-cocktail/';
+//
+// // 15.Sparkling Suze
+// cocktailRecipeBox[14].ingredient1 = 'Suze';
+// cocktailRecipeBox[14].ingredient2 = 'St Germain\'s';
+// cocktailRecipeBox[14].ingredient3 = 'Cava';
+// cocktailRecipeBox[14].link = 'http://www.seriouseats.com/recipes/2014/08/suze-cava-st-germain-cocktail-aperitif-drink.html';
+//
+// // 16.Man About Town 
+// cocktailRecipeBox[15].ingredient1 = 'Rye Whiskey';
+// cocktailRecipeBox[15].ingredient2 = 'Cynar';
+// cocktailRecipeBox[15].ingredient3 = 'Sweet Vermouth';
+// cocktailRecipeBox[15].link = 'http://www.seriouseats.com/recipes/2012/10/gramercy-tavern-man-about-town-cocktail-rye-boulevardier-cynar-recipe.html';
+//
+// // 17.Bahia Breeze
+// cocktailRecipeBox[16].ingredient1 = 'Gold Tequila';
+// cocktailRecipeBox[16].ingredient2 = 'Pineapple Juice';
+// cocktailRecipeBox[16].ingredient3 = 'Cranberry';
+// cocktailRecipeBox[16].link = 'http://www.drinksmixer.com/drink7265.html';
+//
+// // 18.The Spitfire
+// cocktailRecipeBox[17].ingredient1 = 'Mezcal';
+// cocktailRecipeBox[17].ingredient2 = 'Green Chartreuse';
+// cocktailRecipeBox[17].ingredient3 = 'Tabasco Sauce';
+// cocktailRecipeBox[17].link = 'http://www.barnonedrinks.com/drinks/t/the-spitfire-7751.html';
+//
+// // 19.Angry Balls
+// cocktailRecipeBox[18].ingredient1 = 'Fireball Whiskey';
+// cocktailRecipeBox[18].ingredient2 = 'Hard Cider';
+// cocktailRecipeBox[18].ingredient3 = 'None';
+// cocktailRecipeBox[18].link = 'http://fireballwhisky.com/recipes/angry-balls/';
+//
+// // 20.Chrysanthemum Cocktail
+// cocktailRecipeBox[19].ingredient1 = 'Bénédictine';
+// cocktailRecipeBox[19].ingredient2 = 'Absinthe';
+// cocktailRecipeBox[19].ingredient3 = 'Dry Vermouth';
+// cocktailRecipeBox[19].link = 'http://imbibemagazine.com/chrysanthemum-cocktail-recipe/';
 
 
 var selectedIngredientsArray = [];
@@ -182,27 +181,102 @@ function selectDrinkRecipeRenderToDom() {
   //this creates arrays based on objects
   var classicMartini = Object.values(cocktailRecipeBox[0]);
   var manhattan = Object.values(cocktailRecipeBox[1]);
+  var margarita = Object.values(cocktailRecipeBox[2]);
+  var japaneseCocktail = Object.values(cocktailRecipeBox[3]);
+  var greatGatsby = Object.values(cocktailRecipeBox[4]);
+  // var darkAndStormy = Object.values(cocktailRecipeBox[5]);
+  // var campariSpritz = Object.values(cocktailRecipeBox[6]);
+  // var adriatique = Object.values(cocktailRecipeBox[7]);
+  // var mintJulep = Object.values(cocktailRecipeBox[8]);
+  // var brandyAlexander = Object.values(cocktailRecipeBox[9]);
+  // var adultHotChocolate = Object.values(cocktailRecipeBox[10]);
+  // var whiteSangria = Object.values(cocktailRecipeBox[11]);
 
 
-  for (var i in selectedIngredientsArray){
-    if(selectedIngredientsArray[0] === manhattan[2] && selectedIngredientsArray[1] === manhattan[3] && selectedIngredientsArray[2] === manhattan[4]) {
-      console.log("manhattan");
-    }
 
-    else if (selectedIngredientsArray[0] === classicMartini[2] && selectedIngredientsArray[1] === classicMartini[3] && selectedIngredientsArray[2] === classicMartini[4]) {
+  // for (var i in selectedIngredientsArray){
+  // div class drinkCard
+  // h1 class drinkTitle
+  //
+  if (selectedIngredientsArray[0] === classicMartini[2] && selectedIngredientsArray[1] === classicMartini[3] && selectedIngredientsArray[2] === classicMartini[4]) {
+    console.log("martini");
+    var getRenderId = document.getElementById('render');
+    var makeDiv = document.createElement('div');
+    var makeA = document.createElement('a');
+    makeA.href = cocktailRecipeBox[0].link;
+    makeA.textContent = cocktailRecipeBox[0].name;
+    makeDiv.appendChild(makeA);
+    getRenderId.appendChild(makeDiv);
 
-      console.log("martini");
+  }
+  else if(selectedIngredientsArray[0] === manhattan[2] && selectedIngredientsArray[1] === manhattan[3] && selectedIngredientsArray[2] === manhattan[4]) {
+    var getRenderId = document.getElementById('render');
+    var makeDiv = document.createElement('div');
+    var makeA = document.createElement('a');
+    makeA.href = cocktailRecipeBox[1].link;
+    makeA.textContent = cocktailRecipeBox[1].name;
+    makeDiv.appendChild(makeA);
+    getRenderId.appendChild(makeDiv);
 
-    }
-    else{
-      console.log("fail");
-      console.log(selectedIngredientsArray[i]);
-    }
+
+    console.log("manhattan");
+  }
+  else if (selectedIngredientsArray[0] === margarita[2] && selectedIngredientsArray[1] === margarita[3] && selectedIngredientsArray[2] === margarita[4]) {
+    var getRenderId = document.getElementById('render');
+    var makeDiv = document.createElement('div');
+    var makeA = document.createElement('a');
+    makeA.href = cocktailRecipeBox[2].link;
+    makeA.textContent = cocktailRecipeBox[2].name;
+    makeDiv.appendChild(makeA);
+    getRenderId.appendChild(makeDiv);
+    console.log("margarita");
+  }
+  else if (selectedIngredientsArray[0] === japaneseCocktail[2] && selectedIngredientsArray[1] === japaneseCocktail[3] && selectedIngredientsArray[2] === japaneseCocktail[4]) {
+    var getRenderId = document.getElementById('render');
+    var makeDiv = document.createElement('div');
+    var makeA = document.createElement('a');
+    makeA.href = cocktailRecipeBox[3].link;
+    makeA.textContent = cocktailRecipeBox[3].name;
+    makeDiv.appendChild(makeA);
+    getRenderId.appendChild(makeDiv);
+    console.log("japaneseCocktail");
+  }
+  else if (selectedIngredientsArray[0] === greatGatsby[2] && selectedIngredientsArray[1] === greatGatsby[3] && selectedIngredientsArray[2] === greatGatsby[4]) {
+    var getRenderId = document.getElementById('render');
+    var makeDiv = document.createElement('div');
+    var makeA = document.createElement('a');
+    makeA.href = cocktailRecipeBox[4].link;
+    makeA.textContent = cocktailRecipeBox[4].name;
+    makeDiv.appendChild(makeA);
+    getRenderId.appendChild(makeDiv);
+    console.log("greatGatsby");
+  }
+  // else if (selectedIngredientsArray[0] === darkAndStormy[2] && selectedIngredientsArray[1] === darkAndStormy[3] && selectedIngredientsArray[2] === darkAndStormy[4]) {
+  //   console.log("darkAndStormy");
+  // }
+  // else if (selectedIngredientsArray[0] === campariSpritz[2] && selectedIngredientsArray[1] === campariSpritz[3] && selectedIngredientsArray[2] === campariSpritz[4]) {
+  //   console.log("campariSpritz");
+  // }
+  // else if (selectedIngredientsArray[0] === adriatique[2] && selectedIngredientsArray[1] === adriatique[3] && selectedIngredientsArray[2] === adriatique[4]) {
+  //   console.log("adriatique");
+  // }
+  // else if (selectedIngredientsArray[0] === mintJulep[2] && selectedIngredientsArray[1] === mintJulep[3] && selectedIngredientsArray[2] === mintJulep[4]) {
+  //   console.log("mintJulep");
+  // }
+  // else if (selectedIngredientsArray[0] === brandyAlexander[2] && selectedIngredientsArray[1] === brandyAlexander[3] && selectedIngredientsArray[2] === brandyAlexander[4]) {
+  //   console.log("brandyAlexander");
+  // }
+  // else if (selectedIngredientsArray[0] === adultHotChocolate[2] && selectedIngredientsArray[1] === adultHotChocolate[3] && selectedIngredientsArray[2] === adultHotChocolate[4]) {
+  //   console.log("adultHotChocolate");
+  // }
+  // else if (selectedIngredientsArray[0] === whiteSangria[2] && selectedIngredientsArray[1] === whiteSangria[3] && selectedIngredientsArray[2] === whiteSangria[4]) {
+  //   console.log("whiteSangria");
+  // }
+
+  else{
+    console.log("fail");
   };
-
-}
+};
 
 
 document.getElementById('submit').addEventListener('click', selectDrinkRecipeRenderToDom);
-console.log(selectedIngredientsArray);
-console.log(event);
