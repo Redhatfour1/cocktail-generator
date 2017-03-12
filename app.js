@@ -23,7 +23,7 @@ function Cocktail(name, imagePath, ingredient1, ingredient2, ingredient3){
 cocktailRecipeBox[0].ingredient1 = 'Gin';
 cocktailRecipeBox[0].ingredient2 = 'White Vermouth';
 cocktailRecipeBox[0].ingredient3 = 'None';
-cocktailRecipeBox[0].link = 'http://www.telegraph.co.uk/food-and-drink/cocktails/10-classic-mad-men-era-cocktails/whiskey-sour/';
+cocktailRecipeBox[0].link = 'http://www.telegraph.co.uk/food-and-drink/cocktails/10-classic-mad-men-era-cocktails/martini/';
 
 // 2.Manhattan
 cocktailRecipeBox[1].ingredient1 = 'Whiskey';
@@ -49,47 +49,47 @@ cocktailRecipeBox[4].ingredient2 = 'Lillet Blanc';
 cocktailRecipeBox[4].ingredient3 = 'Grapefruit Juice';
 cocktailRecipeBox[4].link = 'http://www.seriouseats.com/recipes/2012/01/frank-stitts-great-gatsby-vodka-grapefruit-cocktail-recipe.html';
 
-// 6.Dark and Stormy
-cocktailRecipeBox[5].ingredient1 = 'Rum';
-cocktailRecipeBox[5].ingredient2 = 'Ginger Beer';
-cocktailRecipeBox[5].ingredient3 = 'Lime';
-cocktailRecipeBox[5].link = 'http://www.seriouseats.com/recipes/2011/06/dark-and-stormy-cocktail-the-spotted-pig-recipe.html';
-
-// 7.Campari Spritz
-cocktailRecipeBox[6].ingredient1 = 'Sparkling Wine';
-cocktailRecipeBox[6].ingredient2 = 'Campari';
-cocktailRecipeBox[6].ingredient3 = 'Club Soda';
-cocktailRecipeBox[6].link = 'http://www.seriouseats.com/recipes/2011/06/campari-spritz-recipe.html';
-
-// 8.Adriatique
-cocktailRecipeBox[7].ingredient1 = 'Amaro Montenegro';
-cocktailRecipeBox[7].ingredient2 = 'Aperol';
-cocktailRecipeBox[7].ingredient3 = 'Orange Juice';
-cocktailRecipeBox[7].link = 'http://www.seriouseats.com/recipes/2012/01/jackson-cannons-adriatique-aperitif-aperol-orange-juice-amaro-cocktail-recipe.html';
-
-// 9.Mint Julep
-cocktailRecipeBox[8].ingredient1 = 'Bourbon';
-cocktailRecipeBox[8].ingredient2 = 'Mint Leaves';
-cocktailRecipeBox[8].ingredient3 = 'Sugar';
-cocktailRecipeBox[8].link = 'http://www.telegraph.co.uk/food-and-drink/cocktails/10-classic-mad-men-era-cocktails/mint-julep/';
-
-// 10.Brandy Alexander
-cocktailRecipeBox[9].ingredient1 = 'Brandy';
-cocktailRecipeBox[9].ingredient2 = 'Dark Créme De Liquer';
-cocktailRecipeBox[9].ingredient3 = 'Single Cream';
-cocktailRecipeBox[9].link = 'http://www.telegraph.co.uk/food-and-drink/cocktails/10-classic-mad-men-era-cocktails/brandy-alexander/';
-
-// 11.Adult Hot Chocolate
-cocktailRecipeBox[10].ingredient1 = 'Peppermint Snapps';
-cocktailRecipeBox[10].ingredient2 = 'Hot Chocolate';
-cocktailRecipeBox[10].ingredient3 = 'Whip Cream';
-cocktailRecipeBox[10].link = 'http://www.drinksmixer.com/drinkn1m2540.html';
-
-// 12.White Sangria
-cocktailRecipeBox[11].ingredient1 = 'White Wine';
-cocktailRecipeBox[11].ingredient2 = 'Calvados';
-cocktailRecipeBox[11].ingredient3 = 'Fruit';
-cocktailRecipeBox[11].link = 'http://www.foodnetwork.com/recipes/rachael-ray/white-sangria-recipe';
+// // 6.Dark and Stormy
+// cocktailRecipeBox[5].ingredient1 = 'Rum';
+// cocktailRecipeBox[5].ingredient2 = 'Ginger Beer';
+// cocktailRecipeBox[5].ingredient3 = 'Lime';
+// cocktailRecipeBox[5].link = 'http://www.seriouseats.com/recipes/2011/06/dark-and-stormy-cocktail-the-spotted-pig-recipe.html';
+//
+// // 7.Campari Spritz
+// cocktailRecipeBox[6].ingredient1 = 'Sparkling Wine';
+// cocktailRecipeBox[6].ingredient2 = 'Campari';
+// cocktailRecipeBox[6].ingredient3 = 'Club Soda';
+// cocktailRecipeBox[6].link = 'http://www.seriouseats.com/recipes/2011/06/campari-spritz-recipe.html';
+//
+// // 8.Adriatique
+// cocktailRecipeBox[7].ingredient1 = 'Amaro Montenegro';
+// cocktailRecipeBox[7].ingredient2 = 'Aperol';
+// cocktailRecipeBox[7].ingredient3 = 'Orange Juice';
+// cocktailRecipeBox[7].link = 'http://www.seriouseats.com/recipes/2012/01/jackson-cannons-adriatique-aperitif-aperol-orange-juice-amaro-cocktail-recipe.html';
+//
+// // 9.Mint Julep
+// cocktailRecipeBox[8].ingredient1 = 'Bourbon';
+// cocktailRecipeBox[8].ingredient2 = 'Mint Leaves';
+// cocktailRecipeBox[8].ingredient3 = 'Sugar';
+// cocktailRecipeBox[8].link = 'http://www.telegraph.co.uk/food-and-drink/cocktails/10-classic-mad-men-era-cocktails/mint-julep/';
+//
+// // 10.Brandy Alexander
+// cocktailRecipeBox[9].ingredient1 = 'Brandy';
+// cocktailRecipeBox[9].ingredient2 = 'Dark Créme De Liquer';
+// cocktailRecipeBox[9].ingredient3 = 'Single Cream';
+// cocktailRecipeBox[9].link = 'http://www.telegraph.co.uk/food-and-drink/cocktails/10-classic-mad-men-era-cocktails/brandy-alexander/';
+//
+// // 11.Adult Hot Chocolate
+// cocktailRecipeBox[10].ingredient1 = 'Peppermint Snapps';
+// cocktailRecipeBox[10].ingredient2 = 'Hot Chocolate';
+// cocktailRecipeBox[10].ingredient3 = 'Whip Cream';
+// cocktailRecipeBox[10].link = 'http://www.drinksmixer.com/drinkn1m2540.html';
+//
+// // 12.White Sangria
+// cocktailRecipeBox[11].ingredient1 = 'White Wine';
+// cocktailRecipeBox[11].ingredient2 = 'Calvados';
+// cocktailRecipeBox[11].ingredient3 = 'Fruit';
+// cocktailRecipeBox[11].link = 'http://www.foodnetwork.com/recipes/rachael-ray/white-sangria-recipe';
 
 // // 13.Raspberry Prosecco Bellini
 // cocktailRecipeBox[12].ingredient1 = 'Prosecco';
@@ -190,29 +190,60 @@ function selectDrinkRecipeRenderToDom() {
 
 
   // for (var i in selectedIngredientsArray){
+  // div class drinkCard
+  // h1 class drinkTitle
+  // 
   if (selectedIngredientsArray[0] === classicMartini[2] && selectedIngredientsArray[1] === classicMartini[3] && selectedIngredientsArray[2] === classicMartini[4]) {
     console.log("martini");
     var getRenderId = document.getElementById('render');
     var makeDiv = document.createElement('div');
-    var makeH1 = document.createElement('h1');
-    makeH1.id =
-    makeH1 = document.createTextNode(cocktailRecipeBox[0].name);
-    makeDiv.appendChild(makeH1);
+    var makeA = document.createElement('a');
+    makeA.href = cocktailRecipeBox[0].link;
+    makeA.textContent = cocktailRecipeBox[0].name;
+    makeDiv.appendChild(makeA);
     getRenderId.appendChild(makeDiv);
 
   }
   else if(selectedIngredientsArray[0] === manhattan[2] && selectedIngredientsArray[1] === manhattan[3] && selectedIngredientsArray[2] === manhattan[4]) {
+    var getRenderId = document.getElementById('render');
+    var makeDiv = document.createElement('div');
+    var makeA = document.createElement('a');
+    makeA.href = cocktailRecipeBox[1].link;
+    makeA.textContent = cocktailRecipeBox[1].name;
+    makeDiv.appendChild(makeA);
+    getRenderId.appendChild(makeDiv);
 
 
     console.log("manhattan");
   }
   else if (selectedIngredientsArray[0] === margarita[2] && selectedIngredientsArray[1] === margarita[3] && selectedIngredientsArray[2] === margarita[4]) {
+    var getRenderId = document.getElementById('render');
+    var makeDiv = document.createElement('div');
+    var makeA = document.createElement('a');
+    makeA.href = cocktailRecipeBox[2].link;
+    makeA.textContent = cocktailRecipeBox[2].name;
+    makeDiv.appendChild(makeA);
+    getRenderId.appendChild(makeDiv);
     console.log("margarita");
   }
   else if (selectedIngredientsArray[0] === japaneseCocktail[2] && selectedIngredientsArray[1] === japaneseCocktail[3] && selectedIngredientsArray[2] === japaneseCocktail[4]) {
+    var getRenderId = document.getElementById('render');
+    var makeDiv = document.createElement('div');
+    var makeA = document.createElement('a');
+    makeA.href = cocktailRecipeBox[3].link;
+    makeA.textContent = cocktailRecipeBox[3].name;
+    makeDiv.appendChild(makeA);
+    getRenderId.appendChild(makeDiv);
     console.log("japaneseCocktail");
   }
   else if (selectedIngredientsArray[0] === greatGatsby[2] && selectedIngredientsArray[1] === greatGatsby[3] && selectedIngredientsArray[2] === greatGatsby[4]) {
+    var getRenderId = document.getElementById('render');
+    var makeDiv = document.createElement('div');
+    var makeA = document.createElement('a');
+    makeA.href = cocktailRecipeBox[4].link;
+    makeA.textContent = cocktailRecipeBox[4].name;
+    makeDiv.appendChild(makeA);
+    getRenderId.appendChild(makeDiv);
     console.log("greatGatsby");
   }
   // else if (selectedIngredientsArray[0] === darkAndStormy[2] && selectedIngredientsArray[1] === darkAndStormy[3] && selectedIngredientsArray[2] === darkAndStormy[4]) {
