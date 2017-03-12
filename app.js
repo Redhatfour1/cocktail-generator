@@ -7,7 +7,7 @@ var cocktailNames = ['Classic Martini', 'Manhattan', 'Margarita', 'Japanese Cock
 
 var cocktailRecipeBox = [];
 console.log(cocktailRecipeBox);
-// >>>>>>> 1ef420285a2014bfb0c4b01e1be6c90278e50298
+
 
 // Constructor Function
 function Cocktail(name, imagePath, ingredient1, ingredient2, ingredient3){
@@ -30,7 +30,7 @@ cocktailRecipeBox[0].ingredient3 = 'None';
 cocktailRecipeBox[0].link = 'http://www.telegraph.co.uk/food-and-drink/cocktails/10-classic-mad-men-era-cocktails/whiskey-sour/';
 
 // 2.Manhattan
- // 1ef420285a2014bfb0c4b01e1be6c90278e50298
+
 cocktailRecipeBox[1].ingredient1 = 'Whiskey';
 cocktailRecipeBox[1].ingredient2 = 'Red Vermouth';
 cocktailRecipeBox[1].ingredient3 = 'Bitters';
@@ -203,12 +203,6 @@ function selectDrinkRecipeRenderToDom() {
 }
 
 
-
-
-
-
-
 document.getElementById('submit').addEventListener('click', selectDrinkRecipeRenderToDom);
 console.log(selectedIngredientsArray);
 console.log(event);
-// >>>>>>> 1ef420285a2014bfb0c4b01e1be6c90278e50298
