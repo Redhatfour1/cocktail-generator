@@ -3,8 +3,10 @@
 // Object stored in an array.
 var cocktailNames = ['Classic Martini', 'Manhattan', 'Margarita', 'Japanese Cocktail', 'Great Gatsby', 'Dark & Stormy', 'Campari Spritz', 'Adriatique', 'Mint Julep', 'Brandy Alexander', 'Adult Hot Chocolate', 'White Sangria'];
 
+
 var cocktailRecipeBox = [];
 console.log(cocktailRecipeBox);
+
 
 // Constructor Function
 function Cocktail(name, imagePath, ingredient1, ingredient2, ingredient3){
@@ -19,6 +21,7 @@ function Cocktail(name, imagePath, ingredient1, ingredient2, ingredient3){
   };
 })()
 
+
 // 1.Classic Martini
 cocktailRecipeBox[0].ingredient1 = 'Gin';
 cocktailRecipeBox[0].ingredient2 = 'White Vermouth';
@@ -26,10 +29,12 @@ cocktailRecipeBox[0].ingredient3 = 'None';
 cocktailRecipeBox[0].link = 'http://www.telegraph.co.uk/food-and-drink/cocktails/10-classic-mad-men-era-cocktails/martini/';
 
 // 2.Manhattan
+
 cocktailRecipeBox[1].ingredient1 = 'Whiskey';
 cocktailRecipeBox[1].ingredient2 = 'Red Vermouth';
 cocktailRecipeBox[1].ingredient3 = 'Bitters';
 cocktailRecipeBox[1].link = 'http://www.telegraph.co.uk/food-and-drink/cocktails/10-classic-mad-men-era-cocktails/manhattan/';
+
 
 // 3.Margarita
 cocktailRecipeBox[2].ingredient1 = 'White Tequila';
@@ -192,7 +197,7 @@ function selectDrinkRecipeRenderToDom() {
   // for (var i in selectedIngredientsArray){
   // div class drinkCard
   // h1 class drinkTitle
-  // 
+  //
   if (selectedIngredientsArray[0] === classicMartini[2] && selectedIngredientsArray[1] === classicMartini[3] && selectedIngredientsArray[2] === classicMartini[4]) {
     console.log("martini");
     var getRenderId = document.getElementById('render');
@@ -270,9 +275,8 @@ function selectDrinkRecipeRenderToDom() {
 
   else{
     console.log("fail");
-    // }
   };
-
 };
+
 
 document.getElementById('submit').addEventListener('click', selectDrinkRecipeRenderToDom);
