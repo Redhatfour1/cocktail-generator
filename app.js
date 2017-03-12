@@ -31,7 +31,7 @@ function Cocktail(name, imagePath, ingredient1, ingredient2, ingredient3, link){
 
   for (var i in cocktailNames){
     var newCocktail = new Cocktail(cocktailNames[i], 'assets/' + cocktailNames[i] + '.jpg', ingredient1Array[i], ingredient2Array[i],
-  ingredient3Array[i], linkArray[i])
+    ingredient3Array[i], linkArray[i])
   };
 })()
 
@@ -89,149 +89,64 @@ function Cocktail(name, imagePath, ingredient1, ingredient2, ingredient3, link){
 
 
 
-var selectedIngredientsArray = [];
+var userSelectedIngredientsArray = [];
 
 // ingredients that were selected get push into an array
 
 function handleUserFormSubmit(event) {
-  selectedIngredientsArray = [];
+  userSelectedIngredientsArray = [];
   // user^
-  console.log(selectedIngredientsArray);
+  console.log(userSelectedIngredientsArray);
 
   var getIngredientOne = document.getElementById("ing1");
   var selectedNode1 = getIngredientOne.options[getIngredientOne.selectedIndex].value;
-  selectedIngredientsArray.push(selectedNode1);
+  userSelectedIngredientsArray.push(selectedNode1);
 
   var elem2 = document.getElementById("ing2");
   var selectedNode2 = elem2.options[elem2.selectedIndex].value;
-  selectedIngredientsArray.push(selectedNode2);
+  userSelectedIngredientsArray.push(selectedNode2);
 
   var elem3 = document.getElementById("ing3");
   var selectedNode3 = elem3.options[elem3.selectedIndex].value;
-  selectedIngredientsArray.push(selectedNode3);
-  return selectedIngredientsArray;
+  userSelectedIngredientsArray.push(selectedNode3);
+  return userSelectedIngredientsArray;
 }
 
-//
 console.log(Object.values(cocktailRecipeBox[1]));
 
 // This dynamically Creates arrays inside of arrays for all drinks
 var cocktailArray = [];
-
 function makeCocktailArrays(){
   for (var i in cocktailNames) {
-      cocktailArray[i] = Object.values(cocktailRecipeBox[i]);
+    cocktailArray[i] = Object.values(cocktailRecipeBox[i]);
   }
   return cocktailArray;
 }
-//
-// console.log(Object.values(cocktailRecipeBox[1]));
-// Sad attempt at a logical operator
 
 
 function selectDrinkRecipeRenderToDom() {
   handleUserFormSubmit();
+  makeCocktailArrays();
 
   //this creates arrays based on objects this is now being complteted dynamically.
-  // var classicMartini = Object.values(cocktailRecipeBox[0]);
-  // var manhattan = Object.values(cocktailRecipeBox[1]);
-  // var margarita = Object.values(cocktailRecipeBox[2]);
-  // var japaneseCocktail = Object.values(cocktailRecipeBox[3]);
-  // var greatGatsby = Object.values(cocktailRecipeBox[4]);
-  // var darkAndStormy = Object.values(cocktailRecipeBox[5]);
-  // var campariSpritz = Object.values(cocktailRecipeBox[6]);
-  // var adriatique = Object.values(cocktailRecipeBox[7]);
-  // var mintJulep = Object.values(cocktailRecipeBox[8]);
-  // var brandyAlexander = Object.values(cocktailRecipeBox[9]);
-  // var adultHotChocolate = Object.values(cocktailRecipeBox[10]);
-  // var whiteSangria = Object.values(cocktailRecipeBox[11]);
+
+  for (var i in cocktailRecipeBox) {
+    if (userSelectedIngredientsArray[0] === cocktailArray[i][2] && userSelectedIngredientsArray[1] === cocktailArray[i][3] && userSelectedIngredientsArray[2] === cocktailArray[i][4]){
+      var getRenderId = document.getElementById('render');
+      var makeDiv = document.createElement('div');
+      var makeA = document.createElement('a');
+      makeA.href = cocktailRecipeBox[i].link;
+      // makeA.target = blank;
+      makeA.textContent = cocktailRecipeBox[i].name;
+      makeDiv.appendChild(makeA);
+      getRenderId.appendChild(makeDiv);
+    }
+
+    else{
+      console.log("fail");
+    };
+  };
+};
 
 
-
-//   // for (var i in selectedIngredientsArray){
-//   // div class drinkCard
-//   // h1 class drinkTitle
-//   //
-//   if (selectedIngredientsArray[0] === classicMartini[2] && selectedIngredientsArray[1] === classicMartini[3] && selectedIngredientsArray[2] === classicMartini[4]) {
-//     console.log("martini");
-//     var getRenderId = document.getElementById('render');
-//     var makeDiv = document.createElement('div');
-//     var makeA = document.createElement('a');
-//     makeA.href = cocktailRecipeBox[0].link;
-//     makeA.target = blank;
-//     makeA.textContent = cocktailRecipeBox[0].name;
-//     makeDiv.appendChild(makeA);
-//     getRenderId.appendChild(makeDiv);
-//
-//   }
-//   else if(selectedIngredientsArray[0] === manhattan[2] && selectedIngredientsArray[1] === manhattan[3] && selectedIngredientsArray[2] === manhattan[4]) {
-//     var getRenderId = document.getElementById('render');
-//     var makeDiv = document.createElement('div');
-//     var makeA = document.createElement('a');
-//     makeA.href = cocktailRecipeBox[1].link;
-//     makeA.textContent = cocktailRecipeBox[1].name;
-//     makeDiv.appendChild(makeA);
-//     getRenderId.appendChild(makeDiv);
-//
-//
-//     console.log("manhattan");
-//   }
-//   else if (selectedIngredientsArray[0] === margarita[2] && selectedIngredientsArray[1] === margarita[3] && selectedIngredientsArray[2] === margarita[4]) {
-//     var getRenderId = document.getElementById('render');
-//     var makeDiv = document.createElement('div');
-//     var makeA = document.createElement('a');
-//     makeA.href = cocktailRecipeBox[2].link;
-//     makeA.textContent = cocktailRecipeBox[2].name;
-//     makeDiv.appendChild(makeA);
-//     getRenderId.appendChild(makeDiv);
-//     console.log("margarita");
-//   }
-//   else if (selectedIngredientsArray[0] === japaneseCocktail[2] && selectedIngredientsArray[1] === japaneseCocktail[3] && selectedIngredientsArray[2] === japaneseCocktail[4]) {
-//     var getRenderId = document.getElementById('render');
-//     var makeDiv = document.createElement('div');
-//     var makeA = document.createElement('a');
-//     makeA.href = cocktailRecipeBox[3].link;
-//     makeA.textContent = cocktailRecipeBox[3].name;
-//     makeDiv.appendChild(makeA);
-//     getRenderId.appendChild(makeDiv);
-//     console.log("japaneseCocktail");
-//   }
-//   else if (selectedIngredientsArray[0] === greatGatsby[2] && selectedIngredientsArray[1] === greatGatsby[3] && selectedIngredientsArray[2] === greatGatsby[4]) {
-//     var getRenderId = document.getElementById('render');
-//     var makeDiv = document.createElement('div');
-//     var makeA = document.createElement('a');
-//     makeA.href = cocktailRecipeBox[4].link;
-//     makeA.textContent = cocktailRecipeBox[4].name;
-//     makeDiv.appendChild(makeA);
-//     getRenderId.appendChild(makeDiv);
-//     console.log("greatGatsby");
-//   }
-//   // else if (selectedIngredientsArray[0] === darkAndStormy[2] && selectedIngredientsArray[1] === darkAndStormy[3] && selectedIngredientsArray[2] === darkAndStormy[4]) {
-//   //   console.log("darkAndStormy");
-//   // }
-//   // else if (selectedIngredientsArray[0] === campariSpritz[2] && selectedIngredientsArray[1] === campariSpritz[3] && selectedIngredientsArray[2] === campariSpritz[4]) {
-//   //   console.log("campariSpritz");
-//   // }
-//   // else if (selectedIngredientsArray[0] === adriatique[2] && selectedIngredientsArray[1] === adriatique[3] && selectedIngredientsArray[2] === adriatique[4]) {
-//   //   console.log("adriatique");
-//   // }
-//   // else if (selectedIngredientsArray[0] === mintJulep[2] && selectedIngredientsArray[1] === mintJulep[3] && selectedIngredientsArray[2] === mintJulep[4]) {
-//   //   console.log("mintJulep");
-//   // }
-//   // else if (selectedIngredientsArray[0] === brandyAlexander[2] && selectedIngredientsArray[1] === brandyAlexander[3] && selectedIngredientsArray[2] === brandyAlexander[4]) {
-//   //   console.log("brandyAlexander");
-//   // }
-//   // else if (selectedIngredientsArray[0] === adultHotChocolate[2] && selectedIngredientsArray[1] === adultHotChocolate[3] && selectedIngredientsArray[2] === adultHotChocolate[4]) {
-//   //   console.log("adultHotChocolate");
-//   // }
-//   // else if (selectedIngredientsArray[0] === whiteSangria[2] && selectedIngredientsArray[1] === whiteSangria[3] && selectedIngredientsArray[2] === whiteSangria[4]) {
-//   //   console.log("whiteSangria");
-//   // }
-//
-//   else{
-//     console.log("fail");
-//   };
-// };
-//
-//
-// document.getElementById('submit').addEventListener('click', selectDrinkRecipeRenderToDom);
+document.getElementById('submit').addEventListener('click', selectDrinkRecipeRenderToDom);
