@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>It's 5 o'clock somewhere</title>
-  <link rel = "stylesheet" href="style.css">
+  <link rel = "stylesheet" href="about.css">
   <img id= "logo" src=""/>
 
 
@@ -12,107 +12,73 @@
   <header>
     <img id= "fiveoclocksomewhere" src="assets/fiveoclock.jpeg" height="175" width="175"/>
     <div class="header">
-      <span class="title"><h1>It's 5 o'clock somewhere...</h1></span><br/>
+      <span class="title"><h1>Recipes...</h1></span><br/>
     </div>
 
     <nav class="navigation">
       <ul class="navlist">
-        <li class="one"><a href="index.html">Home</a></li>
-
-        <li class="two"><a href="recipes.html">Recipes</a></li>
-
+        <li class="one"><a href= "index.html">Home</a></li>
+        <li class="two"><a href= "recipes.html">Recipes</a></li>
         <li class="three"> <a href="about.html">About Us</a></li>
         <li class="four"><a href="accessories.html">Accessories</a></li>
-
       </ul>
     </nav>
   </header>
 
   <!-- Main Container -->
-  <main class="maincontainer">
+  <main class="maincontainerAbout">
 
-    <section class="form"></section>
-    <section class="form" id="form">
-      <div class="dropdown">
-        <select name="ing1" id="ing1" class="dropbtn">
-          <div class="dropdown-content">
-            <option selected hidden disabled>Ingredient One:</option>
-            <option value="Gin">Gin</option>
-            <option value="Whiskey">Whiskey</option>
-            <option value="White Tequila">White Tequila</option>
-            <option value="Cognac">Cognac</option>
-            <option value="Vodka">Vodka</option>
-            <!-- <option value="Rum">Rum</option>
-            <option value="Sparkling Wine">Sparkling Wine</option>
-            <option value="Amaro Mentenegro">Amaro Mentenegro</option>
-            <option value="Bourbon">Bourbon</option>
-            <option value="Brandy">Brandy</option>
-            <option value="Peppermint Snapps">Peppermint Snapps</option>
-            <option value="White Wine">White Wine</option> -->
-          </div>
-        </select>
+<div class="recipe1">
+  <div>
 
-      </div>
+</div>
 
-      <div class="dropdown">
-        <select name="ing2" id= "ing2"  class="dropbtn">
-
-          <div class="dropdown-content">
-            <option selected hidden disabled>Ingredient Two:</option>
-            <option value="White Vermouth">White Vermouth</option>
-            <option value="Red Vermouth">Red Vermouth</option>
-            <option value="Cointreau">Cointreau</option>
-            <option value="Orgeat">Orgeat</option>
-            <option value="Lillet Blanc">Lillet Blanc</option>
-            <!-- <option value="Ginger Beer">Ginger Beer</option>
-            <option value="Campari">Campari</option>
-            <option value="Aperol">Aperol</option>
-            <option value="Mint Leaves">Mint Leaves</option>
-            <option value="Dark Créme De Liquer">Dark Créme De Liquer</option>
-            <option value="Hot Chocolate">Hot Chocolate</option>
-            <option value="Calvados">Calvados</option> -->
-          </div>
-        </select>
-      </div>
-
-      <div class="dropdown">
-        <select name="ing3" class="dropbtn" id="ing3">
-          <div class="dropdown-content">
-            <option selected hidden disabled>Ingredient Three:</option>
-            <option value="None">None</option>
-            <option value="Bitters">Bitters</option>
-            <option value="Lime Juice">Lime Juice</option>
-            <option value="Angostura Bitters">Angostura Bitters</option>
-            <option value="Grapefruit Juice">Grapefruit Juice</option>
-            <!-- <option value="Lime">Lime</option>
-            <option value="Club Soda">Club Soda</option>
-            <option value="Orange Juice">Orange Juice</option>
-            <option value="Sugar">Sugar</option>
-            <option value="Single Cream">Single Cream</option>
-            <option value="Whip Cream">Whip Cream</option>
-            <option value="Fruit">Fruit</option>
-            <option value="Bitters">Bitters</option> -->
-          </div>
-        </select>
-
-      </div>
-
-        <div class="dropdown">
-          <input class="submit" id="submit" type="submit" value="Let's Unwind!">
-        </div>
-      </div>
+<div class="card-container">
+  <div class="card">
+    <div class="side"><img src="assets/Dirty Martini.jpeg"
+       alt="Dirty Martini">
+     </div>
+    <div class="side back">
+      <h4>Dirty Martini</h4>
+      <h5>Ingredients</h5>
+      <ul>
+      <li>6 fluid oz. of vodka</li>
+      <li>1 dash dry vermouth</li>
+      <li>1 fluid oz. brine from olive jar</li>
+      <li>4 stuffed green olives</li></ul>
+      <h5>Method</h5>
+      <p class="colorblack">In a mixing glass, combine vodka, dry vermouth, brine and olives. Pour into a glass over ice. Either drink on the rocks, or strain into a chilled cocktail glass.</p></div>
+  </div>
+</div>
 
 
-      <!-- Sidebar -->
-      <!-- <aside class="sidebar" id=""></aside> -->
-
-      <!-- Main Content -->
-      <section class="render" id="render"></section>
+<div class="card-container">
+  <div class="card2">
+    <div class="side"><img src="assets/DarkandStormy.jpeg"
+       alt="DarkandStormy">
+     </div>
+    <div class="side back">
+      <h4>Dark & Stormy</h4>
+      <h5>Ingredients</h5>
+      <ul>
+      <li>2 fluid oz. of dark rum</li>
+      <li>4 fluid oz. of ginger beer</li>
+      <li>1/2 cup of ice</li>
+      <li></ul>
+      <h5>Method</h5>
+      <p class="colorblack">Combine rum and ginger beer in an old-fashioned glass. Add ice and stir.</p></div>
+  </div>
+</div>
 
 
 
-    </main>
-    <script src="app.js" charset="utf-8"></script>
+
+
+
+  </main>
+
+
+  <script src="app.js" charset="utf-8"></script>
 
   </script>
   <footer class="footer">
@@ -120,5 +86,5 @@
     <ul class = "footer-logo">Cocktail Generator @CodeFellows 2017 - All Rights Reserved</ul>
 
   </footer>
-</body>
-</html>
+  </body>
+  </html>
