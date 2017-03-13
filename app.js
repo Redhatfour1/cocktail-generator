@@ -132,21 +132,34 @@ function selectDrinkRecipeRenderToDom() {
 
   for (var i in cocktailRecipeBox) {
     if (userSelectedIngredientsArray[0] === cocktailArray[i][2] && userSelectedIngredientsArray[1] === cocktailArray[i][3] && userSelectedIngredientsArray[2] === cocktailArray[i][4]){
+
+      genDiv.remove();
+
+
       var getRenderId = document.getElementById('render');
       var makeDiv = document.createElement('div');
+      makeDiv.id ='genDiv'
       var makeA = document.createElement('a');
       makeA.href = cocktailRecipeBox[i].link;
-      // makeA.target = blank;
+      makeA.target = '_blank';
       makeA.textContent = cocktailRecipeBox[i].name;
       makeDiv.appendChild(makeA);
       getRenderId.appendChild(makeDiv);
     }
-
     else{
       console.log("fail");
+      // var getRenderId = document.getElementById('render');
+      // var makeDiv = document.createElement('div');
+      // var makeIframe = document.createElement('iframe');
+      // makeIframe.src =
+      // makeDiv.appendChild(makeIframe);
+      // getRenderId.appendChild(makeDiv);
     };
   };
 };
 
 
 document.getElementById('submit').addEventListener('click', selectDrinkRecipeRenderToDom);
+
+
+// <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d85990.51403603442!2d-122.38668305266528!3d47.66104173231092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sbars+in+seattle!5e0!3m2!1sen!2sus!4v1489361176461" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
