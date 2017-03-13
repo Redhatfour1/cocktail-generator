@@ -30,7 +30,7 @@ function Cocktail(name, imagePath, ingredient1, ingredient2, ingredient3, link){
 (function() {
 
   for (var i in cocktailNames){
-    var newCocktail = new Cocktail(cocktailNames[i], 'assets/' + cocktailNames[i] + '.jpg', ingredient1Array[i], ingredient2Array[i],
+    var newCocktail = new Cocktail(cocktailNames[i], 'assets/' + cocktailNames[i] + '.jpeg', ingredient1Array[i], ingredient2Array[i],
     ingredient3Array[i], linkArray[i])
   };
 })()
@@ -131,18 +131,24 @@ function selectDrinkRecipeRenderToDom() {
   //this creates arrays based on objects this is now being complteted dynamically.
 
   for (var i in cocktailRecipeBox) {
-    if (userSelectedIngredientsArray[0] === cocktailArray[i][2] && userSelectedIngredientsArray[1] === cocktailArray[i][3] && userSelectedIngredientsArray[2] === cocktailArray[i][4]){
+    if (userSelectedIngredientsArray[0] === cocktailArray[i][2] && userSelectedIngredientsArray[1] === cocktailArray[i][3] || userSelectedIngredientsArray[2] === cocktailArray[i][4]){
 
-      genDiv.remove();
+      drinkCard.remove();
 
 
       var getRenderId = document.getElementById('render');
       var makeDiv = document.createElement('div');
-      makeDiv.id ='genDiv'
+      makeDiv.id = 'drinkCard';
+      makeDiv.className ='drinkCard';
       var makeA = document.createElement('a');
+      var makeImg = document.createElement('img');
       makeA.href = cocktailRecipeBox[i].link;
+      makeA.id = 'drinkTitle';
+      makeA.className = 'drinkTitle';
       makeA.target = '_blank';
+      makeImg.src = cocktailRecipeBox[i].imagePath;
       makeA.textContent = cocktailRecipeBox[i].name;
+      makeA.appendChild(makeImg);
       makeDiv.appendChild(makeA);
       getRenderId.appendChild(makeDiv);
     }
