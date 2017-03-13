@@ -121,6 +121,9 @@ img {
 }
 p.colorblack{
   color: black;
+  width: 290px;
+  /*text-align: center;*/
+
 }
 
 img.codefellows{
@@ -133,11 +136,84 @@ img.codefellows{
   width: 25px;
   text-align: center;
 }
+/*This paragraph is for the paragraphs on the about us page.*/
 p{
   width:600px;
   height: 150px;
+}
+card-container {
+  cursor: pointer;
+  height: 150px;
+  perspective: 600;
+  /*position: relative;*/
+  width: 175px;
 
 }
+.card {
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+  width: 30%;
+  margin-top: 15px;
+}
+.card:hover {
+  transform: rotateY(180deg);
+}
+.card .side {
+  backface-visibility: hidden;
+  border-radius: 10px;
+  height: 100%;
+  position: absolute;
+  /*overflow: hidden;*/
+  width: 100%;
+}
+.card .back {
+  background: #eaeaed;
+  color: black;
+  font-size: 14px;
+  text-decoration: none;
+  line-height: 20px;
+  text-align: center;
+  transform: rotateY(180deg);
+}
+.card2 {
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+  width: 30%;
+  margin-top: 15px;
+}
+.card2:hover {
+  transform: rotateY(180deg);
+}
+.card2 .side {
+  backface-visibility: hidden;
+  border-radius: 10px;
+  height: 100%;
+  position: absolute;
+  /*overflow: hidden;*/
+  width: 100%;
+}
+.card2 .back {
+  background: #eaeaed;
+  color: black;
+  font-size: 14px;
+  text-decoration: none;
+  line-height: 20px;
+  text-align: center;
+  transform: rotateY(180deg);
+}
+
+
+
+
+
+
+
+
+
 .footer{
 
   text-align: center;
