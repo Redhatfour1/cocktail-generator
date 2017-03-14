@@ -1,25 +1,41 @@
 
 'use strict'
-// Object stored in an array.
-var cocktailNames = ['Classic Martini', 'Manhattan', 'Margarita', 'Japanese Cocktail', 'Great Gatsby', 'Dark & Stormy', 'Campari Spritz', 'Adriatique', 'Mint Julep', 'Brandy Alexander', 'Adult Hot Chocolate', 'White Sangria'];
+//Cocktail Object stored in an array.
+var cocktailNames = ['Classic Martini', 'Manhattan', 'Margarita', 'Japanese Cocktail', 'Great Gatsby', 'Dark & Stormy', 'Campari Spritz', 'Adriatique', 'Mint Julep', 'Brandy Alexander', 'Adult Hot Chocolate', 'White Sangria', 'Cuba Libre', 'Raspberry Prosecco Bellini', 'Rum & Coke'];
 
+
+//Ingredients have to be in same order as drink
+var ingredient1Array = ['Gin', 'Whiskey', 'White Tequila', 'Cognac', 'Vodka', 'Rum', 'Sparkling Wine', 'Amaro Montenegro', 'Bourbon', 'Brandy', 'Peppermint Snapps', 'White Wine', 'Rum', 'Prosecco','Rum'];
+
+var ingredient2Array = ['White Vermouth', 'Red Vermouth', 'Cointreau', 'Orgeat', 'Lillet Blanc', 'Ginger Beer', 'Campari', 'Aperol', 'Mint Leaves', 'Dark Créme De Liquer', 'Hot Chocolate', 'Calvados', 'Coke', 'Raspberry liqueur', 'Coke'];
+
+var ingredient3Array = ['None', 'Bitters', 'Lime Juice', 'Angostura Bitters', 'Grapefruit Juice', 'Lime', 'Club Soda', 'Orange Juice', 'Sugar', 'Single Cream', 'Whip Cream', 'Fruit', 'Lime', 'Basil', 'None'];
+
+var linkArray = ['http://www.telegraph.co.uk/food-and-drink/cocktails/10-classic-mad-men-era-cocktails/martini/', 'http://www.telegraph.co.uk/food-and-drink/cocktails/10-classic-mad-men-era-cocktails/manhattan/', 'http://www.seriouseats.com/recipes/2015/04/classic-margarita-recipe-tequila-cocktail.html', 'http://www.seriouseats.com/recipes/2011/11/japanese-cocktail-recipe.html', 'http://www.seriouseats.com/recipes/2012/01/frank-stitts-great-gatsby-vodka-grapefruit-cocktail-recipe.html', 'http://www.seriouseats.com/recipes/2011/06/dark-and-stormy-cocktail-the-spotted-pig-recipe.html', 'http://www.seriouseats.com/recipes/2011/06/campari-spritz-recipe.html', 'http://www.seriouseats.com/recipes/2012/01/jackson-cannons-adriatique-aperitif-aperol-orange-juice-amaro-cocktail-recipe.html','http://www.telegraph.co.uk/food-and-drink/cocktails/10-classic-mad-men-era-cocktails/mint-julep/', 'http://www.telegraph.co.uk/food-and-drink/cocktails/10-classic-mad-men-era-cocktails/brandy-alexander/', 'http://www.drinksmixer.com/drinkn1m2540.html'
+,'http://www.foodnetwork.com/recipes/rachael-ray/white-sangria-recipe', 'http://www.seriouseats.com/recipes/2012/01/cuba-libre-rum-coke-cocktail-recipe.html',  'http://www.liquidgolddrinks.com/cocktails/prosecco-cocktails/raspberry-prosecco-bellini/']
 
 var cocktailRecipeBox = [];
 console.log(cocktailRecipeBox);
 
 
 // Constructor Function
-function Cocktail(name, imagePath, ingredient1, ingredient2, ingredient3){
+function Cocktail(name, imagePath, ingredient1, ingredient2, ingredient3, link){
   this.name = name;
   this.imagePath = imagePath;
+  this.ingredient1 = ingredient1;
+  this.ingredient2 = ingredient2;
+  this.ingredient3 = ingredient3;
+  this.link = link;
   cocktailRecipeBox.push(this);
 }
 (function() {
 
   for (var i in cocktailNames){
-    var newCocktail = new Cocktail(cocktailNames[i], 'assets/' + cocktailNames[i] + '.jpg')
+    var newCocktail = new Cocktail(cocktailNames[i], 'assets/' + cocktailNames[i] + '.jpeg', ingredient1Array[i], ingredient2Array[i],
+    ingredient3Array[i], linkArray[i])
   };
 })()
+
 
 
 // 1.Classic Martini
@@ -144,39 +160,74 @@ cocktailRecipeBox[4].link = 'http://www.seriouseats.com/recipes/2012/01/frank-st
 // cocktailRecipeBox[19].ingredient3 = 'Dry Vermouth';
 // cocktailRecipeBox[19].link = 'http://imbibemagazine.com/chrysanthemum-cocktail-recipe/';
 
-
 var selectedIngredientsArray = [];
+
+var userSelectedIngredientsArray = [];
 
 // ingredients that were selected get push into an array
 
-function handleFormSubmit(event) {
-  selectedIngredientsArray = [];
+function handleUserFormSubmit(event) {
+  userSelectedIngredientsArray = [];
   // user^
-  console.log(selectedIngredientsArray);
+  console.log(userSelectedIngredientsArray);
 
-  var getIngredientOne = document.getElementById("ing1");
+  var getIngredientOne = document.getElementById('ing1');
   var selectedNode1 = getIngredientOne.options[getIngredientOne.selectedIndex].value;
-  selectedIngredientsArray.push(selectedNode1);
+  userSelectedIngredientsArray.push(selectedNode1);
 
-  var elem2 = document.getElementById("ing2");
+  var elem2 = document.getElementById('ing2');
   var selectedNode2 = elem2.options[elem2.selectedIndex].value;
-  selectedIngredientsArray.push(selectedNode2);
+  userSelectedIngredientsArray.push(selectedNode2);
 
-  var elem3 = document.getElementById("ing3");
+  var elem3 = document.getElementById('ing3');
   var selectedNode3 = elem3.options[elem3.selectedIndex].value;
-  selectedIngredientsArray.push(selectedNode3);
-  return selectedIngredientsArray;
+  userSelectedIngredientsArray.push(selectedNode3);
+  return userSelectedIngredientsArray;
 }
 
-
 console.log(Object.values(cocktailRecipeBox[1]));
-//
-// console.log(Object.values(cocktailRecipeBox[1]));
-// Sad attempt at a logical operator
+
+// This dynamically Creates arrays inside of arrays for all drinks
+var cocktailArray = [];
+function makeCocktailArrays(){
+  for (var i in cocktailNames) {
+    cocktailArray[i] = Object.values(cocktailRecipeBox[i]);
+  }
+  return cocktailArray;
+}
+
+console.log('makeCocktailArrays: ',  makeCocktailArrays());
 
 
 function selectDrinkRecipeRenderToDom() {
-  handleFormSubmit();
+  handleUserFormSubmit();
+  makeCocktailArrays();
+
+  //this creates arrays based on objects this is now being complteted dynamically.
+
+  for (var i in cocktailRecipeBox) {
+    if (userSelectedIngredientsArray[0] === cocktailArray[i][2] && userSelectedIngredientsArray[1] === cocktailArray[i][3] && userSelectedIngredientsArray[2] === cocktailArray[i][4]){
+
+      drinkCard.remove();
+
+      var getRenderId = document.getElementById('render');
+      var makeDiv = document.createElement('div');
+      makeDiv.id = 'drinkCard';
+      makeDiv.className ='drinkCard';
+      var makeA = document.createElement('a');
+      var makeImg = document.createElement('img');
+      makeA.href = cocktailRecipeBox[i].link;
+      makeA.id = 'drinkTitle';
+      makeA.className = 'drinkTitle';
+      makeA.target = '_blank';
+      makeImg.src = cocktailRecipeBox[i].imagePath;
+      makeA.textContent = cocktailRecipeBox[i].name;
+      makeA.appendChild(makeImg);
+      makeDiv.appendChild(makeA);
+      getRenderId.appendChild(makeDiv);
+      break;
+    }
+
 
   //this creates arrays based on objects
   var classicMartini = Object.values(cocktailRecipeBox[0]);
@@ -184,19 +235,19 @@ function selectDrinkRecipeRenderToDom() {
   var margarita = Object.values(cocktailRecipeBox[2]);
   var japaneseCocktail = Object.values(cocktailRecipeBox[3]);
   var greatGatsby = Object.values(cocktailRecipeBox[4]);
-  // var darkAndStormy = Object.values(cocktailRecipeBox[5]);
-  // var campariSpritz = Object.values(cocktailRecipeBox[6]);
-  // var adriatique = Object.values(cocktailRecipeBox[7]);
-  // var mintJulep = Object.values(cocktailRecipeBox[8]);
-  // var brandyAlexander = Object.values(cocktailRecipeBox[9]);
-  // var adultHotChocolate = Object.values(cocktailRecipeBox[10]);
-  // var whiteSangria = Object.values(cocktailRecipeBox[11]);
+  var darkAndStormy = Object.values(cocktailRecipeBox[5]);
+  var campariSpritz = Object.values(cocktailRecipeBox[6]);
+  var adriatique = Object.values(cocktailRecipeBox[7]);
+  var mintJulep = Object.values(cocktailRecipeBox[8]);
+  var brandyAlexander = Object.values(cocktailRecipeBox[9]);
+  var adultHotChocolate = Object.values(cocktailRecipeBox[10]);
+  var whiteSangria = Object.values(cocktailRecipeBox[11]);
 
 
 
-  // for (var i in selectedIngredientsArray){
-  // div class drinkCard
-  // h1 class drinkTitle
+  for (var i in selectedIngredientsArray){
+  div class drinkCard
+  h1 class drinkTitle
   //
   if (selectedIngredientsArray[0] === classicMartini[2] && selectedIngredientsArray[1] === classicMartini[3] && selectedIngredientsArray[2] === classicMartini[4]) {
     console.log("martini");
@@ -251,30 +302,49 @@ function selectDrinkRecipeRenderToDom() {
     getRenderId.appendChild(makeDiv);
     console.log("greatGatsby");
   }
-  // else if (selectedIngredientsArray[0] === darkAndStormy[2] && selectedIngredientsArray[1] === darkAndStormy[3] && selectedIngredientsArray[2] === darkAndStormy[4]) {
-  //   console.log("darkAndStormy");
-  // }
-  // else if (selectedIngredientsArray[0] === campariSpritz[2] && selectedIngredientsArray[1] === campariSpritz[3] && selectedIngredientsArray[2] === campariSpritz[4]) {
-  //   console.log("campariSpritz");
-  // }
-  // else if (selectedIngredientsArray[0] === adriatique[2] && selectedIngredientsArray[1] === adriatique[3] && selectedIngredientsArray[2] === adriatique[4]) {
-  //   console.log("adriatique");
-  // }
-  // else if (selectedIngredientsArray[0] === mintJulep[2] && selectedIngredientsArray[1] === mintJulep[3] && selectedIngredientsArray[2] === mintJulep[4]) {
-  //   console.log("mintJulep");
-  // }
-  // else if (selectedIngredientsArray[0] === brandyAlexander[2] && selectedIngredientsArray[1] === brandyAlexander[3] && selectedIngredientsArray[2] === brandyAlexander[4]) {
-  //   console.log("brandyAlexander");
-  // }
-  // else if (selectedIngredientsArray[0] === adultHotChocolate[2] && selectedIngredientsArray[1] === adultHotChocolate[3] && selectedIngredientsArray[2] === adultHotChocolate[4]) {
-  //   console.log("adultHotChocolate");
-  // }
-  // else if (selectedIngredientsArray[0] === whiteSangria[2] && selectedIngredientsArray[1] === whiteSangria[3] && selectedIngredientsArray[2] === whiteSangria[4]) {
-  //   console.log("whiteSangria");
-  // }
+  else if (selectedIngredientsArray[0] === darkAndStormy[2] && selectedIngredientsArray[1] === darkAndStormy[3] && selectedIngredientsArray[2] === darkAndStormy[4]) {
+    console.log("darkAndStormy");
+  }
+  else if (selectedIngredientsArray[0] === campariSpritz[2] && selectedIngredientsArray[1] === campariSpritz[3] && selectedIngredientsArray[2] === campariSpritz[4]) {
+    console.log("campariSpritz");
+  }
+  else if (selectedIngredientsArray[0] === adriatique[2] && selectedIngredientsArray[1] === adriatique[3] && selectedIngredientsArray[2] === adriatique[4]) {
+    console.log("adriatique");
+  }
+  else if (selectedIngredientsArray[0] === mintJulep[2] && selectedIngredientsArray[1] === mintJulep[3] && selectedIngredientsArray[2] === mintJulep[4]) {
+    console.log("mintJulep");
+  }
+  else if (selectedIngredientsArray[0] === brandyAlexander[2] && selectedIngredientsArray[1] === brandyAlexander[3] && selectedIngredientsArray[2] === brandyAlexander[4]) {
+    console.log("brandyAlexander");
+  }
+  else if (selectedIngredientsArray[0] === adultHotChocolate[2] && selectedIngredientsArray[1] === adultHotChocolate[3] && selectedIngredientsArray[2] === adultHotChocolate[4]) {
+    console.log("adultHotChocolate");
+  }
+  else if (selectedIngredientsArray[0] === whiteSangria[2] && selectedIngredientsArray[1] === whiteSangria[3] && selectedIngredientsArray[2] === whiteSangria[4]) {
+    console.log("whiteSangria");
+  }
 
   else{
     console.log("fail");
+
+    else{
+
+
+      drinkCard.remove();
+
+      var getRenderId = document.getElementById('render');
+      var makeDiv = document.createElement('div');
+      makeDiv.id = 'drinkCard';
+      makeDiv.className ='drinkCard';
+      var makeP = document.createElement('p');
+
+      makeP.textContent = 'NO DRINK!';
+      makeDiv.appendChild(makeP);
+      getRenderId.appendChild(makeDiv);
+
+      console.log('fail: ' + i);
+    };
+
   };
 };
 
