@@ -38,13 +38,9 @@ function Cocktail(name, imagePath, ingredient1, ingredient2, ingredient3, link){
 
 
 
-// // 13.
-// cocktailRecipeBox[12].ingredient1 = ;
-// cocktailRecipeBox[12].ingredient2 = ;
-// cocktailRecipeBox[12].ingredient3 = 'Basil';
-// cocktailRecipeBox[12].link = 'http://www.liquidgolddrinks.com/cocktails/prosecco-cocktails/raspberry-prosecco-bellini/';
+
 //
-// // 14.Almond Joy
+// // 14.
 // cocktailRecipeBox[13].ingredient1 = 'Coconut Rum';
 // cocktailRecipeBox[13].ingredient2 = 'Amaretto';
 // cocktailRecipeBox[13].ingredient3 = 'Crème de cacao';
@@ -99,15 +95,15 @@ function handleUserFormSubmit(event) {
   // user^
   console.log(userSelectedIngredientsArray);
 
-  var getIngredientOne = document.getElementById("ing1");
+  var getIngredientOne = document.getElementById('ing1');
   var selectedNode1 = getIngredientOne.options[getIngredientOne.selectedIndex].value;
   userSelectedIngredientsArray.push(selectedNode1);
 
-  var elem2 = document.getElementById("ing2");
+  var elem2 = document.getElementById('ing2');
   var selectedNode2 = elem2.options[elem2.selectedIndex].value;
   userSelectedIngredientsArray.push(selectedNode2);
 
-  var elem3 = document.getElementById("ing3");
+  var elem3 = document.getElementById('ing3');
   var selectedNode3 = elem3.options[elem3.selectedIndex].value;
   userSelectedIngredientsArray.push(selectedNode3);
   return userSelectedIngredientsArray;
@@ -124,7 +120,7 @@ function makeCocktailArrays(){
   return cocktailArray;
 }
 
-
+console.log('makeCocktailArrays: ',  makeCocktailArrays());
 function selectDrinkRecipeRenderToDom() {
   handleUserFormSubmit();
   makeCocktailArrays();
@@ -152,22 +148,25 @@ function selectDrinkRecipeRenderToDom() {
       makeA.appendChild(makeImg);
       makeDiv.appendChild(makeA);
       getRenderId.appendChild(makeDiv);
+      break;
     }
 
     else{
-      // drinkCard.remove();
-      //
-      // var getRenderId = document.getElementById('render');
-      // var makeDiv = document.createElement('div');
-      // makeDiv.id = 'drinkCard';
-      // makeDiv.className ='drinkCard';
-      // var makeP = document.createElement('p');
-      //
-      // makeP.textContent = 'NO DRINK!';
-      // makeDiv.appendChild(makeP);
-      // getRenderId.appendChild(makeDiv);
 
-      console.log("fail");
+
+      drinkCard.remove();
+
+      var getRenderId = document.getElementById('render');
+      var makeDiv = document.createElement('div');
+      makeDiv.id = 'drinkCard';
+      makeDiv.className ='drinkCard';
+      var makeP = document.createElement('p');
+
+      makeP.textContent = 'NO DRINK!';
+      makeDiv.appendChild(makeP);
+      getRenderId.appendChild(makeDiv);
+
+      console.log('fail: ' + i);
     };
   };
 };
