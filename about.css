@@ -165,7 +165,7 @@ card-container {
   width: 175px;
 
 }
-.card {
+.card1 {
 /*float:left;*/
   height: 100%;
   position: absolute;
@@ -174,10 +174,10 @@ card-container {
   width: 25%;
   margin-top: 15px;
 }
-.card:hover {
+.card1:hover {
   transform: rotateY(180deg);
 }
-.card .side {
+.card1 .side {
 
   backface-visibility: hidden;
   border-radius: 10px;
@@ -189,7 +189,7 @@ card-container {
 /*.sideback{
   list-style-type: none;
 }*/
-.card .back {
+.card1 .back {
 height:50%;
   background: #eaeaed;
   color: black;
@@ -265,6 +265,220 @@ height:50%;
   padding: 0;
 }
 
+
+
+.card4 {
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+  width: 25%;
+  /*margin-left: 60%;*/
+  margin-top: 15px;
+}
+.card4:hover {
+  transform: rotateY(180deg);
+}
+.card4 .side {
+  backface-visibility: hidden;
+  border-radius: 10px;
+  height: 100%;
+  position: absolute;
+  /*overflow: hidden;*/
+  width: 100%;
+}
+.card4 .back {
+  height:50%;
+  background: #eaeaed;
+  color: black;
+  font-size: 14px;
+  text-decoration: none;
+  line-height: 20px;
+  text-align: center;
+  transform: rotateY(180deg);
+  padding: 0;
+}
+
+
+
+.card5 {
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+  width: 25%;
+  margin-left: 30%;
+  margin-top: 15px;
+}
+.card5:hover {
+  transform: rotateY(180deg);
+}
+.card5 .side {
+  backface-visibility: hidden;
+  border-radius: 10px;
+  height: 100%;
+  position: absolute;
+  /*overflow: hidden;*/
+  width: 100%;
+}
+.card5 .back {
+  height:50%;
+  background: #eaeaed;
+  color: black;
+  font-size: 14px;
+  text-decoration: none;
+  line-height: 20px;
+  text-align: center;
+  transform: rotateY(180deg);
+  padding: 0;
+}
+
+
+.card6 {
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+  width: 25%;
+  margin-left: 60%;
+  margin-top: 15px;
+}
+.card6:hover {
+  transform: rotateY(180deg);
+}
+.card6 .side {
+  backface-visibility: hidden;
+  border-radius: 10px;
+  height: 100%;
+  position: absolute;
+  /*overflow: hidden;*/
+  width: 100%;
+}
+.card6 .back {
+  height:50%;
+  background: #eaeaed;
+  color: black;
+  font-size: 14px;
+  text-decoration: none;
+  line-height: 20px;
+  text-align: center;
+  transform: rotateY(180deg);
+  padding: 0;
+}
+
+
+.card7 {
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+  width: 25%;
+  /*margin-left: 60%;*/
+  margin-top: 15px;
+}
+.card7:hover {
+  transform: rotateY(180deg);
+}
+.card7 .side {
+  backface-visibility: hidden;
+  border-radius: 10px;
+  height: 100%;
+  position: absolute;
+  /*overflow: hidden;*/
+  width: 100%;
+}
+.card7 .back {
+  height:50%;
+  background: #eaeaed;
+  color: black;
+  font-size: 14px;
+  text-decoration: none;
+  line-height: 20px;
+  text-align: center;
+  transform: rotateY(180deg);
+  padding: 0;
+}
+
+
+.card8 {
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+  width: 25%;
+  /*margin-left: 60%;*/
+  margin-top: 15px;
+}
+.card8:hover {
+  transform: rotateY(180deg);
+}
+.card8 .side {
+  backface-visibility: hidden;
+  border-radius: 10px;
+  height: 100%;
+  position: absolute;
+  /*overflow: hidden;*/
+  width: 100%;
+}
+.card8 .back {
+  height:50%;
+  background: #eaeaed;
+  color: black;
+  font-size: 14px;
+  text-decoration: none;
+  line-height: 20px;
+  text-align: center;
+  transform: rotateY(180deg);
+  padding: 0;
+}
+
+
+.card9 {
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+  width: 25%;
+  /*margin-left: 60%;*/
+  margin-top: 15px;
+}
+.card9:hover {
+  transform: rotateY(180deg);
+}
+.card9 .side {
+  backface-visibility: hidden;
+  border-radius: 10px;
+  height: 100%;
+  position: absolute;
+  /*overflow: hidden;*/
+  width: 100%;
+}
+.card9 .back {
+  height:50%;
+  background: #eaeaed;
+  color: black;
+  font-size: 14px;
+  text-decoration: none;
+  line-height: 20px;
+  text-align: center;
+  transform: rotateY(180deg);
+  padding: 0;
+}
+
+
+
+
+
+.row1 {
+  border-style: dashed;
+  border-color: red;
+
+}
+.row2{
+  margin-top: 80%;
+  border-style: dashed;
+  border-color: blue;
+}
 
 /*.codefellows{
   margin-top: 50%;
