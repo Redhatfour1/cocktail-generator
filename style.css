@@ -180,6 +180,8 @@ h1 {
 }
 .video-bg {
   background: transparent;
+  /*background: ur(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkx76cfCSFj4VAaToVlSIiELVVxgHrlmNKm90ugRvTO6Im0OHx) no-repeat;*/
+  background-size: cover;
     height: 277px;
     width: 100%;
     position: absolute;
@@ -196,11 +198,9 @@ style {
   width: 100%;
   height: 100%;
 }*/
-/*bgvid{
+/*.id-bg{
   min-width: 100%;
   min-height: 100%;
   width: auto;
   height: auto;
-  background: ur(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkx76cfCSFj4VAaToVlSIiELVVxgHrlmNKm90ugRvTO6Im0OHx) no-repeat;
-  background-size: cover;
-}*/
+  }*/
