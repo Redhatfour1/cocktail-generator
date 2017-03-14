@@ -10,22 +10,24 @@
 </head>
 <body>
   <header>
+    <nav class="navigation">
+      <ul class="navlist">
+        <li class="one"><a href="index.html">Home</a></li>
+        <li class="two"><a href="recipes.html">Recipes</a></li>
+        <li class="three"> <a href="about.html">About Us</a></li>
+        <li class="four"><a href="accessories.html">Accessories</a></li>
+      </ul>
+    </nav>
+    <link href="https://fonts.googleapis.com/css?family=Amita|Expletus+Sans|Faster+One|Lobster+Two|Oswald|Poiret+One|Sacramento|Vibur|Yanone+Kaffeesatz" rel="stylesheet">
     <img id= "fiveoclocksomewhere" src="assets/fiveoclock.jpeg" height="175" width="175"/>
     <div class="header">
       <span class="title"><h1>It's 5 o'clock somewhere...</h1></span><br/>
     </div>
+    <section>
+      <link href="cocktail-generator">
+    </section>
 
-    <nav class="navigation">
-      <ul class="navlist">
-        <li class="one"><a href="index.html">Home</a></li>
 
-        <li class="two"><a href="recipes.html">Recipes</a></li>
-
-        <li class="three"> <a href="about.html">About Us</a></li>
-        <li class="four"><a href="accessories.html">Accessories</a></li>
-
-      </ul>
-    </nav>
   </header>
 
   <!-- Main Container -->
@@ -36,7 +38,7 @@
       <div class="dropdown">
         <select name="ing1" id="ing1" class="dropbtn">
           <div class="dropdown-content">
-            <option selected hidden disabled>Ingredient One:</option>
+            <option selected hidden disabled>Ingredient One</option>
             <option value="Gin">Gin</option>
             <option value="Whiskey">Whiskey</option>
             <option value="White Tequila">White Tequila</option>
@@ -58,7 +60,8 @@
         <select name="ing2" id= "ing2"  class="dropbtn">
 
           <div class="dropdown-content">
-            <option selected hidden disabled>Ingredient Two:</option>
+            <!-- <input type="button" style="background-image:url(assets/Sq Ice Cube.png)"/> -->
+            <option selected hidden disabled>Ingredient Two</option>
             <option value="White Vermouth">White Vermouth</option>
             <option value="Red Vermouth">Red Vermouth</option>
             <option value="Cointreau">Cointreau</option>
@@ -78,7 +81,7 @@
       <div class="dropdown">
         <select name="ing3" class="dropbtn" id="ing3">
           <div class="dropdown-content">
-            <option selected hidden disabled>Ingredient Three:</option>
+            <option selected hidden disabled>Ingredient Three</option>
             <option value="None">None</option>
             <option value="Bitters">Bitters</option>
             <option value="Lime Juice">Lime Juice</option>
