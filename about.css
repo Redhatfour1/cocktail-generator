@@ -1,3 +1,6 @@
+/**{
+  border-style: dashed;
+}*/
 body {
   width: 960px;
   margin-left: auto;
@@ -5,17 +8,20 @@ body {
   background-color: #DCDCDC
   }
   header{
-    padding-bottom: 100px;
+    padding-bottom: 70px;
     border-bottom: solid black 2px;
+    background-image: url("https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ1L8QIASUyIVcZhK9dvU2dPK9ql9yEkJU1QPAEsByP28fvZm0z");
 
   }
 .header{
   display: inline-block;
+
 }
 
 header img {
   display: inline-block;
   float:left;
+
 
 }
 nav ul li{
@@ -39,6 +45,12 @@ li.three{
   color: white;
   text-decoration: none;
 }
+li.four{
+  border-style: solid;
+  color: white;
+  text-decoration: none;
+}
+
 a{
   padding-left: 10px;
   padding-right: 10px;
@@ -61,7 +73,7 @@ p{
 }
 
 .box:hover {
-    background-color: #D3D3D3;
+    background-color: #8B0000;
     width: 702px;
     height: 250px;
     -webkit-transform: rotate(360deg);
@@ -106,6 +118,20 @@ img {
   margin-bottom: 50px;
 }
 
+.
+.jiggerbox{
+  display: inline-block;
+}
+p.colorblack{
+  color: black;
+  width: 290px;
+  margin-top: 5%;
+  /*text-align: center;*/
+}
+h5{
+  padding-bottom: 0;
+}
+
 img.codefellows{
   height: 35px;
   width: 35px;
@@ -116,13 +142,141 @@ img.codefellows{
   width: 25px;
   text-align: center;
 }
+/*This paragraph is for the paragraphs on the about us page.*/
 p{
   width:600px;
   height: 150px;
+}
+
+
+
+
+
+
+.maincontainerrecipe{
+  display: inline-block;
+}
+card-container {
+  /*display: inline-block;;*/
+  cursor: pointer;
+  height: 150px;
+  perspective: 600;
+  /*position: relative;*/
+  width: 175px;
 
 }
-.footer{
+.card {
+/*float:left;*/
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+  width: 25%;
+  margin-top: 15px;
+}
+.card:hover {
+  transform: rotateY(180deg);
+}
+.card .side {
 
+  backface-visibility: hidden;
+  border-radius: 10px;
+  height: 100%;
+  position: absolute;
+  /*overflow: hidden;*/
+  width: 100%;
+}
+/*.sideback{
+  list-style-type: none;
+}*/
+.card .back {
+height:50%;
+  background: #eaeaed;
+  color: black;
+  font-size: 14px;
+  text-decoration: none;
+  line-height: 20px;
+  text-align: center;
+  transform: rotateY(180deg);
+  padding: 0;
+}
+.card2 {
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+  width: 25%;
+  margin-left: 30%;
+  margin-top: 15px;
+}
+.card2:hover {
+  transform: rotateY(180deg);
+}
+.card2 .side {
+  backface-visibility: hidden;
+  border-radius: 10px;
+  height: 100%;
+  position: absolute;
+  /*overflow: hidden;*/
+  width: 100%;
+}
+.card2 .back {
+  height:50%;
+  background: #eaeaed;
+  color: black;
+  font-size: 14px;
+  text-decoration: none;
+  line-height: 20px;
+  text-align: center;
+  transform: rotateY(180deg);
+  padding: 0;
+}
+
+
+.card3 {
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+  width: 25%;
+  margin-left: 60%;
+  margin-top: 15px;
+}
+.card3:hover {
+  transform: rotateY(180deg);
+}
+.card3 .side {
+  backface-visibility: hidden;
+  border-radius: 10px;
+  height: 100%;
+  position: absolute;
+  /*overflow: hidden;*/
+  width: 100%;
+}
+.card3 .back {
+  height:50%;
+  background: #eaeaed;
+  color: black;
+  font-size: 14px;
+  text-decoration: none;
+  line-height: 20px;
+  text-align: center;
+  transform: rotateY(180deg);
+  padding: 0;
+}
+
+
+/*.codefellows{
+  margin-top: 50%;
+  height: 25px;
+  width: 25px;
+  text-align: center;
+}*/
+
+
+
+.footer{
+margin-top: 50%;
   text-align: center;
   text-decoration: none;
   bottom: 0;
