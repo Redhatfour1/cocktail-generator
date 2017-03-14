@@ -122,16 +122,17 @@ function makeCocktailArrays(){
 
 console.log('makeCocktailArrays: ',  makeCocktailArrays());
 
-
+var roundOne = [];
 function selectDrinkRecipeRenderToDom() {
   handleUserFormSubmit();
   makeCocktailArrays();
 
   //this creates arrays based on objects this is now being complteted dynamically.
-
+  roundOne = [];
   for (var i in cocktailRecipeBox) {
-    if (userSelectedIngredientsArray[0] === cocktailArray[i][2] && userSelectedIngredientsArray[1] === cocktailArray[i][3] && userSelectedIngredientsArray[2] === cocktailArray[i][4]){
+    if (userSelectedIngredientsArray[0] === cocktailArray[i][2] && userSelectedIngredientsArray[1] === cocktailArray[i][3]){
 
+      roundOne.push(cocktailArray[i]);
       drinkCard.remove();
 
       var getRenderId = document.getElementById('render');
