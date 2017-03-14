@@ -18,7 +18,7 @@ h1 {
 
 
   header{
-    height: 175px;
+    height: 277px;
     padding-bottom: 100px;
     border-bottom: in black 2px;
     font-family: 'Oswald', sans-serif;
@@ -35,6 +35,7 @@ h1 {
 
   .header{
     display: inline-block;
+    width: 100%;
   }
 
   header img {
@@ -174,33 +175,28 @@ h1 {
   background-color: #391F7A;
 }
 
-.video-header {
-    background: transparent;
-    overflow: hidden;
-}
-.video-bg {
+.header-container{
+  width: 100%;
+  height: 277px;
+  border-left: none;
+  border-right: none;
+  position: relative;
   background: transparent;
-  /*background: ur(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkx76cfCSFj4VAaToVlSIiELVVxgHrlmNKm90ugRvTO6Im0OHx) no-repeat;*/
+}
+
+.video-container{
+  background: url('asstes/videoposter.jpeg') no-repeat;
+  background: transparent;
   background-size: cover;
-    height: 277px;
-    width: 100%;
-    position: absolute;
-    z-index: -1;
-}
-style {
-  width: 100%;
   height: 100%;
-}
-/*iframe {
+  width: 100%;
   position: absolute;
-  top: 0;
-  left: 0;
+  overflow: hidden;
+}
+
+video{
+  position: absolute;
+  z-index: -1;
+  opacity: 0.78;
   width: 100%;
-  height: 100%;
-}*/
-/*.id-bg{
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  }*/
+}

@@ -8,29 +8,32 @@
   <img class= "logo" src=""/>
 </head>
 <body>
-  <header class="video-header" role="banner" style="background-image: url('<?php header_image(); ?>');">
-    <nav class="navigation">
-      <ul class="navlist">
-        <li class="one"><a href="index.html">Home</a></li>
-        <li class="two"><a href="recipes.html">Recipes</a></li>
-        <li class="three"> <a href="about.html">About Us</a></li>
-        <li class="four"><a href="accessories.html">Accessories</a></li>
-      </ul>
-    </nav>
-    <video src="assets/Sixty restaurant and bar. Moscow..mp4" autoplay poster="assets/videoposter.jpeg">
-      <!--page 214  -->
-    </video>
-    </div>
-    <img id= "fiveoclocksomewhere" src="assets/fiveoclock.jpeg" height="175" width="175"/>
-    <div class="header">
-      <span class="title"><h1>It's 5 o'clock somewhere...</h1></span><br/>
-    </div>
-    <section>
-      <link href="cocktail-generator">
-    </section>
+  <header class="header-container" role="banner" style="background-image: url('<?php header_image(); ?>');">
+    <div class="video-container">
+      <video preload="true" autoplay loop muted poster="assets/videoposter.jpeg" class="video-background">
+        <source src="assets/Sixty restaurant and bar1. Moscow.mp4" type="video/mp4">
+        </video>
+        <!--page 214  -->
 
-
-  </header>
+        <div>
+          <nav class="navigation">
+            <ul class="navlist">
+              <li class="one"><a href="index.html">Home</a></li>
+              <li class="two"><a href="recipes.html">Recipes</a></li>
+              <li class="three"> <a href="about.html">About Us</a></li>
+              <li class="four"><a href="accessories.html">Accessories</a></li>
+            </ul>
+          </nav>
+        </div>
+        <img id= "fiveoclocksomewhere" src="assets/fiveoclock.jpeg" height="175" width="175"/>
+        <div class="header">
+          <span class="title"><h1>It's 5 o'clock somewhere...</h1></span><br/>
+        </div>
+        <section>
+          <link href="cocktail-generator">
+        </section>
+      </div>
+    </header>
 
   <!-- Main Container -->
   <main class="maincontainer">
