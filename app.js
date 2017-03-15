@@ -18,7 +18,7 @@ var cocktailRecipeBox = [];
 console.log(cocktailRecipeBox);
 
 
-// Constructor Function
+// Constructor Function to create Cocktail objects
 function Cocktail(name, imagePath, ingredient1, ingredient2, ingredient3, link){
   this.name = name;
   this.imagePath = imagePath;
@@ -28,6 +28,7 @@ function Cocktail(name, imagePath, ingredient1, ingredient2, ingredient3, link){
   this.link = link;
   cocktailRecipeBox.push(this);
 }
+// This IFFE Creates the cocktail objects on load
 (function() {
 
   for (var i in cocktailNames){
@@ -38,8 +39,11 @@ function Cocktail(name, imagePath, ingredient1, ingredient2, ingredient3, link){
 
 var Tracker = {
   userSelectedIngredientsArray: [],
+  cocktailOptionsRound1: [],
+  cocktailOptionsRound2: [],
+  cocktailOptionsRound3: [],
 
-  // ingredients that were selected get push into an array
+  // ingredients that the user select get push into an array to be used in the verification process.
 
   handleUserFormSubmit: function(event) {
     Tracker.userSelectedIngredientsArray = [];
@@ -61,80 +65,84 @@ var Tracker = {
   },
 
 
-
+// this verifies what the user has selected against the cocktail objects in the cocktailRecipeBox array.
   getPossibleCocktails: function() {
     Tracker.handleUserFormSubmit();
 
-    var cocktailOptionsRound1 = [], cocktailOptionsRound2 = [], cocktailOptionsRound3 = [];
+    Tracker.cocktailOptionsRound1 = [];
+    Tracker.cocktailOptionsRound2 = [];
+    Tracker.cocktailOptionsRound3 = [];
 
     for(var i in cocktailRecipeBox){
       if(Tracker.userSelectedIngredientsArray[0] === cocktailRecipeBox[i].ingredient1){
-        cocktailOptionsRound1.push(cocktailRecipeBox[i]);
+        Tracker.cocktailOptionsRound1.push(cocktailRecipeBox[i]);
       }
     }
 
-    for(var i in cocktailOptionsRound1){
-      if(Tracker.userSelectedIngredientsArray[1] === cocktailOptionsRound1[i].ingredient2){
-        cocktailOptionsRound2.push(cocktailOptionsRound1[i]);
+    for(var i in Tracker.cocktailOptionsRound1){
+      if(Tracker.userSelectedIngredientsArray[1] === Tracker.cocktailOptionsRound1[i].ingredient2){
+        Tracker.cocktailOptionsRound2.push(Tracker.cocktailOptionsRound1[i]);
       }
     }
 
-    for(var i in cocktailOptionsRound2){
-      if(Tracker.userSelectedIngredientsArray[2] === cocktailOptionsRound2[i].ingredient3) {
-        cocktailOptionsRound3.push(cocktailOptionsRound2[i]);
+    for(var i in Tracker.cocktailOptionsRound2){
+      if(Tracker.userSelectedIngredientsArray[2] === Tracker.cocktailOptionsRound2[i].ingredient3) {
+        Tracker.cocktailOptionsRound3.push(Tracker.cocktailOptionsRound2[i]);
       }
     }
-    console.log('2: ',cocktailOptionsRound2);
-    console.log('3: ', cocktailOptionsRound3);
-    return cocktailOptionsRound2;
   },
 
+  renderCocktailOptions: function(){
+    Tracker.getPossibleCocktails();
+
+    // This creates and presents the drink in the dom
+    for (var i in Tracker.cocktailOptionsRound2) {
+      console.log('finder: ', Tracker.cocktailOptionsRound2[i]);
+      if (Tracker.cocktailOptionsRound2[i]){
+        var getRenderId = document.getElementById('render');
+        var makeDiv = document.createElement('div');
+        makeDiv.id = 'drinkCard';
+        makeDiv.className ='drinkCard';
+        var makeA = document.createElement('a');
+        var makeImg = document.createElement('img');
+        makeA.href = Tracker.cocktailOptionsRound2[i].link;
+        makeA.id = 'drinkTitle';
+        makeA.className = 'drinkTitle';
+        makeA.target = '_blank';
+        makeImg.src = Tracker.cocktailOptionsRound2[i].imagePath;
+        makeA.textContent = Tracker.cocktailOptionsRound2[i].name;
+        makeA.appendChild(makeImg);
+        makeDiv.appendChild(makeA);
+        getRenderId.appendChild(makeDiv);
+      }
+
+      else{
+
+        var getRenderId = document.getElementById('render');
+        var makeDiv = document.createElement('div');
+        makeDiv.id = 'drinkCard';
+        makeDiv.className ='drinkCard';
+        var makeP = document.createElement('p');
+
+        makeP.textContent = 'NO DRINK!';
+        makeDiv.appendChild(makeP);
+        getRenderId.appendChild(makeDiv);
+
+        console.log('fail: ' + i);
+      };
+    };
+  },
+
+// this method removes the last presented drink option to make room for the new ones
+  removeDrinkCard: function(){
+    var remove = document.getElementById("render");
+    while (remove.firstChild) {
+      remove.removeChild(remove.firstChild);
+    }
+  }
 };
 
-  // roundOne = [];
-  // for (var i in cocktailRecipeBox) {
-  //   if (userSelectedIngredientsArray[0] === cocktailArray[i][2] && userSelectedIngredientsArray[1] === cocktailArray[i][3]){
-  //
-  //     roundOne.push(cocktailArray[i]);
-  //     drinkCard.remove();
-  //
-  //     var getRenderId = document.getElementById('render');
-  //     var makeDiv = document.createElement('div');
-  //     makeDiv.id = 'drinkCard';
-  //     makeDiv.className ='drinkCard';
-  //     var makeA = document.createElement('a');
-  //     var makeImg = document.createElement('img');
-  //     makeA.href = cocktailRecipeBox[i].link;
-  //     makeA.id = 'drinkTitle';
-  //     makeA.className = 'drinkTitle';
-  //     makeA.target = '_blank';
-  //     makeImg.src = cocktailRecipeBox[i].imagePath;
-  //     makeA.textContent = cocktailRecipeBox[i].name;
-  //     makeA.appendChild(makeImg);
-  //     makeDiv.appendChild(makeA);
-  //     getRenderId.appendChild(makeDiv);
-  //     break;
-  //   }
-  //
-  //   else{
-  //
-  //
-  //     drinkCard.remove();
-  //
-  //     var getRenderId = document.getElementById('render');
-  //     var makeDiv = document.createElement('div');
-  //     makeDiv.id = 'drinkCard';
-  //     makeDiv.className ='drinkCard';
-  //     var makeP = document.createElement('p');
-  //
-  //     makeP.textContent = 'NO DRINK!';
-  //     makeDiv.appendChild(makeP);
-  //     getRenderId.appendChild(makeDiv);
-  //
-  //     console.log('fail: ' + i);
-  //   };
-  // };
-// };
 
-
-document.getElementById('submit').addEventListener('click', Tracker.getPossibleCocktails);
+// This is where the submit button is being tracked and starts the functionality.
+document.getElementById('submit').addEventListener('click', Tracker.removeDrinkCard);
+document.getElementById('submit').addEventListener('click', Tracker.renderCocktailOptions);
