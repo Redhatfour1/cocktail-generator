@@ -2,42 +2,47 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>It's 5 o'clock somewhere</title>
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Amita|Expletus+Sans|Faster+One|Lobster+Two|Oswald|Poiret+One|Sacramento|Vibur|Yanone+Kaffeesatz" rel="stylesheet">
   <link rel = "stylesheet" href="style.css">
-  <img class= "logo" src=""/>
+
 </head>
 <body>
-  <header class="header-container" role="banner" style="background-image: url('<?php header_image(); ?>');">
-    <div class="video-container">
-      <video preload="true" autoplay loop muted poster="assets/videoposter.jpeg" class="video-background">
-        <source src="assets/Sixty restaurant and bar1. Moscow.mp4" type="video/mp4">
-        </video>
-        <!--page 214  -->
+<header>
+  <section class="headerwrap">
 
-        <div>
-          <nav class="navigation">
-            <ul class="navlist">
-              <li class="one"><a href="index.html">Home</a></li>
-              <li class="two"><a href="recipes.html">Recipes</a></li>
-              <li class="three"> <a href="about.html">About Us</a></li>
-              <li class="four"><a href="accessories.html">Accessories</a></li>
-            </ul>
-          </nav>
+    <span class="title"><h1>It's 5 o'clock somewhere...</h1></span><br/>
+    <img id= "fiveoclocksomewhere" src="assets/fiveoclock.jpeg" height="175" width="175"/>
+  </section>
+  <video preload="true" autoplay loop muted poster="assets/videoposter.jpeg" class="video-background">
+    <source src="assets/Sixty restaurant and bar1. Moscow.mp4" type="video/mp4">
+    </video>
+
+      <nav class="navigation">
+        <div class="dropbox">
+          <button class="navbtn">Menu</button>
+          <div class="dropbox-content">
+            <a href="index.html">Home</a>
+            <a href="recipes.html">Recipes</a>
+            <a href="accessories.html">Accessories</a>
+            <a href="about.html">About Us</a>
+          </div>
         </div>
-        <img id= "fiveoclocksomewhere" src="assets/fiveoclock.jpeg" height="175" width="175"/>
-        <div class="header">
-          <span class="title"><h1>It's 5 o'clock somewhere...</h1></span><br/>
-        </div>
-        <section>
-          <link href="cocktail-generator">
-        </section>
-      </div>
-    </header>
+      </nav>
+    </div>
+    <div class="header">
+    </div>
+  </header>
 
-  <!-- Main Container -->
-  <main class="maincontainer">
 
+</header>
+<section class="headerwrapbottom"></section>
+
+<!-- Main Container -->
+<main class="maincontainer">
+
+  <section class="bgmain">
+    <h2>So, What Ingredients do you have?</h2>
     <section class="form"></section>
     <section class="form" id="form">
       <div class="dropdown">
@@ -136,22 +141,23 @@
         <input class="submit" id="submit" type="submit" value="Let's Unwind!">
       </div>
     </div>
-
-
-    <!-- Sidebar -->
-    <!-- <aside class="sidebar" id=""></aside> -->
-
-
-      <section class="render" id="render">
-        <div id="drinkCard">
-
-        </div>
-      </section>
+  </section>
 
 
 
-  </main>
-  <script src="app.js" charset="utf-8"></script>
+  <!-- Sidebar -->
+  <!-- <aside class="sidebar" id=""></aside> -->
+
+
+  <section class="render" id="render">
+    <div id="drinkCard">
+    </div>
+  </section>
+
+
+
+</main>
+<script src="app.js" charset="utf-8"></script>
 
 </script>
 <footer class="footer">

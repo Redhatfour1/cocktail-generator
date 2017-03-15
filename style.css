@@ -1,100 +1,69 @@
 body {
-  width: 1000px;
+
   margin-left: auto;
   margin-right: auto;
   /*background-color: #DCDCDC*/
-  background-image: url(assets/WoodGrainBackgroundPage.jpeg);
+  background-image: ;
   background-repeat: repeat repeat;
   opacity: .90;
-  padding-left: 143px;
-  }
+}
 
 h1 {
-  /*font-family: 'Vibur', cursive;*/
-  /*font-family: 'Sacramento', cursive;*/
-  font-family: 'Poiret One', cursive;
+  font-family: 'Lobster', cursive;
   display: inline-block;
-  }
+  color: white;
+  margin-top: 13px;
+  margin-left: 210px;
+  font-size: 68px;
+  text-shadow: 2px 2px grey;
+}
 
+h2 {
+  margin-top: auto;
+  padding-left: 370px;
+  padding-top: 22px;
+  font-family: 'Lobster', cursive;
+  color: white;
+  font-size: 45px;
+}
+.headerwrap {
+  background-color: black;
+  height: 100px;
+}
 
-  header{
-    height: 277px;
-    padding-bottom: 100px;
-    border-bottom: in black 2px;
-    font-family: 'Oswald', sans-serif;
-    letter-spacing: 1px;
-    font-size: 35px;
-    padding-left: 145px;
-    border-image-source: url(assets/WoodShelf.png);
-    /*placholder for a diff custom line*/
-    /*border-bottom: groove 5px black;*/
-    text-shadow: 2px 2px grey;
-    /*background-image: url("assets/CocktailShakerSet.png");*/
+.headerwrapbottom {
+  background-color: black;
+  height: 50px;
+}
 
-  }
+header{
+  height: 277px;
+  padding-bottom: 100px;
+  border-bottom: in black 2px;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 1px;
+  font-size: 35px;
+  border-image-source: url(assets/WoodShelf.png);
+  text-shadow: 2px 2px grey;
+}
 
-  .header{
-    display: inline-block;
-    width: 100%;
-  }
+.header{
+  display: inline-block;
+}
 
-  header img {
-    display: inline-block;
-    float:left;
-    position: relative;
-    z-index: 3;
-
-  }
-  nav ul li{
-    display: inline-block;
-    list-style: none;
-    float: right;
-    padding: 30px;
-    padding:8px;
-    font-family: 'Oswald', sans-serif;
-    letter-spacing: 3px;
-    text-shadow: 1.5px 1.5px grey;
-    font-size: 20px;
-    text-align: center;
-    border-style: groove;
-    background-color: white;
-    opacity: .85;
-
-  }
-  li.one{
-    border-style: inset;
-    color: white;
-    text-decoration: none;
-    width: 125px;
-  }
-  li.two{
-    border-style: inset;
-    color: white;
-    text-decoration: none;
-    width: 125px;
-  }
-  li.three{
-    border-style: inset;
-    color: white;
-    text-decoration: none;
-    width: 125px;
-  }
-  li.four{
-    border-style: inset;
-    color: white;
-    text-decoration: none;
-    width: 125px;
-  }
-
-  a{
-    padding-left: 10px;
-    padding-right: 10px;
-    color: white;
-    text-decoration: none;
-  }
+header img {
+  display: inline-block;
+  float: left;
+  position: relative;
+  z-index: 3;
+  margin-left: 205px;
+  margin-top: -54px;
+}
+.navigation{
+  margin-top: -36px;
+}
 
 .codefellows{
-  margin-top: 50%;
   height:50px;
   width: 50px;
   text-align: center;
@@ -104,9 +73,10 @@ h1 {
 .footer{
   text-align: center;
   text-decoration: none;
+  background-color: black;
   bottom: 0;
   width: auto;
-  height: 110px;
+  height: 132px;
   position: relative;
   clear: both;
   padding-top: 30px;
@@ -114,65 +84,151 @@ h1 {
   letter-spacing: 3px;
   text-shadow: 1.5px 1.5px grey;
 }
-/*.footer-logo{
-  text-decoration: none;
-}*/
+.footer-logo{
+  color: white;
+  text-align: center;
+}
 
 .form {
-  padding-top: 25px;
+  padding-top: 11px;
+  margin-left: 108px;
+}
+
+.bgmain {
+  background-image: url(assets/WoodGrainBackgroundPage.jpeg);
+  border-top-style: outset;
+  border-top-color: grey;
+  border-top-width: 10px;
+  border-bottom-style: outset;
+  border-bottom-color: grey;
+  border-bottom-width: 10px;
+
+
 }
 
 
 .dropbtn, .submit {
-    display: block;
-    /*background-color: #553A9C;*/
-    background-color: none;
-    background: none;
-    color: black;
-    text-shadow: 1.5px 1.5px grey;
-    padding: 1px;
-    font-size: 19px;
-    border: groove 5px;
-    cursor: pointer;
-    width: 145px;
-    height: 75px;
-    border-radius: 20px;
-    font-family: 'Oswald', sans-serif;
-    letter-spacing: 2px;
-    text-align: center;
-    white-space: pre-line;
+  display: block;
+  background: none;
+  color: black;
+  text-shadow: 1.5px 1.5px grey;
+  font-size: 19px;
+  border: none 5px;
+  cursor: pointer;
+  width: 183px;
+  height: 75px;
+  border-radius: 20px;
+  font-family: 'Lobster', cursive;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-left: -18px;
 }
 
 
 #dropdown #dropdown {
-    border-style: inset;
-    border-radius: 20px;
+  border-style: inset;
+  border-radius: 20px;
 }
-
 
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
-    /*position: relative;*/
-    /*Change back to inline-block if want them horizontally aligned*/
-    display: block;
-    padding-top: 40px;
-    padding-left: 60px;
-    padding-right: 5px;
-    background-image: url("assets/Sq Ice Cube.png");
-    background-repeat: no-repeat;
-    height: 224px;
-    width: 262px;
-    /*border-radius: 20px;*/
+  /*position: relative;*/
+  /*Change back to inline-block if want them horizontally aligned*/
+  display: inline-block;
+  padding-top: 73px;
+  padding-bottom: 73px;
+  padding-left: 68px;
+  background-image: url("assets/Sq Ice Cube.png");
+  background-repeat: no-repeat;
+  height: 141px;
+  width: 184px;
+  margin-left: 7px;
 }
 
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn{
-    background-color: #391F7A;
+.dropdown:hover .dropbtn {
+  background-color: Black;
+  color: white;
 }
 
 .dropdown:hover .submit {
-  background-color: #391F7A;
+  background-color: Black;
+  color: white;
+}
+.video-header {
+  background: transparent;
+  overflow: hidden;
+}
+.video-bg {
+  background: transparent;
+  height: 277px;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+style {
+  width: 100%;
+  height: 100%;
+}
+
+
+/* Dropdown Button */
+.navbtn {
+  background-color: grey;
+  color: white;
+  padding: 16px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  font-family: 'Lobster', cursive;
+  text-transform: uppercase;
+  width: 219px;
+  text-shadow: 1.5px 1.5px grey;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropbox {
+  position: fixed;
+  display: inline-block;
+  padding: 2px;
+  text-align: center;
+  border-style: groove;
+  background-color: white;
+  margin-top: -58px;
+  margin-left: 1003px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropbox-content {
+  display: none;
+  position: absolute;
+  font-family: 'Lobster', cursive;
+  background-color: #f9f9f9;
+  min-width: 225px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropbox-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropbox-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropbox:hover .dropbox-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropbox:hover .navbtn {
+  background-color: grey;
 }
 
 .header-container{
