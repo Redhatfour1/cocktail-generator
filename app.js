@@ -109,92 +109,79 @@ function handleUserFormSubmit(event) {
   return userSelectedIngredientsArray;
 }
 
-console.log(Object.values(cocktailRecipeBox[1]));
-
-// This dynamically Creates arrays inside of arrays for all drinks
-var cocktailArray = [];
-function makeCocktailArrays(){
-  for (var i in cocktailNames) {
-    cocktailArray[i] = Object.values(cocktailRecipeBox[i]);
-  }
-  return cocktailArray;
-}
-
-console.log('makeCocktailArrays: ',  makeCocktailArrays());
-
-var roundOne = [];
-function selectDrinkRecipeRenderToDom() {
-  handleUserFormSubmit();
-  makeCocktailArrays();
-
-  //this creates arrays based on objects this is now being complteted dynamically.
- //  getPossibleOptions: function() {
- //
- //    var optionsRound1 = [], optionsRound2 = [], optionsRound3 = [];
- //
- //   for(var i=0; i<beers.length; i++){
- //     if(this.userHoppy === beers[i].hoppy){
- //       optionsRound1.push(beers[i]);
- //     }
- //   }
- //
- //   for(var i=0; i<optionsRound1.length; i++){
- //     if(this.userType === optionsRound1[i].type){
- //       optionsRound2.push(optionsRound1[i]);
- //     }
- //   }
- //
- //   for(var i=0; i<optionsRound2.length; i++){
- //     if(this.userFlavor === optionsRound2[i].flavor) {
- //       optionsRound3.push(optionsRound2[i]);
- //     }
- //   }
- //   return optionsRound3;
- // },
-  roundOne = [];
-  for (var i in cocktailRecipeBox) {
-    if (userSelectedIngredientsArray[0] === cocktailArray[i][2] && userSelectedIngredientsArray[1] === cocktailArray[i][3]){
-
-      roundOne.push(cocktailArray[i]);
-      drinkCard.remove();
-
-      var getRenderId = document.getElementById('render');
-      var makeDiv = document.createElement('div');
-      makeDiv.id = 'drinkCard';
-      makeDiv.className ='drinkCard';
-      var makeA = document.createElement('a');
-      var makeImg = document.createElement('img');
-      makeA.href = cocktailRecipeBox[i].link;
-      makeA.id = 'drinkTitle';
-      makeA.className = 'drinkTitle';
-      makeA.target = '_blank';
-      makeImg.src = cocktailRecipeBox[i].imagePath;
-      makeA.textContent = cocktailRecipeBox[i].name;
-      makeA.appendChild(makeImg);
-      makeDiv.appendChild(makeA);
-      getRenderId.appendChild(makeDiv);
-      break;
-    }
-
-    else{
 
 
-      drinkCard.remove();
+   function getPossibleCocktails() {
+    handleUserFormSubmit();
 
-      var getRenderId = document.getElementById('render');
-      var makeDiv = document.createElement('div');
-      makeDiv.id = 'drinkCard';
-      makeDiv.className ='drinkCard';
-      var makeP = document.createElement('p');
+    var optionsRound1 = [], optionsRound2 = [], optionsRound3 = [];
 
-      makeP.textContent = 'NO DRINK!';
-      makeDiv.appendChild(makeP);
-      getRenderId.appendChild(makeDiv);
+   for(var i in cocktailRecipeBox){
+     if(userSelectedIngredientsArray[0] === cocktailRecipeBox[i].ingredient1){
+       optionsRound1.push(cocktailRecipeBox[i]);
+     }
+   }
 
-      console.log('fail: ' + i);
-    };
-  };
-};
+   for(var i in optionsRound1){
+     if(userSelectedIngredientsArray[1] === optionsRound1[i].ingredient2){
+       optionsRound2.push(optionsRound1[i]);
+     }
+   }
+
+   for(var i in optionsRound2){
+     if(userSelectedIngredientsArray[2] === optionsRound2[i].ingredient3) {
+       optionsRound3.push(optionsRound2[i]);
+     }
+   }
+   console.log('2: ',optionsRound2);
+   console.log('get me some: ',optionsRound3);
+   return optionsRound3;
+ };
+
+  // roundOne = [];
+  // for (var i in cocktailRecipeBox) {
+  //   if (userSelectedIngredientsArray[0] === cocktailArray[i][2] && userSelectedIngredientsArray[1] === cocktailArray[i][3]){
+  //
+  //     roundOne.push(cocktailArray[i]);
+  //     drinkCard.remove();
+  //
+  //     var getRenderId = document.getElementById('render');
+  //     var makeDiv = document.createElement('div');
+  //     makeDiv.id = 'drinkCard';
+  //     makeDiv.className ='drinkCard';
+  //     var makeA = document.createElement('a');
+  //     var makeImg = document.createElement('img');
+  //     makeA.href = cocktailRecipeBox[i].link;
+  //     makeA.id = 'drinkTitle';
+  //     makeA.className = 'drinkTitle';
+  //     makeA.target = '_blank';
+  //     makeImg.src = cocktailRecipeBox[i].imagePath;
+  //     makeA.textContent = cocktailRecipeBox[i].name;
+  //     makeA.appendChild(makeImg);
+  //     makeDiv.appendChild(makeA);
+  //     getRenderId.appendChild(makeDiv);
+  //     break;
+  //   }
+  //
+  //   else{
+  //
+  //
+  //     drinkCard.remove();
+  //
+  //     var getRenderId = document.getElementById('render');
+  //     var makeDiv = document.createElement('div');
+  //     makeDiv.id = 'drinkCard';
+  //     makeDiv.className ='drinkCard';
+  //     var makeP = document.createElement('p');
+  //
+  //     makeP.textContent = 'NO DRINK!';
+  //     makeDiv.appendChild(makeP);
+  //     getRenderId.appendChild(makeDiv);
+  //
+  //     console.log('fail: ' + i);
+  //   };
+  // };
+// };
 
 
-document.getElementById('submit').addEventListener('click', selectDrinkRecipeRenderToDom);
+document.getElementById('submit').addEventListener('click', getPossibleCocktails);
