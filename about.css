@@ -8,14 +8,15 @@ body {
   background-color: black;
   }
   header{
-    padding-bottom: 70px;
+    width: 75%;
+    padding-bottom: 0px;
     border-bottom: solid black 2px;
     background-image: url("https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ1L8QIASUyIVcZhK9dvU2dPK9ql9yEkJU1QPAEsByP28fvZm0z");
-
-  }
+    }
 .header{
   display: inline-block;
-
+  height: 175px;
+  width: 75%;
 }
 
 header img {

@@ -8,16 +8,16 @@
 
 </head>
 <body>
-<header>
+<header class="header-container" role="banner" style="background-image: url('<?php header_image(); ?>');">
   <section class="headerwrap">
 
     <span class="title"><h1>It's 5 o'clock somewhere...</h1></span><br/>
     <img id= "fiveoclocksomewhere" src="assets/fiveoclock.jpeg" height="175" width="175"/>
   </section>
+  <div class="video-container">
   <video preload="true" autoplay loop muted poster="assets/videoposter.jpeg" class="video-background">
-    <source src="assets/Sixty restaurant and bar1. Moscow.mp4" type="video/mp4">
+    <source src="assets/Sixty restaurant and bar1. Moscow.mp4" type="video/mp4" media="(orientation:landscape)">
     </video>
-
       <nav class="navigation">
         <div class="dropbox">
           <button class="navbtn">Menu</button>
