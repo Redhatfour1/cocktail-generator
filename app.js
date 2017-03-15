@@ -94,7 +94,6 @@ var Tracker = {
 
   renderCocktailOptions: function(){
     Tracker.getPossibleCocktails();
-
     // This creates and presents the drink in the dom
     for (var i in Tracker.cocktailOptionsRound2) {
       console.log('finder: ', Tracker.cocktailOptionsRound2[i]);
@@ -110,29 +109,25 @@ var Tracker = {
         makeA.className = 'drinkTitle';
         makeA.target = '_blank';
         makeImg.src = Tracker.cocktailOptionsRound2[i].imagePath;
+        makeImg.className = 'cocktailImg';
         makeA.textContent = Tracker.cocktailOptionsRound2[i].name;
         makeA.appendChild(makeImg);
         makeDiv.appendChild(makeA);
         getRenderId.appendChild(makeDiv);
       }
-
       else{
-
         var getRenderId = document.getElementById('render');
         var makeDiv = document.createElement('div');
         makeDiv.id = 'drinkCard';
         makeDiv.className ='drinkCard';
         var makeP = document.createElement('p');
-
         makeP.textContent = 'NO DRINK!';
         makeDiv.appendChild(makeP);
         getRenderId.appendChild(makeDiv);
-
         console.log('fail: ' + i);
       };
     };
   },
-
 // this method removes the last presented drink option to make room for the new ones
   removeDrinkCard: function(){
     var remove = document.getElementById("render");
@@ -141,8 +136,6 @@ var Tracker = {
     }
   }
 };
-
-
 // This is where the submit button is being tracked and starts the functionality.
 document.getElementById('submit').addEventListener('click', Tracker.removeDrinkCard);
 document.getElementById('submit').addEventListener('click', Tracker.renderCocktailOptions);
