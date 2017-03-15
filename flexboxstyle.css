@@ -1,30 +1,28 @@
-/*container {
+container {
   display: flex;
-}*/
+}
 
 body {
-  width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
-  /*background-color: #DCDCDC*/
+  display: flex;
+  width: 100%;
+  margin: 3%;
   background-image: url("assets/WoodGrainBackgroundPage10%lighter.png");
   background-repeat: repeat repeat;
   opacity: .95;
-  padding-left: 143px;
 }
 
 h1 {
   /*font-family: 'Vibur', cursive;*/
   /*font-family: 'Sacramento', cursive;*/
   font-family: 'Poiret One', cursive;
-  display: block;
+  /*display: block;*/
   padding-top: 70px;
   padding-left: 125px;
   z-index: 4;
 }
 
 #sidebar {
-  /*display: block;*/
+  display: flex;
   /*image: url("assets/rotatedeames.png");*/
   text-align: center;
   /*padding-top: 100px;*/
@@ -38,16 +36,16 @@ h1 {
   background-color: #007C93;
 }
 
-  header{
+  header {
+    display: flex;
+    width: 100%;
     height: 175px;
     padding-bottom: 100px;
-    border-bottom: in black 2px;
+    border-bottom: black 2px;
     font-family: 'Oswald', sans-serif;
     letter-spacing: 1px;
-    font-size: 35px;
-    padding-left: 5px;
-    margin-right: 15px;
-    /*padding-top: 5px;*/
+    font-size: 2.3em;
+    color: white;
     border-image-source: url(assets/WoodShelf.png);
     /*placholder for a diff custom line*/
     /*border-bottom: groove 5px black;*/
@@ -60,22 +58,22 @@ h1 {
   }
 
   header img {
-    display: inline-block;
-    float:left;
+    display: flex;
+    float: left;
     position: relative;
     z-index: 3;
 
   }
   nav ul li {
-    display: inline-block;
+    display: flex;
+    flex: row;
     list-style: none;
-    float: right;
-    margin-right: 0px;
+    /*margin-right: 0px;*/
     /*padding:8px;*/
     font-family: 'Oswald', sans-serif;
     letter-spacing: 3px;
     text-shadow: 1.5px 1.5px grey;
-    font-size: 20px;
+    font-size: .75em;
     text-align: center;
     border-style: groove;
     background-color: white;
@@ -85,7 +83,6 @@ h1 {
   li.one {
     border-style: inset;
     color: white;
-    text-decoration: none;
     width: 125px;
     margin-right: 0px;
     margin-top: 0;
@@ -95,21 +92,18 @@ h1 {
   li.two {
     border-style: inset;
     color: white;
-    text-decoration: none;
     width: 125px;
   }
 
   li.three {
     border-style: inset;
     color: white;
-    text-decoration: none;
     width: 125px;
   }
 
   li.four {
     border-style: inset;
     color: white;
-    text-decoration: none;
     width: 125px;
   }
 
@@ -117,7 +111,6 @@ h1 {
     padding-left: 10px;
     padding-right: 10px;
     color: white;
-    text-decoration: none;
   }
 
 img .codefellows {
@@ -133,11 +126,15 @@ img .codefellows {
 }
 
 .footer {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: center;
+  flex-
+  width: 97%;
+  margin: 0;
   text-align: center;
-  /*padding-top: 100px;*/
-  margin-top: 25px;
-  margin-left: 5px;
-  margin-right: 47px;
+  /*margin-top: 25px;*/
   font-family: 'Oswald', sans-serif;
   letter-spacing: 3px;
   font-size: 20px;
@@ -146,12 +143,13 @@ img .codefellows {
 }
 
 .footer-logo {
+
   background-color: #007C93;
   margin-bottom: 45px;
   /*margin-right: 20px;*/
   height: 75px;
-  padding-right: 0;
-  padding-top: 0;
+  /*padding-right: 0;
+  padding-top: 0;*/
   /*margin-top: =*/
 }
 
@@ -219,23 +217,20 @@ aside {
 }
 
 .video-header {
+    display: flex;
     background: black;
     overflow: hidden;
-    margin: 46px;
-    /*width: 92.5%*/
-    margin-top: 35px;
-    /*padding-top: 5px;*/
-
+    margin: 0;
 }
+
 .video-bg {
     background: transparent;
     height: 277px;
     width: 100%;
     position: absolute;
     z-index: -1;
-    /*padding-top: 5px;*/
     border-style: groove 25px;
-    padding-right: 0px;
+
 
 }
 style {

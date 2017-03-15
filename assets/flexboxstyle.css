@@ -1,0 +1,518 @@
+container {
+  display: flex;
+  background-image: url("assets/WoodGrainBackgroundPage10%lighter.png");
+  background-repeat: repeat repeat;
+}
+
+body {
+  display: flex;
+  /*margin-left: auto;*/
+  /*margin-right: auto;*/
+  background-image: url("assets/WoodGrainBackgroundPage10%lighter.png");
+  background-repeat: repeat repeat;
+  opacity: .95;
+  /*padding-left: 14  3px;*/
+
+}
+
+h1 {
+  /*font-family: 'Vibur', cursive;*/
+  /*font-family: 'Sacramento', cursive;*/
+  font-family: 'Poiret One', cursive;
+  display: block;
+  padding-top: 70px;
+  padding-left: 125px;
+  z-index: 4;
+}
+
+#sidebar {
+  /*display: block;*/
+  /*image: url("assets/rotatedeames.png");*/
+  text-align: center;
+  /*padding-top: 100px;*/
+  margin-top: 25px;
+  /*margin-left: 5px;*/
+  /*margin-right: 47px;*/
+  /*font-family: 'Oswald', sans-serif;*/
+  /*letter-spacing: 3px;*/
+  /*font-size: 20px;*/
+  /*text-shadow: 1.5px 1.5px 	#808080;*/
+  background-color: #007C93;
+}
+
+  header{
+    height: 175px;
+    padding-bottom: 100px;
+    border-bottom: in black 2px;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1px;
+    font-size: 35px;
+    padding-left: 5px;
+    margin-right: 15px;
+    /*padding-top: 5px;*/
+    border-image-source: url(assets/WoodShelf.png);
+    /*placholder for a diff custom line*/
+    /*border-bottom: groove 5px black;*/
+    text-shadow: 2px 2px grey;
+    /*background-image: url("assets/CocktailShakerSet.png");*/
+  }
+
+  .header{
+    display: inline-block;
+  }
+
+  header img {
+    display: inline-block;
+    float:left;
+    position: relative;
+    z-index: 3;
+
+  }
+  nav ul li {
+    display: inline-block;
+    list-style: none;
+    float: right;
+    margin-right: 0px;
+    /*padding:8px;*/
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 3px;
+    text-shadow: 1.5px 1.5px grey;
+    font-size: 20px;
+    text-align: center;
+    border-style: groove;
+    background-color: white;
+    opacity: .85;
+  }
+
+  li.one {
+    border-style: inset;
+    color: white;
+    text-decoration: none;
+    width: 125px;
+    margin-right: 0px;
+    margin-top: 0;
+
+  }
+
+  li.two {
+    border-style: inset;
+    color: white;
+    text-decoration: none;
+    width: 125px;
+  }
+
+  li.three {
+    border-style: inset;
+    color: white;
+    text-decoration: none;
+    width: 125px;
+  }
+
+  li.four {
+    border-style: inset;
+    color: white;
+    text-decoration: none;
+    width: 125px;
+  }
+
+  a {
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+    text-decoration: none;
+  }
+
+img .codefellows {
+  margin-top: 15px;
+}
+
+.codefellows {
+  height: 75px;
+  width: 75px;
+  text-align: center;
+  border: inset;
+  margin-bottom: 0;
+}
+
+.footer {
+  text-align: center;
+  /*padding-top: 100px;*/
+  margin-top: 25px;
+  margin-left: 5px;
+  margin-right: 47px;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 3px;
+  font-size: 20px;
+  text-shadow: 1.5px 1.5px 	#808080;
+  background-color: #007C93;
+}
+
+.footer-logo {
+  background-color: #007C93;
+  margin-bottom: 45px;
+  /*margin-right: 20px;*/
+  height: 75px;
+  padding-right: 0;
+  padding-top: 0;
+  /*margin-top: =*/
+}
+
+.form {
+  padding-top: 25px;
+}
+
+aside {
+
+}
+
+.shaker {
+  background-image: url("assets/closed shaker.png");
+  background-repeat: no-repeat;
+  height: 600px;
+  padding-left: 0;
+}
+
+.dropbtn, .submit {
+    display: block;
+    /*background-color: #553A9C;*/
+    background-color: none;
+    background: none;
+    color: black;
+    text-shadow: 1.5px 1.5px grey;
+    padding: 1px;
+    font-size: 19px;
+    border: groove 5px;
+    cursor: pointer;
+    width: 145px;
+    height: 75px;
+    border-radius: 20px;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 2px;
+    text-align: center;
+    white-space: pre-line;
+}
+
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    /*position: relative;*/
+    /*Change back to inline-block if want them horizontally aligned*/
+    display: block;
+    padding-top: 40px;
+    padding-left: 55px;
+    padding-right: 5px;
+    background-image: url("assets/Sq Ice Cube.png");
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 262px;
+    /*border-radius: 20px;*/
+}
+
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn{
+    background-color: #007C93;
+    /*background-image: url("assets/Sq Ice Cube.png");");*/
+   background-image: url("assets/Sq Ice Cube150x125 copy.png");");
+}
+
+.dropdown:hover .submit {
+  background-color: #007C93;
+}
+
+.video-header {
+    background: black;
+    overflow: hidden;
+    margin: 46px;
+    /*width: 92.5%*/
+    margin-top: 35px;
+    /*padding-top: 5px;*/
+
+}
+.video-bg {
+    background: transparent;
+    height: 277px;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    /*padding-top: 5px;*/
+    border-style: groove 25px;
+    padding-right: 0px;
+
+}
+style {
+  width: 100%;
+  height: 100%;
+}
+/*iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}*/
+/*bgvid{
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  background: ur(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkx76cfCSFj4VAaToVlSIiELVVxgHrlmNKm95ugRvTO6Im0OHx) no-repeat;
+  background-size: cover;
+}*/
+
+
+body {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  /*background-color: #DCDCDC*/
+  background-image: url("assets/WoodGrainBackgroundPage10%lighter.png");
+  background-repeat: repeat repeat;
+  opacity: .95;
+  padding-left: 143px;
+}
+
+h1 {
+  /*font-family: 'Vibur', cursive;*/
+  /*font-family: 'Sacramento', cursive;*/
+  font-family: 'Poiret One', cursive;
+  display: block;
+  padding-top: 70px;
+  padding-left: 125px;
+  z-index: 4;
+}
+
+#sidebar {
+  /*display: block;*/
+  /*image: url("assets/rotatedeames.png");*/
+  text-align: center;
+  /*padding-top: 100px;*/
+  margin-top: 25px;
+  /*margin-left: 5px;*/
+  /*margin-right: 47px;*/
+  /*font-family: 'Oswald', sans-serif;*/
+  /*letter-spacing: 3px;*/
+  /*font-size: 20px;*/
+  /*text-shadow: 1.5px 1.5px 	#808080;*/
+  background-color: #007C93;
+}
+
+  header{
+    height: 175px;
+    padding-bottom: 100px;
+    border-bottom: in black 2px;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1px;
+    font-size: 35px;
+    padding-left: 5px;
+    margin-right: 15px;
+    /*padding-top: 5px;*/
+    border-image-source: url(assets/WoodShelf.png);
+    /*placholder for a diff custom line*/
+    /*border-bottom: groove 5px black;*/
+    text-shadow: 2px 2px grey;
+    /*background-image: url("assets/CocktailShakerSet.png");*/
+  }
+
+  .header{
+    display: inline-block;
+  }
+
+  header img {
+    display: inline-block;
+    float:left;
+    position: relative;
+    z-index: 3;
+
+  }
+  nav ul li {
+    display: inline-block;
+    list-style: none;
+    float: right;
+    margin-right: 0px;
+    /*padding:8px;*/
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 3px;
+    text-shadow: 1.5px 1.5px grey;
+    font-size: 20px;
+    text-align: center;
+    border-style: groove;
+    background-color: white;
+    opacity: .85;
+  }
+
+  li.one {
+    border-style: inset;
+    color: white;
+    text-decoration: none;
+    width: 125px;
+    margin-right: 0px;
+    margin-top: 0;
+
+  }
+
+  li.two {
+    border-style: inset;
+    color: white;
+    text-decoration: none;
+    width: 125px;
+  }
+
+  li.three {
+    border-style: inset;
+    color: white;
+    text-decoration: none;
+    width: 125px;
+  }
+
+  li.four {
+    border-style: inset;
+    color: white;
+    text-decoration: none;
+    width: 125px;
+  }
+
+  a {
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+    text-decoration: none;
+  }
+
+img .codefellows {
+  margin-top: 15px;
+}
+
+.codefellows {
+  height: 75px;
+  width: 75px;
+  text-align: center;
+  border: inset;
+  margin-bottom: 0;
+}
+
+.footer {
+  text-align: center;
+  /*padding-top: 100px;*/
+  margin-top: 25px;
+  margin-left: 5px;
+  margin-right: 47px;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 3px;
+  font-size: 20px;
+  text-shadow: 1.5px 1.5px 	#808080;
+  background-color: #007C93;
+}
+
+.footer-logo {
+  background-color: #007C93;
+  margin-bottom: 45px;
+  /*margin-right: 20px;*/
+  height: 75px;
+  padding-right: 0;
+  padding-top: 0;
+  /*margin-top: =*/
+}
+
+.form {
+  padding-top: 25px;
+}
+
+aside {
+
+}
+
+.shaker {
+  background-image: url("assets/closed shaker.png");
+  background-repeat: no-repeat;
+  height: 600px;
+  padding-left: 0;
+}
+
+.dropbtn, .submit {
+    display: block;
+    /*background-color: #553A9C;*/
+    background-color: none;
+    background: none;
+    color: black;
+    text-shadow: 1.5px 1.5px grey;
+    padding: 1px;
+    font-size: 19px;
+    border: groove 5px;
+    cursor: pointer;
+    width: 145px;
+    height: 75px;
+    border-radius: 20px;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 2px;
+    text-align: center;
+    white-space: pre-line;
+}
+
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    /*position: relative;*/
+    /*Change back to inline-block if want them horizontally aligned*/
+    display: block;
+    padding-top: 40px;
+    padding-left: 55px;
+    padding-right: 5px;
+    background-image: url("assets/Sq Ice Cube.png");
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 262px;
+    /*border-radius: 20px;*/
+}
+
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn{
+    background-color: #007C93;
+    /*background-image: url("assets/Sq Ice Cube.png");");*/
+   background-image: url("assets/Sq Ice Cube150x125 copy.png");");
+}
+
+.dropdown:hover .submit {
+  background-color: #007C93;
+}
+
+.video-header {
+    background: black;
+    overflow: hidden;
+    margin: 46px;
+    /*width: 92.5%*/
+    margin-top: 35px;
+    /*padding-top: 5px;*/
+
+}
+.video-bg {
+    background: transparent;
+    height: 277px;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    /*padding-top: 5px;*/
+    border-style: groove 25px;
+    padding-right: 0px;
+
+}
+style {
+  width: 100%;
+  height: 100%;
+}
+/*iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}*/
+/*bgvid{
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  background: ur(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkx76cfCSFj4VAaToVlSIiELVVxgHrlmNKm95ugRvTO6Im0OHx) no-repeat;
+  background-size: cover;
+}*/
