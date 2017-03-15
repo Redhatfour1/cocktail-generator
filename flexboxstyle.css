@@ -1,11 +1,7 @@
-container {
-  display: flex;
-}
-
 body {
   display: flex;
   width: 100%;
-  margin: 3%;
+  margin: 3% auto;
   background-image: url("assets/WoodGrainBackgroundPage10%lighter.png");
   background-repeat: repeat repeat;
   opacity: .95;
@@ -19,21 +15,6 @@ h1 {
   padding-top: 70px;
   padding-left: 125px;
   z-index: 4;
-}
-
-#sidebar {
-  display: flex;
-  /*image: url("assets/rotatedeames.png");*/
-  text-align: center;
-  /*padding-top: 100px;*/
-  margin-top: 25px;
-  /*margin-left: 5px;*/
-  /*margin-right: 47px;*/
-  /*font-family: 'Oswald', sans-serif;*/
-  /*letter-spacing: 3px;*/
-  /*font-size: 20px;*/
-  /*text-shadow: 1.5px 1.5px 	#808080;*/
-  background-color: #007C93;
 }
 
   header {
@@ -53,20 +34,16 @@ h1 {
     /*background-image: url("assets/CocktailShakerSet.png");*/
   }
 
-  .header{
-    display: inline-block;
-  }
-
   header img {
     display: flex;
-    float: left;
     position: relative;
     z-index: 3;
 
   }
   nav ul li {
     display: flex;
-    flex: row;
+    flex-direction: row;
+    justify-content: flex-end;
     list-style: none;
     /*margin-right: 0px;*/
     /*padding:8px;*/
@@ -78,9 +55,12 @@ h1 {
     border-style: groove;
     background-color: white;
     opacity: .85;
+    border-style: inset;
+    color: white;
+    width: 125px;
   }
 
-  li.one {
+  /*li.one {
     border-style: inset;
     color: white;
     width: 125px;
@@ -105,17 +85,15 @@ h1 {
     border-style: inset;
     color: white;
     width: 125px;
-  }
+  }*/
 
   a {
-    padding-left: 10px;
-    padding-right: 10px;
+    display: flex;
+    flex-direction: row;
+    padding-left: 5%;
+    padding-right: 5%;
     color: white;
   }
-
-img .codefellows {
-  margin-top: 15px;
-}
 
 .codefellows {
   height: 75px;
@@ -127,14 +105,12 @@ img .codefellows {
 
 .footer {
   display: flex;
-  flex: 1;
-  flex-direction: row;
   justify-content: center;
-  flex-
-  width: 97%;
+  align-items: center;
+  width: 100%;
+  height: 150px;
   margin: 0;
-  text-align: center;
-  /*margin-top: 25px;*/
+  margin-right: 0;
   font-family: 'Oswald', sans-serif;
   letter-spacing: 3px;
   font-size: 20px;
@@ -142,30 +118,18 @@ img .codefellows {
   background-color: #007C93;
 }
 
-.footer-logo {
-
-  background-color: #007C93;
-  margin-bottom: 45px;
-  /*margin-right: 20px;*/
-  height: 75px;
-  /*padding-right: 0;
-  padding-top: 0;*/
-  /*margin-top: =*/
-}
 
 .form {
-  padding-top: 25px;
+  padding-left: 11%;
+  padding-top: 7%;
+  padding-bottom: 7%;
 }
 
-aside {
-
-}
 
 .shaker {
   background-image: url("assets/closed shaker.png");
   background-repeat: no-repeat;
   height: 600px;
-  padding-left: 0;
 }
 
 .dropbtn, .submit {
@@ -193,7 +157,7 @@ aside {
 .dropdown {
     /*position: relative;*/
     /*Change back to inline-block if want them horizontally aligned*/
-    display: block;
+    /*display: block;*/
     padding-top: 40px;
     padding-left: 55px;
     padding-right: 5px;
@@ -230,9 +194,8 @@ aside {
     position: absolute;
     z-index: -1;
     border-style: groove 25px;
-
-
 }
+
 style {
   width: 100%;
   height: 100%;
