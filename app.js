@@ -36,107 +36,60 @@ function Cocktail(name, imagePath, ingredient1, ingredient2, ingredient3, link){
   };
 })()
 
+var Tracker = {
+  userSelectedIngredientsArray: [],
+
+  // ingredients that were selected get push into an array
+
+  handleUserFormSubmit: function(event) {
+    Tracker.userSelectedIngredientsArray = [];
+    // user^
+    console.log(Tracker.userSelectedIngredientsArray);
+
+    var getIngredientOne = document.getElementById('ing1');
+    var selectedNode1 = getIngredientOne.options[getIngredientOne.selectedIndex].value;
+    Tracker.userSelectedIngredientsArray.push(selectedNode1);
+
+    var elem2 = document.getElementById('ing2');
+    var selectedNode2 = elem2.options[elem2.selectedIndex].value;
+    Tracker.userSelectedIngredientsArray.push(selectedNode2);
+
+    var elem3 = document.getElementById('ing3');
+    var selectedNode3 = elem3.options[elem3.selectedIndex].value;
+    Tracker.userSelectedIngredientsArray.push(selectedNode3);
+    return Tracker.userSelectedIngredientsArray;
+  },
 
 
 
-//
-// // 14.
-// cocktailRecipeBox[13].ingredient1 = 'Coconut Rum';
-// cocktailRecipeBox[13].ingredient2 = 'Amaretto';
-// cocktailRecipeBox[13].ingredient3 = 'Crème de cacao';
-// cocktailRecipeBox[13].link = 'http://allrecipes.com/recipe/234754/almond-joy-cocktail/';
-//
-// // 15.Sparkling Suze
-// cocktailRecipeBox[14].ingredient1 = 'Suze';
-// cocktailRecipeBox[14].ingredient2 = 'St Germain\'s';
-// cocktailRecipeBox[14].ingredient3 = 'Cava';
-// cocktailRecipeBox[14].link = 'http://www.seriouseats.com/recipes/2014/08/suze-cava-st-germain-cocktail-aperitif-drink.html';
-//
-// // 16.Man About Town 
-// cocktailRecipeBox[15].ingredient1 = 'Rye Whiskey';
-// cocktailRecipeBox[15].ingredient2 = 'Cynar';
-// cocktailRecipeBox[15].ingredient3 = 'Sweet Vermouth';
-// cocktailRecipeBox[15].link = 'http://www.seriouseats.com/recipes/2012/10/gramercy-tavern-man-about-town-cocktail-rye-boulevardier-cynar-recipe.html';
-//
-// // 17.Bahia Breeze
-// cocktailRecipeBox[16].ingredient1 = 'Gold Tequila';
-// cocktailRecipeBox[16].ingredient2 = 'Pineapple Juice';
-// cocktailRecipeBox[16].ingredient3 = 'Cranberry';
-// cocktailRecipeBox[16].link = 'http://www.drinksmixer.com/drink7265.html';
-//
-// // 18.The Spitfire
-// cocktailRecipeBox[17].ingredient1 = 'Mezcal';
-// cocktailRecipeBox[17].ingredient2 = 'Green Chartreuse';
-// cocktailRecipeBox[17].ingredient3 = 'Tabasco Sauce';
-// cocktailRecipeBox[17].link = 'http://www.barnonedrinks.com/drinks/t/the-spitfire-7751.html';
-//
-// // 19.Angry Balls
-// cocktailRecipeBox[18].ingredient1 = 'Fireball Whiskey';
-// cocktailRecipeBox[18].ingredient2 = 'Hard Cider';
-// cocktailRecipeBox[18].ingredient3 = 'None';
-// cocktailRecipeBox[18].link = 'http://fireballwhisky.com/recipes/angry-balls/';
-//
-// // 20.Chrysanthemum Cocktail
-// cocktailRecipeBox[19].ingredient1 = 'Bénédictine';
-// cocktailRecipeBox[19].ingredient2 = 'Absinthe';
-// cocktailRecipeBox[19].ingredient3 = 'Dry Vermouth';
-// cocktailRecipeBox[19].link = 'http://imbibemagazine.com/chrysanthemum-cocktail-recipe/';
+  getPossibleCocktails: function() {
+    Tracker.handleUserFormSubmit();
 
+    var cocktailOptionsRound1 = [], cocktailOptionsRound2 = [], cocktailOptionsRound3 = [];
 
+    for(var i in cocktailRecipeBox){
+      if(Tracker.userSelectedIngredientsArray[0] === cocktailRecipeBox[i].ingredient1){
+        cocktailOptionsRound1.push(cocktailRecipeBox[i]);
+      }
+    }
 
+    for(var i in cocktailOptionsRound1){
+      if(Tracker.userSelectedIngredientsArray[1] === cocktailOptionsRound1[i].ingredient2){
+        cocktailOptionsRound2.push(cocktailOptionsRound1[i]);
+      }
+    }
 
+    for(var i in cocktailOptionsRound2){
+      if(Tracker.userSelectedIngredientsArray[2] === cocktailOptionsRound2[i].ingredient3) {
+        cocktailOptionsRound3.push(cocktailOptionsRound2[i]);
+      }
+    }
+    console.log('2: ',cocktailOptionsRound2);
+    console.log('3: ', cocktailOptionsRound3);
+    return cocktailOptionsRound2;
+  },
 
-var userSelectedIngredientsArray = [];
-
-// ingredients that were selected get push into an array
-
-function handleUserFormSubmit(event) {
-  userSelectedIngredientsArray = [];
-  // user^
-  console.log(userSelectedIngredientsArray);
-
-  var getIngredientOne = document.getElementById('ing1');
-  var selectedNode1 = getIngredientOne.options[getIngredientOne.selectedIndex].value;
-  userSelectedIngredientsArray.push(selectedNode1);
-
-  var elem2 = document.getElementById('ing2');
-  var selectedNode2 = elem2.options[elem2.selectedIndex].value;
-  userSelectedIngredientsArray.push(selectedNode2);
-
-  var elem3 = document.getElementById('ing3');
-  var selectedNode3 = elem3.options[elem3.selectedIndex].value;
-  userSelectedIngredientsArray.push(selectedNode3);
-  return userSelectedIngredientsArray;
-}
-
-
-
-   function getPossibleCocktails() {
-    handleUserFormSubmit();
-
-    var optionsRound1 = [], optionsRound2 = [], optionsRound3 = [];
-
-   for(var i in cocktailRecipeBox){
-     if(userSelectedIngredientsArray[0] === cocktailRecipeBox[i].ingredient1){
-       optionsRound1.push(cocktailRecipeBox[i]);
-     }
-   }
-
-   for(var i in optionsRound1){
-     if(userSelectedIngredientsArray[1] === optionsRound1[i].ingredient2){
-       optionsRound2.push(optionsRound1[i]);
-     }
-   }
-
-   for(var i in optionsRound2){
-     if(userSelectedIngredientsArray[2] === optionsRound2[i].ingredient3) {
-       optionsRound3.push(optionsRound2[i]);
-     }
-   }
-   console.log('2: ',optionsRound2);
-   console.log('get me some: ',optionsRound3);
-   return optionsRound3;
- };
+};
 
   // roundOne = [];
   // for (var i in cocktailRecipeBox) {
@@ -184,4 +137,4 @@ function handleUserFormSubmit(event) {
 // };
 
 
-document.getElementById('submit').addEventListener('click', getPossibleCocktails);
+document.getElementById('submit').addEventListener('click', Tracker.getPossibleCocktails);
