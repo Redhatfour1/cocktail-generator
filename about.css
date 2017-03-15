@@ -2,10 +2,10 @@
   border-style: dashed;
 }*/
 body {
-  width: 960px;
+  width: auto;
   margin-left: auto;
   margin-right: auto;
-  background-color: #DCDCDC
+  background-color: black;
   }
   header{
     padding-bottom: 70px;
@@ -172,6 +172,7 @@ card-container {
   transform-style: preserve-3d;
   transition: all 1s ease-in-out;
   width: 25%;
+  margin-left: 5%;
   margin-top: 15px;
 }
 .card1:hover {
@@ -206,7 +207,7 @@ height:50%;
   transform-style: preserve-3d;
   transition: all 1s ease-in-out;
   width: 25%;
-  margin-left: 30%;
+  margin-left: 36%;
   margin-top: 15px;
 }
 .card2:hover {
@@ -239,7 +240,7 @@ height:50%;
   transform-style: preserve-3d;
   transition: all 1s ease-in-out;
   width: 25%;
-  margin-left: 60%;
+  margin-left: 68%;
   margin-top: 15px;
 }
 .card3:hover {
@@ -273,7 +274,7 @@ height:50%;
   transform-style: preserve-3d;
   transition: all 1s ease-in-out;
   width: 25%;
-  /*margin-left: 60%;*/
+  margin-left: 5%;
   margin-top: 15px;
 }
 .card4:hover {
@@ -307,7 +308,7 @@ height:50%;
   transform-style: preserve-3d;
   transition: all 1s ease-in-out;
   width: 25%;
-  margin-left: 30%;
+  margin-left: 36%;
   margin-top: 15px;
 }
 .card5:hover {
@@ -340,7 +341,7 @@ height:50%;
   transform-style: preserve-3d;
   transition: all 1s ease-in-out;
   width: 25%;
-  margin-left: 60%;
+  margin-left: 68%;
   margin-top: 15px;
 }
 .card6:hover {
@@ -373,6 +374,7 @@ height:50%;
   transform-style: preserve-3d;
   transition: all 1s ease-in-out;
   width: 25%;
+  margin-left: 5%;
   margin-top: 15px;
 }
 .card7:hover {
@@ -405,7 +407,7 @@ height:50%;
   transform-style: preserve-3d;
   transition: all 1s ease-in-out;
   width: 25%;
-  margin-left: 30%;
+  margin-left: 36%;
   margin-top: 15px;
 }
 .card8:hover {
@@ -438,7 +440,7 @@ height:50%;
   transform-style: preserve-3d;
   transition: all 1s ease-in-out;
   width: 25%;
-  margin-left: 60%;
+  margin-left: 68%;
   margin-top: 15px;
 }
 .card9:hover {
