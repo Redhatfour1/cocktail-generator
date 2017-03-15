@@ -128,6 +128,29 @@ function selectDrinkRecipeRenderToDom() {
   makeCocktailArrays();
 
   //this creates arrays based on objects this is now being complteted dynamically.
+ //  getPossibleOptions: function() {
+ //
+ //    var optionsRound1 = [], optionsRound2 = [], optionsRound3 = [];
+ //
+ //   for(var i=0; i<beers.length; i++){
+ //     if(this.userHoppy === beers[i].hoppy){
+ //       optionsRound1.push(beers[i]);
+ //     }
+ //   }
+ //
+ //   for(var i=0; i<optionsRound1.length; i++){
+ //     if(this.userType === optionsRound1[i].type){
+ //       optionsRound2.push(optionsRound1[i]);
+ //     }
+ //   }
+ //
+ //   for(var i=0; i<optionsRound2.length; i++){
+ //     if(this.userFlavor === optionsRound2[i].flavor) {
+ //       optionsRound3.push(optionsRound2[i]);
+ //     }
+ //   }
+ //   return optionsRound3;
+ // },
   roundOne = [];
   for (var i in cocktailRecipeBox) {
     if (userSelectedIngredientsArray[0] === cocktailArray[i][2] && userSelectedIngredientsArray[1] === cocktailArray[i][3]){
