@@ -43,6 +43,7 @@ var Tracker = {
   cocktailOptionsRound2: [],
   cocktailOptionsRound3: [],
 
+
   // ingredients that the user select get push into an array to be used in the verification process.
 
   handleUserFormSubmit: function(event) {
@@ -65,7 +66,7 @@ var Tracker = {
   },
 
 
-// this verifies what the user has selected against the cocktail objects in the cocktailRecipeBox array.
+  // this verifies what the user has selected against the cocktail objects in the cocktailRecipeBox array.
   getPossibleCocktails: function() {
     Tracker.handleUserFormSubmit();
 
@@ -94,10 +95,12 @@ var Tracker = {
 
   renderCocktailOptions: function(){
     Tracker.getPossibleCocktails();
+    console.log(Tracker.cocktailOptionsRound2);
+    var elem3 = document.getElementById('ing3');
+    var selectedNode3 = elem3.options[elem3.selectedIndex].value;
     // This creates and presents the drink in the dom
-    for (var i in Tracker.cocktailOptionsRound2) {
-      console.log('finder: ', Tracker.cocktailOptionsRound2[i]);
-      if (Tracker.cocktailOptionsRound2[i]){
+    if (selectedNode3 === 'None') {
+      for (var i in Tracker.cocktailOptionsRound2) {
         var getRenderId = document.getElementById('render');
         var makeDiv = document.createElement('div');
         makeDiv.id = 'drinkCard';
@@ -115,20 +118,33 @@ var Tracker = {
         makeDiv.appendChild(makeA);
         getRenderId.appendChild(makeDiv);
       }
-      else{
+    }
+    else if (Tracker.cocktailOptionsRound2) {
+      console.log('second');
+      for (var i in Tracker.cocktailOptionsRound3) {
         var getRenderId = document.getElementById('render');
         var makeDiv = document.createElement('div');
         makeDiv.id = 'drinkCard';
         makeDiv.className ='drinkCard';
-        var makeP = document.createElement('p');
-        makeP.textContent = 'NO DRINK!';
-        makeDiv.appendChild(makeP);
+        var makeA = document.createElement('a');
+        var makeImg = document.createElement('img');
+        makeA.href = Tracker.cocktailOptionsRound2[i].link;
+        makeA.id = 'drinkTitle';
+        makeA.className = 'drinkTitle';
+        makeA.target = '_blank';
+        makeImg.src = Tracker.cocktailOptionsRound2[i].imagePath;
+        makeImg.className = 'cocktailImg';
+        makeA.textContent = Tracker.cocktailOptionsRound2[i].name;
+        makeA.appendChild(makeImg);
+        makeDiv.appendChild(makeA);
         getRenderId.appendChild(makeDiv);
-        console.log('fail: ' + i);
-      };
-    };
+      }
+    }
+    else {
+      console.log('fail');
+    }
   },
-// this method removes the last presented drink option to make room for the new ones
+  // this method removes the last presented drink option to make room for the new ones
   removeDrinkCard: function(){
     var remove = document.getElementById("render");
     while (remove.firstChild) {
