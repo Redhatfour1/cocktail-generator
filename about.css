@@ -9,28 +9,31 @@ body {
   width: 960px%;
   margin-left: auto;
   margin-right: auto;
-  background-color: black;
+  /*background-color: #A9A9A9;*/
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu3kr-G-eh03D2fJFTlsGvwfS9OUX2q5YkDJA4Q9lkD4rBQ2bV");
+}
+
+  header{
+    margin-top: 25px;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-top: 10px;
+    width:100%;
+    height:110px;
+    padding-bottom: 70px;
+    border-bottom: solid black 2px;
+    background-image: url("https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ1L8QIASUyIVcZhK9dvU2dPK9ql9yEkJU1QPAEsByP28fvZm0z");
   }
 
-header {
-  width: 75%;
-  padding-bottom: 0px;
-  border-bottom: solid black 2px;
-  background-image: url("https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ1L8QIASUyIVcZhK9dvU2dPK9ql9yEkJU1QPAEsByP28fvZm0z");
+ .header{
+   margin-top: 10px;
+   display: inline-block;
+   width: auto;
  }
-
-.header {
-  margin-top: 10px;
-  display: inline-block;
-  height: 175px;
-  width: 75%;
-}
 
 header img {
   display: inline-block;
   float:left;
-
-
 }
 /* Dropdown Button */
 .navbtn {
@@ -60,7 +63,6 @@ header img {
   background-color: white;
   margin-top: -58px;
   margin-left: 56%;
-
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -126,7 +128,12 @@ p{
   -webkit-transform: rotate(360deg);
   transform: rotate(360deg);
 }
-
+.maincontainerAbout{
+  width:1080px;
+  height: 1200px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
 .james{
   display: inline-block;
   margin: 50px;
@@ -184,362 +191,17 @@ h5{
   padding-bottom: 0;
 }
 
-img.codefellows{
-  height: 35px;
-  width: 35px;
-  text-align: center;
-}
-
-.codefellows{
-  height:25px;
-  width: 25px;
-  text-align: center;
-}
 /*This paragraph is for the paragraphs on the about us page.*/
 p{
   width:600px;
   height: 150px;
 }
 
-.maincontainerrecipe{
-  display: inline-block;
-  width: 100%;
-}
-card-container {
-  /*display: inline-block;;*/
-  cursor: pointer;
-  height: 150px;
-  perspective: 600;
-  /*position: relative;*/
-  width: 175px;
-
-}
-.card1 {
-  /*float:left;*/
-  height: 85%;
-  position: absolute;
-  transform-style: preserve-3d;
-  transition: all 1s ease-in-out;
-  width: 28%;
-  margin-left: 5%;
-  margin-top: 15px;
-}
-.card1:hover {
-  transform: rotateY(180deg);
-}
-.card1 .side {
-
-  backface-visibility: hidden;
-  border-radius: 10px;
-  height: 100%;
-  position: absolute;
-  /*overflow: hidden;*/
-  width: 100%;
-}
-
-.card1 .back {
-  height:50%;
-  background: #eaeaed;
-  color: black;
-  font-size: 12px;
-  text-decoration: none;
-  line-height: 15px;
-  text-align: center;
-  transform: rotateY(180deg);
-  padding: 0;
-}
-.card2 {
-  height: 85%;
-  position: absolute;
-  transform-style: preserve-3d;
-  transition: all 1s ease-in-out;
-  width: 28%;
-  margin-left: 36%;
-  margin-top: 15px;
-}
-.card2:hover {
-  transform: rotateY(180deg);
-}
-.card2 .side {
-  backface-visibility: hidden;
-  border-radius: 10px;
-  height: 100%;
-  position: absolute;
-  /*overflow: hidden;*/
-  width: 100%;
-}
-.card2 .back {
-  height:50%;
-  background: #eaeaed;
-  color: black;
-  font-size: 12px;
-  text-decoration: none;
-  line-height: 15px;
-  text-align: center;
-  transform: rotateY(180deg);
-  padding: 0;
-}
-
-
-.card3 {
-  height: 85%;
-  position: absolute;
-  transform-style: preserve-3d;
-  transition: all 1s ease-in-out;
-  width: 28%;
-  margin-left: 68%;
-  margin-top: 15px;
-}
-.card3:hover {
-  transform: rotateY(180deg);
-}
-.card3 .side {
-  backface-visibility: hidden;
-  border-radius: 10px;
-  height: 100%;
-  position: absolute;
-  /*overflow: hidden;*/
-  width: 100%;
-}
-.card3 .back {
-  height:50%;
-  background: #eaeaed;
-  color: black;
-  font-size: 12px;
-  text-decoration: none;
-  line-height: 15px;
-  text-align: center;
-  transform: rotateY(180deg);
-  padding: 0;
-}
-
-
-
-.card4 {
-  height: 85%;
-  position: absolute;
-  transform-style: preserve-3d;
-  transition: all 1s ease-in-out;
-  width: 28%;
-  margin-left: 5%;
-  margin-top: 15px;
-}
-.card4:hover {
-  transform: rotateY(180deg);
-}
-.card4 .side {
-  backface-visibility: hidden;
-  border-radius: 10px;
-  height: 100%;
-  position: absolute;
-  /*overflow: hidden;*/
-  width: 100%;
-}
-.card4 .back {
-  height:50%;
-  background: #eaeaed;
-  color: black;
-  font-size: 12px;
-  text-decoration: none;
-  line-height: 20px;
-  text-align: center;
-  transform: rotateY(180deg);
-  padding: 0;
-}
-
-
 ul{
   list-style-type: none;
   text-align: center;
 }
-.card5 {
-  /*text-decoration: none;*/
-  height: 85%;
-  position: absolute;
-  transform-style: preserve-3d;
-  transition: all 1s ease-in-out;
-  width: 28%;
-  margin-left: 36%;
-  margin-top: 15px;
-}
-.card5:hover {
-  transform: rotateY(180deg);
-}
-.card5 .side {
-  /*text-decoration: none;*/
-  backface-visibility: hidden;
-  border-radius: 10px;
-  height: 100%;
-  position: absolute;
-  /*overflow: hidden;*/
-  width: 100%;
-}
-.card5 .back {
 
-  height:50%;
-  background: #eaeaed;
-  color: black;
-  font-size: 12px;
-  list-style-type: none;
-  line-height: 20px;
-  transform: rotateY(180deg);
-  padding: 0;
-}
-
-
-.card6 {
-  height: 85%;
-  position: absolute;
-  transform-style: preserve-3d;
-  transition: all 1s ease-in-out;
-  width: 28%;
-  margin-left: 68%;
-  margin-top: 15px;
-}
-.card6:hover {
-  transform: rotateY(180deg);
-}
-.card6 .side {
-  backface-visibility: hidden;
-  border-radius: 10px;
-  height: 100%;
-  position: absolute;
-  /*overflow: hidden;*/
-  width: 100%;
-}
-.card6 .back {
-  height:50%;
-  background: #eaeaed;
-  color: black;
-  font-size: 12px;
-  text-decoration: none;
-  line-height: 20px;
-  text-align: center;
-  transform: rotateY(180deg);
-  padding: 0;
-}
-
-
-.card7 {
-  height: 85%;
-  position: absolute;
-  transform-style: preserve-3d;
-  transition: all 1s ease-in-out;
-  width: 28%;
-  margin-left: 5%;
-  margin-top: 15px;
-}
-.card7:hover {
-  transform: rotateY(180deg);
-}
-.card7 .side {
-  backface-visibility: hidden;
-  border-radius: 10px;
-  height: 100%;
-  position: absolute;
-  /*overflow: hidden;*/
-  width: 100%;
-}
-.card7 .back {
-  height:50%;
-  background: #eaeaed;
-  color: black;
-  font-size: 12px;
-  text-decoration: none;
-  line-height: 20px;
-  text-align: center;
-  transform: rotateY(180deg);
-  padding: 0;
-}
-
-
-.card8 {
-  height: 85%;
-  position: absolute;
-  transform-style: preserve-3d;
-  transition: all 1s ease-in-out;
-  width: 28%;
-  margin-left: 36%;
-  margin-top: 15px;
-}
-.card8:hover {
-  transform: rotateY(180deg);
-}
-.card8 .side {
-  backface-visibility: hidden;
-  border-radius: 10px;
-  height: 100%;
-  position: absolute;
-  /*overflow: hidden;*/
-  width: 100%;
-}
-.card8 .back {
-  height:50%;
-  background: #eaeaed;
-  color: black;
-  font-size: 12px;
-  text-decoration: none;
-  line-height: 20px;
-  text-align: center;
-  transform: rotateY(180deg);
-  padding: 0;
-}
-
-
-.card9 {
-  height: 85%;
-  position: absolute;
-  transform-style: preserve-3d;
-  transition: all 1s ease-in-out;
-  width: 28%;
-  margin-left: 68%;
-  margin-top: 15px;
-}
-.card9:hover {
-  transform: rotateY(180deg);
-}
-.card9 .side {
-  backface-visibility: hidden;
-  border-radius: 10px;
-  height: 100%;
-  position: absolute;
-  /*overflow: hidden;*/
-  width: 100%;
-}
-.card9 .back {
-  height:50%;
-  background: #eaeaed;
-  color: black;
-  font-size: 12px;
-  text-decoration: none;
-  line-height: 20px;
-  text-align: center;
-  transform: rotateY(180deg);
-  padding: 0;
-}
-
-.row1 {
-  border-style: dashed;
-  border-color: red;
-
-}
-.row2{
-  margin-top: 30%;
-  border-style: dashed;
-  border-color: blue;
-}
-.row3{
-  margin-top: 30%;
-  border-style: dashed;
-  border-color: green;
-}
-.codefellows{
-  height:50px;
-  width: 50px;
-  text-align: center;
-  border: inset;
-
-}
 .footer{
   text-align: center;
   text-decoration: none;
@@ -553,6 +215,13 @@ ul{
   font-family: 'Oswald', sans-serif;
   letter-spacing: 3px;
   text-shadow: 1.5px 1.5px grey;
+}
+.codefellows{
+  height:50px;
+  width: 50px;
+  text-align: center;
+  border: inset;
+
 }
 .footer-logo{
   color: white;
