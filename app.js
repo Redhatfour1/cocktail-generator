@@ -100,28 +100,28 @@ var Tracker = {
     var selectedNode3 = elem3.options[elem3.selectedIndex].value;
     // This creates and presents the drink in the dom
     if (selectedNode3 === 'None') {
-      for (var i in Tracker.cocktailOptionsRound2) {
+      for (var i in Tracker.cocktailOptionsRound3) {
         var getRenderId = document.getElementById('render');
         var makeDiv = document.createElement('div');
         makeDiv.id = 'drinkCard';
         makeDiv.className ='drinkCard';
         var makeA = document.createElement('a');
         var makeImg = document.createElement('img');
-        makeA.href = Tracker.cocktailOptionsRound2[i].link;
+        makeA.href = Tracker.cocktailOptionsRound3[i].link;
         makeA.id = 'drinkTitle';
         makeA.className = 'drinkTitle';
         makeA.target = '_blank';
-        makeImg.src = Tracker.cocktailOptionsRound2[i].imagePath;
+        makeImg.src = Tracker.cocktailOptionsRound3[i].imagePath;
         makeImg.className = 'cocktailImg';
-        makeA.textContent = Tracker.cocktailOptionsRound2[i].name;
+        makeA.textContent = Tracker.cocktailOptionsRound3[i].name;
         makeA.appendChild(makeImg);
         makeDiv.appendChild(makeA);
         getRenderId.appendChild(makeDiv);
       }
     }
-    else if (Tracker.cocktailOptionsRound2) {
+    else if (Tracker.cocktailOptionsRound2 !== 'undefined') {
       console.log('second');
-      for (var i in Tracker.cocktailOptionsRound3) {
+      for (var i in Tracker.cocktailOptionsRound2) {
         var getRenderId = document.getElementById('render');
         var makeDiv = document.createElement('div');
         makeDiv.id = 'drinkCard';
@@ -144,6 +144,7 @@ var Tracker = {
       console.log('fail');
     }
   },
+
   // this method removes the last presented drink option to make room for the new ones
   removeDrinkCard: function(){
     var remove = document.getElementById("render");
