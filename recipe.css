@@ -472,9 +472,12 @@ text-align: center;
 	-ms-transition: all ease 0.8;
 }
 .door-left {
+  color: white;
+  text-align: center;
 	left: 0%;
 	background-color:  brown;
   z-index: 1;
+  /*background-image:  url("https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQEeSdnFcTz96rCdLqrxhTz2BTb_cjU7dNCTZVVWNokRoNAzdfqEwrgb");*/
 }
 /*.texture{
   background: url("https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQEeSdnFcTz96rCdLqrxhTz2BTb_cjU7dNCTZVVWNokRoNAzdfqEwrgb");
@@ -484,6 +487,8 @@ text-align: center;
   background-color: brown:
 }*/
 .door-right {
+  color: white;
+  text-align: center;
 	left: 50%;
 	background-color: brown;
   z-index: 1;
