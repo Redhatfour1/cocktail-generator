@@ -34,8 +34,6 @@ header{
 header img {
   display: inline-block;
   float:left;
-
-
 }
 /* Dropdown Button */
 .navbtn {
@@ -123,9 +121,6 @@ img {
   padding-left: 25px;
   float: left;
 }
-/*img#fiveoclocksomewhere{
-border-style: double red;
-}*/
 
 .accessoryshakers{
   display: inline-block;
