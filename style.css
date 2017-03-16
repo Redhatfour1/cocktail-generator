@@ -74,7 +74,6 @@ header img {
   width: 50px;
   text-align: center;
   border: inset;
-
 }
 
 .footer{
@@ -150,6 +149,7 @@ header img {
   height: 141px;
   width: 184px;
   margin-left: 7px;
+  z-index: 1;
 }
 
 
@@ -209,7 +209,7 @@ header img {
   font-size: 25px;
   min-width: 200px;
   box-shadow: 0px 16px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+  z-index: 2;
 }
 
 /* Links inside the dropdown */
@@ -263,8 +263,8 @@ video {
 
 .render .drinkCard {
   display: flex;
-  /*flex-direction: column;*/
-  flex-wrap: wrap-reverse;
+  flex-direction: row-reverse;
+  /*flex-wrap: wrap-reverse;*/
   justify-content: center;
   padding-bottom: 45px;
   font-size: 45px;
@@ -273,10 +273,14 @@ video {
   color: white;
   letter-spacing: 5px;
 }
-
-
-/*.render .drinkCard drinkTitle {
+/*Not working yet, want drink title under image*/
+/*.render .drinktitle {
   display: flex;
-  flex-direction:
-
+  justify-content: center;
+  padding-bottom: 45px;
+  font-size: 45px;
+  font-family: 'Grand Hotel', cursive;
+  text-shadow: 1.5px 1.5px #5e5d5b;
+  color: white;
+  letter-spacing: 5px;
 }*/
