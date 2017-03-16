@@ -164,7 +164,7 @@ card-container {
 }
 
 .card1 .back {
-  height:50%;
+  height:25%;
   background: #eaeaed;
   color: black;
   font-size: 12px;
@@ -194,7 +194,7 @@ card-container {
   width: 100%;
 }
 .card2 .back {
-  height:50%;
+  height:25%;
   background: #eaeaed;
   color: black;
   font-size: 12px;
@@ -225,7 +225,7 @@ card-container {
   width: 100%;
 }
 .card3 .back {
-  height:50%;
+  height:25%;
   background: #eaeaed;
   color: black;
   font-size: 12px;
@@ -258,7 +258,7 @@ card-container {
   width: 100%;
 }
 .card4 .back {
-  height:50%;
+  height:25%;
   background: #eaeaed;
   color: black;
   font-size: 12px;
@@ -295,7 +295,7 @@ ul{
 }
 .card5 .back {
 text-align: center;
-  height:50%;
+  height:25%;
   background: #eaeaed;
   color: black;
   font-size: 12px;
@@ -325,7 +325,7 @@ text-align: center;
   width: 100%;
 }
 .card6 .back {
-  height:50%;
+  height:25%;
   background: #eaeaed;
   color: black;
   font-size: 12px;
@@ -356,7 +356,7 @@ text-align: center;
   width: 100%;
 }
 .card7 .back {
-  height:50%;
+  height:25%;
   background: #eaeaed;
   color: black;
   font-size: 12px;
@@ -387,7 +387,7 @@ text-align: center;
   width: 100%;
 }
 .card8 .back {
-  height:50%;
+  height:25%;
   background: #eaeaed;
   color: black;
   font-size: 12px;
@@ -418,7 +418,7 @@ text-align: center;
   width: 100%;
 }
 .card9 .back {
-  height:50%;
+  height:25%;
   background: #eaeaed;
   color: black;
   font-size: 12px;
@@ -449,6 +449,63 @@ text-align: center;
   border-style: solid;
   border-color: none;
 }
+
+
+
+.container {
+	position: relative;
+	overflow: hidden;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.door-left, .door-right {
+	position: absolute;
+	height: 100%;
+	width: 50%;
+	top: 0%;
+	transition: all ease 0.8s;
+	-moz-transition: all ease 0.8s;
+	-webkit-transition: all ease 0.8s;
+	-o-transition: all ease 0.8s;
+	-ms-transition: all ease 0.8;
+}
+.door-left {
+  color: white;
+  text-align: center;
+	left: 0%;
+	background-color:  brown;
+  z-index: 1;
+  /*background-image:  url("https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQEeSdnFcTz96rCdLqrxhTz2BTb_cjU7dNCTZVVWNokRoNAzdfqEwrgb");*/
+}
+/*.texture{
+  background: url("https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQEeSdnFcTz96rCdLqrxhTz2BTb_cjU7dNCTZVVWNokRoNAzdfqEwrgb");
+  opacity: 0.8;
+}
+.texture-color{
+  background-color: brown:
+}*/
+.door-right {
+  color: white;
+  text-align: center;
+	left: 50%;
+	background-color: brown;
+  z-index: 1;
+}
+.container:hover .door-left{
+	left: -50%;
+}
+.container:hover .door-right{
+	left: 100%;
+}
+
+
+
+
+
+
+
 
 .codefellows{
   height:50px;
