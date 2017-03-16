@@ -57,12 +57,14 @@ header{
 
 header img {
   display: inline-block;
-  float: left;
-  position: relative;
+  /*float: left;*/
+  /*position: relative;*/
   z-index: 3;
-  margin-left: 205px;
-  margin-top: -54px;
+  margin-left:225px;
+  margin-top: -40px;
+  margin-bottom: 10px;
 }
+
 .navigation{
   margin-top: -36px;
 }
