@@ -47,7 +47,7 @@ header{
   font-family: 'Oswald', sans-serif;
   letter-spacing: 1px;
   font-size: 35px;
-  border-image-source: url(assets/WoodShelf.png);
+  /*border-image-source: url(assets/WoodShelf.png);*/
   text-shadow: 2px 2px #5e5d5b;
 }
 
@@ -108,7 +108,6 @@ header img {
   border-bottom-style: outset;
   border-bottom-color: #61605e;
   border-bottom-width: 10px;
-
 }
 
 

@@ -2,17 +2,25 @@
 border-style: dashed;
 border-color: white;
 }*/
-html{
+html {
   height:100%;
 }
+
 body {
   width: 960px%;
   margin-left: auto;
   margin-right: auto;
   /*background-color: #A9A9A9;*/
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu3kr-G-eh03D2fJFTlsGvwfS9OUX2q5YkDJA4Q9lkD4rBQ2bV");
+  background-image: url(assets/WoodGrainBackgroundPage10%lighter.jpeg);
+  border-top-style: outset;
+  border-top-color: #5e5d5b;
+  border-top-width: 10px;
+  border-bottom-style: outset;
+  border-bottom-color: #61605e;
+  border-bottom-width: 10px;
 }
-header{
+
+header {
   margin-top: 25px;
   margin-left: 15px;
   margin-right: 15px;
@@ -24,7 +32,7 @@ header{
   background-image: url("https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ1L8QIASUyIVcZhK9dvU2dPK9ql9yEkJU1QPAEsByP28fvZm0z");
 
 }
-.header{
+.header {
   margin-top: 10px;
   display: inline-block;
   width: auto;
@@ -51,7 +59,7 @@ header img {
   width: 219px;
   text-shadow: 1.5px 1.5px grey;
 }
-.navigation{
+.navigation {
   margin-right: %;
 }
 
@@ -65,7 +73,6 @@ header img {
   background-color: white;
   margin-top: -58px;
   margin-left: 56%;
-
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -242,14 +249,21 @@ p.colorblack{
   margin-top: 5%;
   /*text-align: center;*/
 }
-p.colorwhite{
+p.colorwhite {
   color:white;
   width:950px;
   text-align: center;
 }
-h1{
-  font-style: italic;
-  font-size: 36px;
+
+h1 {
+  font-family: 'Grand Hotel', cursive;
+  letter-spacing: 7px;
+  display: inline-block;
+  color: white;
+  margin-top: 8px;
+  margin-left: 150px;
+  font-size: 68px;
+  text-shadow: 2px 2px #5e5d5b;
 }
 
 h2{
@@ -265,11 +279,7 @@ img.codefellows{
   text-align: center;
 }
 
-.codefellows{
-  height:25px;
-  width: 25px;
-  text-align: center;
-}
+
 /*This paragraph is for the paragraphs on the about us page.*/
 p{
   width:600px;
@@ -625,10 +635,12 @@ ul{
   text-align: center;
   text-decoration: none;
   background-color: black;
-  bottom: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
   width: auto;
   height: 132px;
   position: relative;
+  bottom
   clear: both;
   padding-top: 30px;
   font-family: 'Oswald', sans-serif;

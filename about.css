@@ -2,9 +2,7 @@
 border-style: dashed;
 border-color: white;
 }*/
-html{
-  height:100%;
-}
+
 body {
   width: 960px%;
   margin-left: auto;
@@ -242,9 +240,16 @@ p.colorwhite{
   width:950px;
   text-align: center;
 }
-h1{
-  font-style: italic;
-  font-size: 36px;
+
+h1 {
+  font-family: 'Grand Hotel', cursive;
+  letter-spacing: 7px;
+  display: inline-block;
+  color: white;
+  margin-top: 8px;
+  margin-left: 150px;
+  font-size: 68px;
+  text-shadow: 2px 2px #5e5d5b;
 }
 
 h2{
@@ -608,29 +613,34 @@ ul{
   border-style: dashed;
   border-color: green;
 }
-.codefellows{
-/*margin-top: 50%;
-height: 25px;
-width: 25px;*/
+
+.codefellows {
+margin-top: 50%;
+height: 50x;
+width: 50px;
 text-align: center;
 }
 
-.footer{
-  margin-top: 50%;
-  /*margin:auto;*/
+.footer {
+  display: flex;
+  justify-content: center;
+  /*margin-top: 50%;*/
+  /*margin: auto;*/
   text-align: center;
   text-decoration: none;
-  bottom: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
   width: auto;
   height: 110px;
-  position: relative;
-  clear: both;
+  /*position: relative;*/
+  /*clear: both;*/
   /*padding-top: 330px;*/
   font-family: 'Oswald', sans-serif;
   letter-spacing: 3px;
   text-shadow: 1.5px 1.5px grey;
 }
-.footer-logo{
+
+.footer-logo {
   color: white;
   text-align: center;
 }
