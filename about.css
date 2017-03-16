@@ -1,20 +1,32 @@
 /**{
-  border-style: dashed;
+border-style: dashed;
 }*/
+html{
+  height:100%;
+}
 body {
-  width: 100%;
+  width: 960px%;
   margin-left: auto;
   margin-right: auto;
-  background-color: black;
-  }
-  header{
-    padding-bottom: 70px;
-    border-bottom: solid black 2px;
-    background-image: url("https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ1L8QIASUyIVcZhK9dvU2dPK9ql9yEkJU1QPAEsByP28fvZm0z");
+  /*background-color: #A9A9A9;*/
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu3kr-G-eh03D2fJFTlsGvwfS9OUX2q5YkDJA4Q9lkD4rBQ2bV");
+}
+header{
+  margin-top: 25px;
+  margin-left: 15px;
+  margin-right: 15px;
+  padding-top: 10px;
+  width:100%;
+  height:110px;
+  padding-bottom: 70px;
+  border-bottom: solid black 2px;
+  background-image: url("https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ1L8QIASUyIVcZhK9dvU2dPK9ql9yEkJU1QPAEsByP28fvZm0z");
 
-  }
+}
 .header{
+  margin-top: 10px;
   display: inline-block;
+  width: auto;
 
 }
 
@@ -26,6 +38,7 @@ header img {
 }
 /* Dropdown Button */
 .navbtn {
+
   background-color: grey;
   color: white;
   padding: 16px;
@@ -37,17 +50,21 @@ header img {
   width: 219px;
   text-shadow: 1.5px 1.5px grey;
 }
+.navigation{
+  margin-right: %;
+}
 
 /* The container <div> - needed to position the dropdown content */
 .dropbox {
-  position: fixed;
+  /*position: fixed;*/
   display: inline-block;
   padding: 2px;
   text-align: center;
   border-style: groove;
   background-color: white;
   margin-top: -58px;
-  margin-left: 1003px;
+  margin-left: 56%;
+
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -95,64 +112,65 @@ header img {
 
 
 /*nav ul li{
-  display: inline-block;
-  list-style: none;
-  float: right;
-  padding:8px;
+display: inline-block;
+list-style: none;
+float: right;
+padding:8px;
 }
 li.one{
-  border-style: solid;
-  color: white;
-  text-decoration: none;
+border-style: solid;
+color: white;
+text-decoration: none;
 }
 li.two{
-  border-style: solid;
-  color: white;
-  text-decoration: none;
+border-style: solid;
+color: white;
+text-decoration: none;
 }
 li.three{
-  border-style: solid;
-  color: white;
-  text-decoration: none;
+border-style: solid;
+color: white;
+text-decoration: none;
 }
 li.four{
-  border-style: solid;
-  color: white;
-  text-decoration: none;
+border-style: solid;
+color: white;
+text-decoration: none;
 }
 
 a{
-  padding-left: 10px;
-  padding-right: 10px;
-  color: black;
-  text-decoration: none;
+padding-left: 10px;
+padding-right: 10px;
+color: black;
+text-decoration: none;
 }*/
 p{
   color: white;
 }
 
+
 .box {
-    border-style: solid;
-    border-width: 1px;
-    display: block;
-    width: 602px;
-    height: 150px;
-    background-color: #778899;
-    `-webkit-transition: width 2s, height 2s, background-color 2s, -webkit-transform 2s;
-    transition: width 2s, height 2s, background-color 2s, transform 2s;`
+  border-style: solid;
+  border-width: 1px;
+  display: block;
+  width: 602px;
+  height: 150px;
+  background-color: #778899;
+  `-webkit-transition: width 2s, height 2s, background-color 2s, -webkit-transform 2s;
+  transition: width 2s, height 2s, background-color 2s, transform 2s;`
 }
 
 .box:hover {
-    background-color: #8B0000;
-    width: 702px;
-    height: 250px;
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
+  background-color: #8B0000;
+  width: 702px;
+  height: 250px;
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
 }
 
 .james{
   display: inline-block;
-  margin-top: 50px;
+  margin: 50px;
   float: left;
   border-bottom width: 960px;
   border-bottom-style: groove;
@@ -160,7 +178,7 @@ p{
 }
 .chrystie{
   display: inline-block;
-  margin-top: 50px;
+  margin: 50px;
   float:right;
   border-bottom width: 960px;
   border-bottom-style: groove;
@@ -169,18 +187,15 @@ p{
 
 .louis{
   display: inline-block;
-  margin-top: 50px;
+  margin: 50px;
   float: left;
   border-bottom width: 960px;
   border-bottom-style: groove;
   border-color: gray;
 }
-img {
-  padding-right: 25px;
-}
 .sam{
   display: inline-block;
-  margin-top: 50px;
+  margin: 50px;
   float:right;
   border-bottom width: 960px;
   border-bottom-style: groove;
@@ -188,15 +203,55 @@ img {
   margin-bottom: 50px;
 }
 
-.
-.jiggerbox{
+img {
+
+  padding-right: 25px;
+  padding-left: 25px;
+  float: left;
+}
+/*img#fiveoclocksomewhere{
+border-style: double red;
+}*/
+
+.accessoryshakers{
   display: inline-block;
 }
+
+.jiggerbox{
+  display: inline-block;
+  margin-top: 20px;
+}
+.shakerbox{
+  display: inline-block;
+  margin-top: 20px;
+}
+.barspoonbox{
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.juicerbox.{
+  display: inline-block;
+  margin-top: 20px;
+}
+
 p.colorblack{
   color: black;
   width: 290px;
   margin-top: 5%;
   /*text-align: center;*/
+}
+p.colorwhite{
+  color:white;
+  width:950px;
+}
+h1{
+  font-style: italic;
+  font-size: 36px;
+}
+
+h2{
+  color: white;
 }
 h5{
   padding-bottom: 0;
@@ -205,6 +260,7 @@ h5{
 img.codefellows{
   height: 35px;
   width: 35px;
+  text-align: center;
 }
 
 .codefellows{
@@ -236,12 +292,12 @@ card-container {
 
 }
 .card1 {
-/*float:left;*/
-  height: 100%;
+  /*float:left;*/
+  height: 85%;
   position: absolute;
   transform-style: preserve-3d;
   transition: all 1s ease-in-out;
-  width: 25%;
+  width: 28%;
   margin-left: 5%;
   margin-top: 15px;
 }
@@ -257,26 +313,24 @@ card-container {
   /*overflow: hidden;*/
   width: 100%;
 }
-/*.sideback{
-  list-style-type: none;
-}*/
+
 .card1 .back {
-height:50%;
+  height:50%;
   background: #eaeaed;
   color: black;
-  font-size: 14px;
+  font-size: 12px;
   text-decoration: none;
-  line-height: 20px;
+  line-height: 15px;
   text-align: center;
   transform: rotateY(180deg);
   padding: 0;
 }
 .card2 {
-  height: 100%;
+  height: 85%;
   position: absolute;
   transform-style: preserve-3d;
   transition: all 1s ease-in-out;
-  width: 25%;
+  width: 28%;
   margin-left: 36%;
   margin-top: 15px;
 }
@@ -295,9 +349,9 @@ height:50%;
   height:50%;
   background: #eaeaed;
   color: black;
-  font-size: 14px;
+  font-size: 12px;
   text-decoration: none;
-  line-height: 20px;
+  line-height: 15px;
   text-align: center;
   transform: rotateY(180deg);
   padding: 0;
@@ -305,11 +359,11 @@ height:50%;
 
 
 .card3 {
-  height: 100%;
+  height: 85%;
   position: absolute;
   transform-style: preserve-3d;
   transition: all 1s ease-in-out;
-  width: 25%;
+  width: 28%;
   margin-left: 68%;
   margin-top: 15px;
 }
@@ -328,9 +382,9 @@ height:50%;
   height:50%;
   background: #eaeaed;
   color: black;
-  font-size: 14px;
+  font-size: 12px;
   text-decoration: none;
-  line-height: 20px;
+  line-height: 15px;
   text-align: center;
   transform: rotateY(180deg);
   padding: 0;
@@ -339,11 +393,11 @@ height:50%;
 
 
 .card4 {
-  height: 100%;
+  height: 85%;
   position: absolute;
   transform-style: preserve-3d;
   transition: all 1s ease-in-out;
-  width: 25%;
+  width: 28%;
   margin-left: 5%;
   margin-top: 15px;
 }
@@ -362,7 +416,7 @@ height:50%;
   height:50%;
   background: #eaeaed;
   color: black;
-  font-size: 14px;
+  font-size: 12px;
   text-decoration: none;
   line-height: 20px;
   text-align: center;
@@ -373,11 +427,11 @@ height:50%;
 
 
 .card5 {
-  height: 100%;
+  height: 85%;
   position: absolute;
   transform-style: preserve-3d;
   transition: all 1s ease-in-out;
-  width: 25%;
+  width: 28%;
   margin-left: 36%;
   margin-top: 15px;
 }
@@ -396,7 +450,7 @@ height:50%;
   height:50%;
   background: #eaeaed;
   color: black;
-  font-size: 14px;
+  font-size: 12px;
   text-decoration: none;
   line-height: 20px;
   text-align: center;
@@ -406,11 +460,11 @@ height:50%;
 
 
 .card6 {
-  height: 100%;
+  height: 85%;
   position: absolute;
   transform-style: preserve-3d;
   transition: all 1s ease-in-out;
-  width: 25%;
+  width: 28%;
   margin-left: 68%;
   margin-top: 15px;
 }
@@ -429,7 +483,7 @@ height:50%;
   height:50%;
   background: #eaeaed;
   color: black;
-  font-size: 14px;
+  font-size: 12px;
   text-decoration: none;
   line-height: 20px;
   text-align: center;
@@ -439,11 +493,11 @@ height:50%;
 
 
 .card7 {
-  height: 100%;
+  height: 85%;
   position: absolute;
   transform-style: preserve-3d;
   transition: all 1s ease-in-out;
-  width: 25%;
+  width: 28%;
   margin-left: 5%;
   margin-top: 15px;
 }
@@ -462,7 +516,7 @@ height:50%;
   height:50%;
   background: #eaeaed;
   color: black;
-  font-size: 14px;
+  font-size: 12px;
   text-decoration: none;
   line-height: 20px;
   text-align: center;
@@ -472,11 +526,11 @@ height:50%;
 
 
 .card8 {
-  height: 100%;
+  height: 85%;
   position: absolute;
   transform-style: preserve-3d;
   transition: all 1s ease-in-out;
-  width: 25%;
+  width: 28%;
   margin-left: 36%;
   margin-top: 15px;
 }
@@ -495,7 +549,7 @@ height:50%;
   height:50%;
   background: #eaeaed;
   color: black;
-  font-size: 14px;
+  font-size: 12px;
   text-decoration: none;
   line-height: 20px;
   text-align: center;
@@ -505,11 +559,11 @@ height:50%;
 
 
 .card9 {
-  height: 100%;
+  height: 85%;
   position: absolute;
   transform-style: preserve-3d;
   transition: all 1s ease-in-out;
-  width: 25%;
+  width: 28%;
   margin-left: 68%;
   margin-top: 15px;
 }
@@ -528,7 +582,7 @@ height:50%;
   height:50%;
   background: #eaeaed;
   color: black;
-  font-size: 14px;
+  font-size: 12px;
   text-decoration: none;
   line-height: 20px;
   text-align: center;
@@ -555,17 +609,18 @@ height:50%;
   border-style: dashed;
   border-color: green;
 }
-/*.codefellows{
-  margin-top: 50%;
-  height: 25px;
-  width: 25px;
-  text-align: center;
-}*/
+.codefellows{
+margin-top: 50%;
+height: 25px;
+width: 25px;
+text-align: center;
+}
 
 
 
 .footer{
-margin-top: 50%;
+  margin-top: 50%;
+  /*margin:auto;*/
   text-align: center;
   text-decoration: none;
   bottom: 0;
@@ -573,4 +628,12 @@ margin-top: 50%;
   height: 110px;
   position: relative;
   clear: both;
+  padding-top: 330px;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 3px;
+  text-shadow: 1.5px 1.5px grey;
+}
+.footer-logo{
+  color: white;
+  text-align: center;
 }
