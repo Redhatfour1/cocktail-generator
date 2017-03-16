@@ -240,7 +240,7 @@ p.colorblack{
   color: black;
   width: 290px;
   margin-top: 5%;
-  /*text-align: center;*/
+  text-align: center;
 }
 p.colorwhite{
   color:white;
@@ -604,12 +604,12 @@ ul{
 
 }
 .row2{
-  margin-top: 80%;
+  margin-top: 30%;
   border-style: dashed;
   border-color: blue;
 }
 .row3{
-  margin-top: 80%;
+  margin-top: 30%;
   border-style: dashed;
   border-color: green;
 }

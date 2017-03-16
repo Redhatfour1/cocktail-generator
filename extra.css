@@ -240,7 +240,7 @@ p.colorblack{
   color: black;
   width: 290px;
   margin-top: 5%;
-  /*text-align: center;*/
+  text-align: center;
 }
 p.colorwhite{
   color:white;
@@ -455,7 +455,7 @@ ul{
   width: 100%;
 }
 .card5 .back {
-
+text-align: center;
   height:50%;
   background: #eaeaed;
   color: black;
@@ -604,14 +604,14 @@ ul{
 
 }
 .row2{
-  margin-top: 80%;
-  border-style: dashed;
-  border-color: blue;
+  margin-top: 30%;
+  border-style: solid;
+  border-color: none;
 }
 .row3{
-  margin-top: 80%;
-  border-style: dashed;
-  border-color: green;
+  margin-top: 30%;
+  border-style: solid;
+  border-color: none;
 }
 .codefellows{
 /*margin-top: 50%;
