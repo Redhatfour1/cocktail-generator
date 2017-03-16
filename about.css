@@ -175,34 +175,6 @@ img {
 }
 
 
-.accessoryshakers{
-  display: inline-block;
-}
-
-.jiggerbox{
-  display: inline-block;
-  margin-top: 20px;
-}
-.shakerbox{
-  display: inline-block;
-  margin-top: 20px;
-}
-.barspoonbox{
-  display: inline-block;
-  margin-top: 20px;
-}
-
-.juicerbox.{
-  display: inline-block;
-  margin-top: 20px;
-}
-
-p.colorblack{
-  color: black;
-  width: 290px;
-  margin-top: 5%;
-  text-align: center;
-}
 p.colorwhite{
   color:white;
   width:950px;
@@ -213,9 +185,6 @@ h1{
   font-size: 36px;
 }
 
-h2{
-  color: white;
-}
 h5{
   padding-bottom: 0;
 }
