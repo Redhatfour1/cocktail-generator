@@ -1,5 +1,4 @@
 body {
-
   margin-left: auto;
   margin-right: auto;
   /*background-color: #DCDCDC*/
@@ -26,6 +25,7 @@ h2 {
   padding-top: 35px;
   letter-spacing: 5px;
   font-family: 'Grand Hotel', cursive;
+  text-shadow: 1.5px 1.5px #5e5d5b;
   color: white;
   font-size: 45px;
 }
@@ -143,7 +143,7 @@ header img {
   display: inline-block;
   padding-top: 60px;
   padding-bottom: 73px;
-  padding-left: 75px;
+  padding-left: 80px;
   background-image: url("assets/Sq Ice Cube.png");
   background-repeat: no-repeat;
   opacity: .9;
@@ -260,3 +260,23 @@ video {
   width: 100%;
   object-fit: cover;
 }
+
+.render .drinkCard {
+  display: flex;
+  /*flex-direction: column;*/
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  padding-bottom: 45px;
+  font-size: 45px;
+  font-family: 'Grand Hotel', cursive;
+  text-shadow: 1.5px 1.5px #5e5d5b;
+  color: white;
+  letter-spacing: 5px;
+}
+
+
+/*.render .drinkCard drinkTitle {
+  display: flex;
+  flex-direction:
+
+}*/
