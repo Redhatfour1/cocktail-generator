@@ -109,94 +109,6 @@ header img {
   background: transparent;
 }
 
-p{
-  color: white;
-}
-
-.box {
-  border-style: solid;
-  border-width: 1px;
-  display: block;
-  width: 602px;
-  height: 150px;
-  background-color: #778899;
-  `-webkit-transition: width 2s, height 2s, background-color 2s, -webkit-transform 2s;
-  transition: width 2s, height 2s, background-color 2s, transform 2s;`
-}
-
-.box:hover {
-  background-color: #8B0000;
-  width: 702px;
-  height: 250px;
-  -webkit-transform: rotate(360deg);
-  transform: rotate(360deg);
-}
-
-.james{
-  display: inline-block;
-  margin: 50px;
-  float: left;
-  border-bottom width: 960px;
-  border-bottom-style: groove;
-  border-color: gray;
-}
-.chrystie{
-  display: inline-block;
-  margin: 50px;
-  float:right;
-  border-bottom width: 960px;
-  border-bottom-style: groove;
-  border-color: gray;
-}
-
-.louis{
-  display: inline-block;
-  margin: 50px;
-  float: left;
-  border-bottom width: 960px;
-  border-bottom-style: groove;
-  border-color: gray;
-}
-.sam{
-  display: inline-block;
-  margin: 50px;
-  float:right;
-  border-bottom width: 960px;
-  border-bottom-style: groove;
-  border-color: gray;
-  margin-bottom: 50px;
-}
-
-img {
-
-  padding-right: 25px;
-  padding-left: 25px;
-  float: left;
-}
-
-
-.accessoryshakers{
-  display: inline-block;
-}
-
-.jiggerbox{
-  display: inline-block;
-  margin-top: 20px;
-}
-.shakerbox{
-  display: inline-block;
-  margin-top: 20px;
-}
-.barspoonbox{
-  display: inline-block;
-  margin-top: 20px;
-}
-
-.juicerbox.{
-  display: inline-block;
-  margin-top: 20px;
-}
-
 p.colorblack{
   color: black;
   width: 290px;
@@ -216,9 +128,7 @@ h1{
 h2{
   color: white;
 }
-h5{
-  padding-bottom: 0;
-}
+
 
 img.codefellows{
   height: 35px;
@@ -231,15 +141,11 @@ img.codefellows{
   width: 25px;
   text-align: center;
 }
-/*This paragraph is for the paragraphs on the about us page.*/
-p{
-  width:600px;
-  height: 150px;
-}
 
 .maincontainerrecipe{
   display: inline-block;
   width: 100%;
+  height: 1500px;
 }
 card-container {
   /*display: inline-block;;*/
@@ -411,7 +317,7 @@ ul{
   width: 100%;
 }
 .card5 .back {
-
+text-align: center;
   height:50%;
   background: #eaeaed;
   color: black;
@@ -561,14 +467,15 @@ ul{
 }
 .row2{
   margin-top: 30%;
-  border-style: dashed;
-  border-color: blue;
+  border-style: solid;
+  border-color: none;
 }
 .row3{
   margin-top: 30%;
-  border-style: dashed;
-  border-color: green;
+  border-style: solid;
+  border-color: none;
 }
+
 .codefellows{
   height:50px;
   width: 50px;
