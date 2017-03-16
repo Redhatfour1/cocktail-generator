@@ -609,18 +609,18 @@ card-container {
   border-style: dashed;
   border-color: green;
 }
-/*.codefellows{
+.codefellows{
 margin-top: 50%;
 height: 25px;
 width: 25px;
 text-align: center;
-}*/
+}
 
 
 
 .footer{
-  /*margin-top: 50%;*/
-  margin:auto;
+  margin-top: 50%;
+  /*margin:auto;*/
   text-align: center;
   text-decoration: none;
   bottom: 0;
