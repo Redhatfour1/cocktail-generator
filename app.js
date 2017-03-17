@@ -154,7 +154,7 @@ var Tracker = {
       remove.removeChild(remove.firstChild);
     }
   },
-
+//method to change images when different ingredients are selected
   changeIngredientImageIng1: function(){
     var getIngredientOneImageName = document.getElementById('ing1');
     console.log(getIngredientOneImageName);
@@ -162,11 +162,14 @@ var Tracker = {
     console.log(getImagePath);
     document.getElementById('imageSpot1').style.backgroundImage = getImagePath;
   },
+  //method to make selecters go back to default
   ingredientsBackToDefault:function(){
     ing1.options[0].selected="selected";
     ing2.options[0].selected="selected";
     ing3.options[0].selected="selected";
   },
+
+  //method to change ingredients back to cubes
   changeBackToCubes: function(){
     var getIngredientOneImageName = document.getElementById('ing1');
     console.log(getIngredientOneImageName);
@@ -177,7 +180,7 @@ var Tracker = {
 };
 // This is where the submit button is being tracked and starts the functionality.
 ing1.addEventListener('change', Tracker.changeIngredientImageIng1, false);
-document.getElementById('submit').addEventListener('click', Tracker.changeBackToCubes);
-document.getElementById('submit').addEventListener('click', Tracker.ingredientsBackToDefault);
 document.getElementById('submit').addEventListener('click', Tracker.removeDrinkCard);
 document.getElementById('submit').addEventListener('click', Tracker.renderCocktailOptions);
+document.getElementById('submit').addEventListener('click', Tracker.changeBackToCubes);
+document.getElementById('submit').addEventListener('click', Tracker.ingredientsBackToDefault);
