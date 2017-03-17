@@ -475,9 +475,12 @@ text-align: center;
   color: white;
   text-align: center;
 	left: 0%;
-	background-color:  brown;
+	/*background-color:  brown;*/
   z-index: 1;
-  /*background-image:  url("https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQEeSdnFcTz96rCdLqrxhTz2BTb_cjU7dNCTZVVWNokRoNAzdfqEwrgb");*/
+
+  background:  url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEz01hHmM6yT1DKQlCE7PAbR2NQw-Y-llOLlgNwTTSNchPzmylVg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 /*.texture{
   background: url("https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQEeSdnFcTz96rCdLqrxhTz2BTb_cjU7dNCTZVVWNokRoNAzdfqEwrgb");
