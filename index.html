@@ -4,11 +4,12 @@
   <meta charset="utf-8">
   <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Amita|Expletus+Sans|Faster+One|Lobster+Two|Oswald|Poiret+One|Sacramento|Vibur|Yanone+Kaffeesatz" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Grand+Hotel|Oswald" rel="stylesheet">
+  <link rel="stylesheet" href="reset.css">
   <link rel = "stylesheet" href="style.css">
 
 </head>
 <body>
+
 <header class="header-container" role="banner" style="background-image: url('<?php header_image(); ?>');">
   <section class="headerwrap">
 
@@ -19,6 +20,7 @@
   <video preload="true" autoplay loop muted poster="assets/videoposter.jpeg" class="video-background">
     <source src="assets/Sixty restaurant and bar1. Moscow.mp4" type="video/mp4" media="(orientation:landscape)">
     </video>
+
       <nav class="navigation">
         <div class="dropbox">
           <button class="navbtn">Menu</button>
@@ -43,13 +45,14 @@
 <main class="maincontainer">
 
   <section class="bgmain">
-    <h2>So, What Ingredients Do You Have?</h2>
-    <section class="form"></section>
+
+    <h2>So, what ingredients do you have?</h2>
+
     <section class="form" id="form">
-      <div class="dropdown">
+      <div class="dropdown" id="imageSpot1">
         <select name="ing1" id="ing1" class="dropbtn">
           <div class="dropdown-content">
-            <option selected hidden disabled>Ingredient One</option>
+            <option selected hidden value="SqIceCube">Ingredient One</option>
             <option value="Gin">Gin</option>
             <option value="Whiskey">Whiskey</option>
             <option value="White Tequila">White Tequila</option>
@@ -81,7 +84,7 @@
 
           <div class="dropdown-content">
             <!-- <input type="button" style="background-image:url(assets/Sq Ice Cube.png)"/> -->
-            <option selected hidden disabled>Ingredient Two</option>
+            <option selected hidden disabled value="Sq Ice Cube">Ingredient Two</option>
             <option value="White Vermouth">White Vermouth</option>
             <option value="Red Vermouth">Red Vermouth</option>
             <option value="Cointreau">Cointreau</option>
@@ -111,7 +114,7 @@
       <div class="dropdown">
         <select name="ing3" class="dropbtn" id="ing3">
           <div class="dropdown-content">
-            <option selected hidden disabled>Ingredient Three</option>
+            <option selected hidden disabled value="Sq Ice Cube">Ingredient Three</option>
             <option value="None">None</option>
             <option value="Bitters">Bitters</option>
             <option value="Lime Juice">Lime Juice</option>
@@ -144,7 +147,7 @@
     </div>
   </section>
   <section class="render" id="render">
-    <div id="drinkCard">
+    <div id="drinkCard" class="drinkCard">
     </div>
   </section>
 </main>
