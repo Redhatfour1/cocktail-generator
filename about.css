@@ -170,9 +170,9 @@ p{
 }
 
 img {
-
+padding-top: 10px;
   padding-right: 25px;
-  padding-left: 25px;
+  padding-left: 10px;
   float: left;
 }
 
@@ -219,11 +219,13 @@ ul{
 .codefellows{
   height:50px;
   width: 50px;
-  text-align: center;
+  /*text-align: center;*/
   border: inset;
+  position: absolute;
 
 }
 .footer-logo{
   color: white;
   text-align: center;
+  margin-top: 10px;
 }
