@@ -108,145 +108,18 @@ header img {
   position: relative;
   background: transparent;
 }
-
-
-
-
-/*nav ul li{
-display: inline-block;
-list-style: none;
-float: right;
-padding:8px;
+.methods{
+  text-align: center;
+  margin-left: 5px;
+  margin-right: 5px;
 }
-li.one{
-border-style: solid;
-color: white;
-text-decoration: none;
-}
-li.two{
-border-style: solid;
-color: white;
-text-decoration: none;
-}
-li.three{
-border-style: solid;
-color: white;
-text-decoration: none;
-}
-li.four{
-border-style: solid;
-color: white;
-text-decoration: none;
-}
-
-a{
-padding-left: 10px;
-padding-right: 10px;
-color: black;
-text-decoration: none;
-}*/
-p{
-  color: white;
-}
-
-
-.box {
-  border-style: solid;
-  border-width: 1px;
-  display: block;
-  width: 602px;
-  height: 150px;
-  background-color: #778899;
-  `-webkit-transition: width 2s, height 2s, background-color 2s, -webkit-transform 2s;
-  transition: width 2s, height 2s, background-color 2s, transform 2s;`
-}
-
-.box:hover {
-  background-color: #8B0000;
-  width: 702px;
-  height: 250px;
-  -webkit-transform: rotate(360deg);
-  transform: rotate(360deg);
-}
-
-.james{
-  display: inline-block;
-  margin: 50px;
-  float: left;
-  border-bottom width: 960px;
-  border-bottom-style: groove;
-  border-color: gray;
-}
-.chrystie{
-  display: inline-block;
-  margin: 50px;
-  float:right;
-  border-bottom width: 960px;
-  border-bottom-style: groove;
-  border-color: gray;
-}
-
-.louis{
-  display: inline-block;
-  margin: 50px;
-  float: left;
-  border-bottom width: 960px;
-  border-bottom-style: groove;
-  border-color: gray;
-}
-.sam{
-  display: inline-block;
-  margin: 50px;
-  float:right;
-  border-bottom width: 960px;
-  border-bottom-style: groove;
-  border-color: gray;
-  margin-bottom: 50px;
-}
-
-img {
-
-  padding-right: 25px;
-  padding-left: 25px;
-  float: left;
-}
-/*img#fiveoclocksomewhere{
-border-style: double red;
-}*/
-
-.accessoryshakers{
-  display: inline-block;
-}
-
-.jiggerbox{
-  display: inline-block;
-  margin-top: 20px;
-}
-.shakerbox{
-  display: inline-block;
-  margin-top: 20px;
-}
-.barspoonbox{
-  display: inline-block;
-  margin-top: 20px;
-}
-
-.juicerbox.{
-  display: inline-block;
-  margin-top: 20px;
-}
-
 p.colorblack{
   color: black;
-  width: 290px;
+  /*width: 290px;*/
   margin-top: 5%;
-  /*text-align: center;*/
-}
-p.colorwhite{
-  color:white;
-  width:950px;
   text-align: center;
 }
+
 h1{
   font-style: italic;
   font-size: 36px;
@@ -255,47 +128,20 @@ h1{
 h2{
   color: white;
 }
-h5{
-  padding-bottom: 0;
-}
-
-img.codefellows{
-  height: 35px;
-  width: 35px;
-  text-align: center;
-}
-
-.codefellows{
-  height:25px;
-  width: 25px;
-  text-align: center;
-}
-/*This paragraph is for the paragraphs on the about us page.*/
-p{
-  width:600px;
-  height: 150px;
-}
-
-
-
-
-
 
 .maincontainerrecipe{
   display: inline-block;
   width: 100%;
+  height: 1257px;
 }
 card-container {
-  /*display: inline-block;;*/
   cursor: pointer;
   height: 150px;
   perspective: 600;
-  /*position: relative;*/
   width: 175px;
 
 }
 .card1 {
-  /*float:left;*/
   height: 85%;
   position: absolute;
   transform-style: preserve-3d;
@@ -318,7 +164,7 @@ card-container {
 }
 
 .card1 .back {
-  height:50%;
+  height:25%;
   background: #eaeaed;
   color: black;
   font-size: 12px;
@@ -345,11 +191,10 @@ card-container {
   border-radius: 10px;
   height: 100%;
   position: absolute;
-  /*overflow: hidden;*/
   width: 100%;
 }
 .card2 .back {
-  height:50%;
+  height:25%;
   background: #eaeaed;
   color: black;
   font-size: 12px;
@@ -359,7 +204,6 @@ card-container {
   transform: rotateY(180deg);
   padding: 0;
 }
-
 
 .card3 {
   height: 85%;
@@ -378,11 +222,10 @@ card-container {
   border-radius: 10px;
   height: 100%;
   position: absolute;
-  /*overflow: hidden;*/
   width: 100%;
 }
 .card3 .back {
-  height:50%;
+  height:25%;
   background: #eaeaed;
   color: black;
   font-size: 12px;
@@ -393,8 +236,6 @@ card-container {
   padding: 0;
 }
 
-
-
 .card4 {
   height: 85%;
   position: absolute;
@@ -404,19 +245,20 @@ card-container {
   margin-left: 5%;
   margin-top: 15px;
 }
+
 .card4:hover {
   transform: rotateY(180deg);
 }
+
 .card4 .side {
   backface-visibility: hidden;
   border-radius: 10px;
   height: 100%;
   position: absolute;
-  /*overflow: hidden;*/
   width: 100%;
 }
 .card4 .back {
-  height:50%;
+  height:25%;
   background: #eaeaed;
   color: black;
   font-size: 12px;
@@ -427,13 +269,12 @@ card-container {
   padding: 0;
 }
 
-
 ul{
   list-style-type: none;
   text-align: center;
+  margin-right: 50px;
 }
 .card5 {
-  /*text-decoration: none;*/
   height: 85%;
   position: absolute;
   transform-style: preserve-3d;
@@ -446,17 +287,15 @@ ul{
   transform: rotateY(180deg);
 }
 .card5 .side {
-  /*text-decoration: none;*/
   backface-visibility: hidden;
   border-radius: 10px;
   height: 100%;
   position: absolute;
-  /*overflow: hidden;*/
   width: 100%;
 }
 .card5 .back {
-
-  height:50%;
+text-align: center;
+  height:25%;
   background: #eaeaed;
   color: black;
   font-size: 12px;
@@ -465,7 +304,6 @@ ul{
   transform: rotateY(180deg);
   padding: 0;
 }
-
 
 .card6 {
   height: 85%;
@@ -484,11 +322,10 @@ ul{
   border-radius: 10px;
   height: 100%;
   position: absolute;
-  /*overflow: hidden;*/
   width: 100%;
 }
 .card6 .back {
-  height:50%;
+  height:25%;
   background: #eaeaed;
   color: black;
   font-size: 12px;
@@ -498,7 +335,6 @@ ul{
   transform: rotateY(180deg);
   padding: 0;
 }
-
 
 .card7 {
   height: 85%;
@@ -517,11 +353,10 @@ ul{
   border-radius: 10px;
   height: 100%;
   position: absolute;
-  /*overflow: hidden;*/
   width: 100%;
 }
 .card7 .back {
-  height:50%;
+  height:25%;
   background: #eaeaed;
   color: black;
   font-size: 12px;
@@ -531,7 +366,6 @@ ul{
   transform: rotateY(180deg);
   padding: 0;
 }
-
 
 .card8 {
   height: 85%;
@@ -550,11 +384,10 @@ ul{
   border-radius: 10px;
   height: 100%;
   position: absolute;
-  /*overflow: hidden;*/
   width: 100%;
 }
 .card8 .back {
-  height:50%;
+  height:25%;
   background: #eaeaed;
   color: black;
   font-size: 12px;
@@ -564,7 +397,6 @@ ul{
   transform: rotateY(180deg);
   padding: 0;
 }
-
 
 .card9 {
   height: 85%;
@@ -583,11 +415,10 @@ ul{
   border-radius: 10px;
   height: 100%;
   position: absolute;
-  /*overflow: hidden;*/
   width: 100%;
 }
 .card9 .back {
-  height:50%;
+  height:25%;
   background: #eaeaed;
   color: black;
   font-size: 12px;
@@ -598,39 +429,104 @@ ul{
   padding: 0;
 }
 
-.row1 {
+/*.row1 {
   border-style: dashed;
   border-color: red;
 
-}
+}*/
 .row2{
-  margin-top: 80%;
-  border-style: dashed;
-  border-color: blue;
+  margin-top: 26%;
+  border-style: solid;
+  border-color: none;
 }
 .row3{
-  margin-top: 80%;
-  border-style: dashed;
-  border-color: green;
+  margin-top: 26%;
+  border-style: solid;
+  border-color: none;
 }
-.codefellows{
-/*margin-top: 50%;
-height: 25px;
-width: 25px;*/
-text-align: center;
+.row4{
+  margin-top: 26%;
+  border-style: solid;
+  border-color: none;
 }
 
+
+
+.container {
+	position: relative;
+	overflow: hidden;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.door-left, .door-right {
+	position: absolute;
+	height: 100%;
+	width: 50%;
+	top: 0%;
+	transition: all ease 0.8s;
+	-moz-transition: all ease 0.8s;
+	-webkit-transition: all ease 0.8s;
+	-o-transition: all ease 0.8s;
+	-ms-transition: all ease 0.8;
+}
+.door-left {
+  color: white;
+  text-align: center;
+	left: 0%;
+	/*background-color:  brown;*/
+  z-index: 1;
+
+  background:  url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEz01hHmM6yT1DKQlCE7PAbR2NQw-Y-llOLlgNwTTSNchPzmylVg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*.texture{
+  background: url("https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQEeSdnFcTz96rCdLqrxhTz2BTb_cjU7dNCTZVVWNokRoNAzdfqEwrgb");
+  opacity: 0.8;
+}
+.texture-color{
+  background-color: brown:
+}*/
+.door-right {
+  color: white;
+  text-align: center;
+	left: 50%;
+	background-color: brown;
+  z-index: 1;
+}
+.container:hover .door-left{
+	left: -50%;
+}
+.container:hover .door-right{
+	left: 100%;
+}
+
+
+
+
+
+
+
+
+.codefellows{
+  height:50px;
+  width: 50px;
+  text-align: center;
+  border: inset;
+
+}
 .footer{
-  margin-top: 50%;
-  /*margin:auto;*/
   text-align: center;
   text-decoration: none;
+  background-color: black;
   bottom: 0;
   width: auto;
-  height: 110px;
+  height: 132px;
   position: relative;
   clear: both;
-  /*padding-top: 330px;*/
+  padding-top: 30px;
   font-family: 'Oswald', sans-serif;
   letter-spacing: 3px;
   text-shadow: 1.5px 1.5px grey;
