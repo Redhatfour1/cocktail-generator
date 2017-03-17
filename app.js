@@ -32,7 +32,7 @@ function Cocktail(name, imagePath, ingredient1, ingredient2, ingredient3, link){
 (function() {
 
   for (var i in cocktailNames){
-    var newCocktail = new Cocktail(cocktailNames[i], 'assets/' + cocktailNames[i] + '.jpeg', ingredient1Array[i], ingredient2Array[i],
+    var newCocktail = new Cocktail(cocktailNames[i], 'assets/assetspng/' + cocktailNames[i] + '.png', ingredient1Array[i], ingredient2Array[i],
     ingredient3Array[i], linkArray[i])
   };
 })()
