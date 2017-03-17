@@ -6,7 +6,7 @@ html{
   height:100%;
 }
 body {
-  width: 960px%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   /*background-color: #A9A9A9;*/
@@ -217,6 +217,7 @@ ul{
   text-shadow: 1.5px 1.5px grey;
 }
 .codefellows{
+  margin-top: 35px;
   height:50px;
   width: 50px;
   /*text-align: center;*/
