@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>It's 5 o'clock somewhere</title>
-  <link rel = "stylesheet" href="about.css">
+  <link rel = "stylesheet" href="recipe.css">
   <img id= "logo" src=""/>
 
 
@@ -12,31 +12,40 @@
 </head>
 <body>
   <header>
-    <img id= "fiveoclocksomewhere" src="assets/fiveoclock.jpeg" height="175" width="175"/>
+    <img id= "fiveoclocksomewhere" src="assets/fiveoclock.jpeg" height="165" width="175"/>
     <div class="header">
       <span class="title"><h1>Recipes...</h1></span><br/>
     </div>
 
     <nav class="navigation">
-      <ul class="navlist">
-        <li class="one"><a href= "index.html">Home</a></li>
-        <li class="two"><a href= "recipes.html">Recipes</a></li>
-        <li class="three"> <a href="about.html">About Us</a></li>
-        <li class="four"><a href="accessories.html">Accessories</a></li>
-      </ul>
+      <div class="dropbox">
+        <button class="navbtn">Menu</button>
+        <div class="dropbox-content">
+          <a href="index.html">Home</a>
+          <a href="recipes.html">Recipes</a>
+          <a href="accessories.html">Accessories</a>
+          <a href="about.html">About Us</a>
+        </div>
+      </div>
     </nav>
   </header>
 
   <!-- Main Container -->
-  <main class="maincontainerrecipe">
+  <main class="container" id="texture">
+<div class="sliding-door">
+<div class="door-left"><h2><b>Check the Liquor Cabinet!</b></h2></div>
+<div class="door-right"><h2><b>Open the door!</b></h2></div>
 
+
+  <!-- <main class="maincontainerrecipe"> -->
+<div class="maincontainerrecipe">
       <div class="card1">
         <div class="side">
           <img src="assets/Dirty Martini.jpeg"
           alt="Dirty Martini">
         </div>
         <div class="side back">
-          <h4>Dirty Martini</h4>
+          <h4><b>Dirty Martini</b></h4>
           <h5>Ingredients</h5>
           <ul>
             <li>6 fluid oz. of vodka</li>
@@ -44,10 +53,11 @@
             <li>1 fluid oz. brine from olive jar</li>
             <li>4 stuffed green olives</li>
           </ul>
-          <h5>Method</h5>
-          <p class="colorblack">In a mixing glass, combine vodka, dry vermouth, brine and olives. Pour into a glass over ice. Either drink on the rocks, or strain into a chilled cocktail glass.</p>
+          <h6>Method</h6>
+          <!-- <div class="methods"> -->
+          <p class="colorblack">In a mixing glass, combine vodka, dry vermouth, brine and olives. Pour into a glass over ice. Either drink on the rocks, or strain into a chilled cocktail glass.</p></div>
         </div>
-          </div>
+          <!-- </div> -->
 
       <div class="card2">
         <div class="side">
@@ -62,7 +72,8 @@
             <li>1/2 cup of ice</li>
         </ul>
         <h5>Method</h5>
-        <p class="colorblack">Combine rum and ginger beer in an old-fashioned glass. Add ice and stir.</p>
+        <div class="methods">
+        <p class="colorblack">Combine rum and ginger beer in an old-fashioned glass. Add ice and stir.</p></div>
       </div>
       </div>
 
@@ -78,12 +89,13 @@
           <li>Collins glass</li>
           <li></ul>
           <h5>Method</h5>
-          <p class="colorblack">Use a tall Collins glass and pour the whiskey. Pour in club soda. No need to stir.</p>
+          <div class="methods">
+          <p class="colorblack">Use a tall Collins glass and pour the whiskey. Pour in club soda. No need to stir.</p></div>
         </div>
         </div>
-        </div>
+        <!-- </div> -->
 
-        <section class="row2">
+          <section class="row2">
           <div class="card4">
           <div class="side"><img src="assets/Adriatique.jpeg"
  alt="Adriatique">
@@ -95,17 +107,12 @@
             <li>fluid oz. of Orange Juice</li>
             <li>1 fluid oz. of Amaro Montenegro</li>
             <li>1/2 oz. Aperol</li>
-            <li>
           </ul>
           <h5>Method</h5>
-          <p class="colorblack">Shake, strain, up.</p>
+          <div class="methods">
+          <p class="colorblack">Shake, strain, up.</p></div>
         </div>
         </div>
-
-
-
-
-
 
         <div class="card5">
         <div class="side"><img src="assets/Adult Hot Chocolate.jpeg"
@@ -115,16 +122,14 @@
         <h4>Adult Hot Chocolate</h4>
         <h5>Ingredients</h5>
         <ul>
-          <li>1 Cup of Milk</li>
-          <li>2-3 tsp cocoa powder</li>
-          <li>2 tbsp sugar</li>
-          <li>pinch of salt</li>
-          <li>1 1/2 oz. Fireball Whiskey</li>
+          <li>2 Cups of Milk</li>
+          <li>3 1/2 oz. semisweet chocolate</li>
+          <li>2 tbsp rum</li>
           <li> whipped cream</li>
-          <li>Chocolate sprinkles</li<
         </ul>
         <h5>Method</h5>
-        <p class="colorblack">Heat the milk in a microwave for 1-2 minutes (or until hot), and being preparing the hot chocolate in a separate mug. Mix the cocoa powder, sugar and salt together then pour in the hot milk. Add the Fireball to the mug and stir. Top with whip cream and add your garnish to make it beautiful – now brave the cold!</p>
+        <div class="methods">
+        <p class="colorblack">Heat the milk and chocolate. Pour into mug. Add the rum and stir. Top with whip cream!</p></div>
         </div>
         </div>
 
@@ -142,12 +147,12 @@
           <li>Lemon peel for garnish</li>
         </ul>
         <h5>Method</h5>
-        <p class="colorblack">Vigorously shake the gin, simple syrup and lemon juice over ice, and strain into a chilled cocktail glass. Garnish with the lemon peel.</p>
+        <div class="methods">
+        <p class="colorblack">Vigorously shake the gin, simple syrup and lemon juice over ice, and strain into a chilled cocktail glass. Garnish with the lemon peel.</p></div>
         </div>
         </div>
-
-
         </section>
+
           <section class="row3">
             <div class="card7">
             <div class="side"><img src="assets/Brandy Alexander.jpeg"
@@ -163,8 +168,8 @@
               <li>pinch of freshly grated nutmeg</li>
             </ul>
             <h5>Method</h5>
-            <p class="colorblack">Shake the brandy, crème de cacao, and cream with ice; then strain into a chilled cocktail glass. Garnish with a pinch of nutmeg.
-</p>
+            <div class="methods">
+            <p class="colorblack">Shake the brandy, crème de cacao, and cream with ice; then strain into a chilled cocktail glass. Garnish with a pinch of nutmeg.</p></div>
           </div>
           </div>
 
@@ -182,9 +187,8 @@
             <li>1 large green olive on a pick</li>
           </ul>
           <h5>Method</h5>
-          <p class="colorblack">Fill rocks glass with ice. Add sparkling wine, club soda, and Campari. Stir gently. Garnish with olives.
-
-</p>
+          <div class="methods">
+          <p class="colorblack">Fill rocks glass with ice. Add sparkling wine, club soda, and Campari. Stir gently. Garnish with olives.</p></div>
         </div>
         </div>
 
@@ -202,35 +206,19 @@
           <li> Garnish, orange twist</li>
         </ul>
         <h5>Method</h5>
-        <p class="colorblack">Fill a mixing glass 2/3 full with ice. Add dry vermouth, Benedictine, and absinthe. Stir until well chilled, about 20 seconds.  Strain into a chilled cocktail glass. Garnish with orange twist and serve.</p>
+        <div class="methods">
+          <p class="colorblack">Fill a mixing glass 2/3 full with ice. Add dry vermouth, Benedictine, and absinthe. Stir until well chilled, about 20 seconds.  Strain into a chilled cocktail glass. Garnish with orange twist and serve.</p></div>
         </div>
         </div>
 
 </section>
-        <!-- </main> -->
+<section class="row4"></section>
 
+      <!-- </main> -->
 
-
-
-  <!-- <div class="w3-container">
-    <h2>Card Content</h2>
-    <p>Add containers inside the card to create different sections:</p>
-
-    <div class="w3-card-4" style="width:50%;">
-      <header class="w3-container w3-blue">
-      <h1>Header</h1>
-    </header>
-
-    <div class="w3-container">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </div> -->
-
-    <!-- <footer class="w3-container w3-blue">
-      <h5>Footer</h5>
-    </footer>
-  </div>
-</div> -->
-
+    </div>
+    </div>
+</main>
   <script src="app.js"charset="utf-8"></script>
 
   <footer class="footer">

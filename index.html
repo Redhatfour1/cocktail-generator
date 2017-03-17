@@ -9,15 +9,17 @@
 
 </head>
 <body>
-  <header>
-    <section class="headerwrap">
 
-      <span class="title"><h1>It's 5 o'clock Somewhere...</h1></span><br/>
-    </section>
-    <video preload="true" autoplay loop muted poster="assets/videoposter.jpeg" class="video-background">
-      <source src="assets/Sixty restaurant and bar1. Moscow.mp4" type="video/mp4">
-      </video>
-      <img id= "fiveoclocksomewhere" src="assets/fiveoclock.jpeg" height="175" width="175"/>
+<header class="header-container" role="banner" style="background-image: url('<?php header_image(); ?>');">
+  <section class="headerwrap">
+
+    <span class="title"><h1>It's 5 o'clock somewhere...</h1></span><br/>
+    <img id= "fiveoclocksomewhere" src="assets/hexinsqlogotrans2-1.png" height="245" width="250"/>
+  </section>
+  <div class="video-container">
+  <video preload="true" autoplay loop muted poster="assets/videoposter.jpeg" class="video-background">
+    <source src="assets/Sixty restaurant and bar1. Moscow.mp4" type="video/mp4" media="(orientation:landscape)">
+    </video>
 
       <nav class="navigation">
         <div class="dropbox">
@@ -43,6 +45,7 @@
 <main class="maincontainer">
 
   <section class="bgmain">
+
     <h2>So, what ingredients do you have?</h2>
 
     <section class="form" id="form">
@@ -143,20 +146,10 @@
       </div>
     </div>
   </section>
-
-
-
-  <!-- Sidebar -->
-  <!-- <aside class="sidebar" id=""></aside> -->
-
-
   <section class="render" id="render">
     <div id="drinkCard" class="drinkCard">
     </div>
   </section>
-
-
-
 </main>
 <script src="app.js" charset="utf-8"></script>
 
