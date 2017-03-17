@@ -32,7 +32,7 @@ function Cocktail(name, imagePath, ingredient1, ingredient2, ingredient3, link){
 (function() {
 
   for (var i in cocktailNames){
-    var newCocktail = new Cocktail(cocktailNames[i], 'assets/' + cocktailNames[i] + '.jpeg', ingredient1Array[i], ingredient2Array[i],
+    var newCocktail = new Cocktail(cocktailNames[i], 'assets/assetspng/' + cocktailNames[i] + '.png', ingredient1Array[i], ingredient2Array[i],
     ingredient3Array[i], linkArray[i])
   };
 })()
@@ -96,8 +96,10 @@ var Tracker = {
   renderCocktailOptions: function(){
     Tracker.getPossibleCocktails();
     console.log(Tracker.cocktailOptionsRound2);
+
     var elem3 = document.getElementById('ing3');
     var selectedNode3 = elem3.options[elem3.selectedIndex].value;
+
     // This creates and presents the drink in the dom
     if (selectedNode3 === 'None') {
       for (var i in Tracker.cocktailOptionsRound3) {
@@ -119,7 +121,7 @@ var Tracker = {
         getRenderId.appendChild(makeDiv);
       }
     }
-    else if (Tracker.cocktailOptionsRound2 !== 'undefined') {
+    else if (Tracker.cocktailOptionsRound2[0] != null) {
       console.log('second');
       for (var i in Tracker.cocktailOptionsRound2) {
         var getRenderId = document.getElementById('render');
@@ -151,8 +153,34 @@ var Tracker = {
     while (remove.firstChild) {
       remove.removeChild(remove.firstChild);
     }
-  }
+  },
+//method to change images when different ingredients are selected
+  changeIngredientImageIng1: function(){
+    var getIngredientOneImageName = document.getElementById('ing1');
+    console.log(getIngredientOneImageName);
+    var getImagePath = 'url(assets/' + ing1.options[ing1.selectedIndex].value + '.png)';
+    console.log(getImagePath);
+    document.getElementById('imageSpot1').style.backgroundImage = getImagePath;
+  },
+  //method to make selecters go back to default
+  ingredientsBackToDefault:function(){
+    ing1.options[0].selected="selected";
+    ing2.options[0].selected="selected";
+    ing3.options[0].selected="selected";
+  },
+
+  //method to change ingredients back to cubes
+  changeBackToCubes: function(){
+    var getIngredientOneImageName = document.getElementById('ing1');
+    console.log(getIngredientOneImageName);
+    var getImagePath = 'url(assets/SqIceCube.png)';
+    console.log('cubes: ', getImagePath);
+    document.getElementById('imageSpot1').style.backgroundImage = getImagePath;
+  },
 };
 // This is where the submit button is being tracked and starts the functionality.
+ing1.addEventListener('change', Tracker.changeIngredientImageIng1, false);
 document.getElementById('submit').addEventListener('click', Tracker.removeDrinkCard);
 document.getElementById('submit').addEventListener('click', Tracker.renderCocktailOptions);
+document.getElementById('submit').addEventListener('click', Tracker.changeBackToCubes);
+document.getElementById('submit').addEventListener('click', Tracker.ingredientsBackToDefault);
