@@ -12,24 +12,24 @@ body {
   /*background-color: #A9A9A9;*/
   background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu3kr-G-eh03D2fJFTlsGvwfS9OUX2q5YkDJA4Q9lkD4rBQ2bV");
 }
+header{
+  margin-top: 25px;
+  margin-left: 15px;
+  margin-right: 15px;
+  padding-top: 10px;
+  width:100%;
+  height:110px;
+  padding-bottom: 70px;
+  border-bottom: solid black 2px;
+  background-image: url("https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ1L8QIASUyIVcZhK9dvU2dPK9ql9yEkJU1QPAEsByP28fvZm0z");
 
-  header{
-    margin-top: 25px;
-    margin-left: 15px;
-    margin-right: 15px;
-    padding-top: 10px;
-    width:100%;
-    height:110px;
-    padding-bottom: 70px;
-    border-bottom: solid black 2px;
-    background-image: url("https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ1L8QIASUyIVcZhK9dvU2dPK9ql9yEkJU1QPAEsByP28fvZm0z");
-  }
+}
+.header{
+  margin-top: 10px;
+  display: inline-block;
+  width: auto;
 
- .header{
-   margin-top: 10px;
-   display: inline-block;
-   width: auto;
- }
+}
 
 header img {
   display: inline-block;
@@ -63,6 +63,7 @@ header img {
   background-color: white;
   margin-top: -58px;
   margin-left: 56%;
+
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -109,73 +110,39 @@ header img {
 p{
   color: white;
 }
-
-.box {
-  border-style: solid;
-  border-width: 1px;
-  display: block;
-  width: 602px;
-  height: 150px;
-  background-color: #778899;
-  `-webkit-transition: width 2s, height 2s, background-color 2s, -webkit-transform 2s;
-  transition: width 2s, height 2s, background-color 2s, transform 2s;`
-}
-
-.box:hover {
-  background-color: #8B0000;
-  width: 702px;
-  height: 250px;
-  -webkit-transform: rotate(360deg);
-  transform: rotate(360deg);
-}
-.maincontainerAbout{
-  width:1080px;
-  height: 1200px;
+.maincontainer{
+  height:1400px;
   margin-left: 25px;
   margin-right: 25px;
 }
-.james{
-  display: inline-block;
-  margin: 50px;
-  float: left;
-  border-bottom width: 960px;
-  border-bottom-style: groove;
-  border-color: gray;
-}
-.chrystie{
-  display: inline-block;
-  margin: 50px;
-  float:right;
-  border-bottom width: 960px;
-  border-bottom-style: groove;
-  border-color: gray;
-}
-
-.louis{
-  display: inline-block;
-  margin: 50px;
-  float: left;
-  border-bottom width: 960px;
-  border-bottom-style: groove;
-  border-color: gray;
-}
-.sam{
-  display: inline-block;
-  margin: 50px;
-  float:right;
-  border-bottom width: 960px;
-  border-bottom-style: groove;
-  border-color: gray;
-  margin-bottom: 50px;
-}
-
 img {
-padding-top: 10px;
+
   padding-right: 25px;
-  padding-left: 10px;
-  float: left;
+  padding-left: 25px;
+  /*float: left;*/
 }
 
+.accessoryshakers{
+  display: inline-block;
+}
+
+.jiggerbox{
+  display: inline-block;
+  margin-top: 20px;
+}
+.shakerbox{
+  display: inline-block;
+  margin-top: 20px;
+}
+.barspoonbox{
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.juicerbox.{
+  display: inline-block;
+  margin-top: 20px;
+}
 
 p.colorwhite{
   color:white;
@@ -187,14 +154,14 @@ h1{
   font-size: 36px;
 }
 
-h5{
-  padding-bottom: 0;
+h2{
+  color: white;
 }
 
-/*This paragraph is for the paragraphs on the about us page.*/
-p{
-  width:600px;
-  height: 150px;
+.codefellows{
+  height:25px;
+  width: 25px;
+  text-align: center;
 }
 
 ul{
@@ -202,13 +169,21 @@ ul{
   text-align: center;
 }
 
+.codefellows{
+  height:50px;
+  width: 50px;
+  text-align: center;
+  border: inset;
+
+}
 .footer{
+  margin-top: 450px;
   text-align: center;
   text-decoration: none;
   background-color: black;
   bottom: 0;
   width: auto;
-  height: 132px;
+  height: 162px;
   position: relative;
   clear: both;
   padding-top: 30px;
@@ -216,17 +191,7 @@ ul{
   letter-spacing: 3px;
   text-shadow: 1.5px 1.5px grey;
 }
-.codefellows{
-  margin-top: 35px;
-  height:50px;
-  width: 50px;
-  /*text-align: center;*/
-  border: inset;
-  position: absolute;
-
-}
 .footer-logo{
   color: white;
   text-align: center;
-  margin-top: 10px;
 }
