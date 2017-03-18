@@ -1,11 +1,12 @@
-
 body {
 
   background-repeat: repeat repeat;
+  opacity: .90;
 }
 
 h1 {
   font-family: 'Lobster', cursive;
+  letter-spacing: 7px;
   display: inline-block;
   color: white;
   margin-left: 16%;
@@ -23,7 +24,24 @@ h2 {
 }
 .headerwrap {
   background-color: black;
-  height: 24%;
+  height: 40%;
+}
+
+.headerwrapbottom {
+  background-color: black;
+  height: 1%;
+}
+
+header{
+  height: 30%;
+  padding-bottom: 24%;
+}
+
+header{
+  height: 277px;
+  padding-bottom: 100px;
+  padding-right: 10px;
+  border-bottom:  black 2px;
 }
 
 .header{
@@ -34,15 +52,10 @@ header img {
   float: left;
   position: relative;
   z-index: 3;
-<<<<<<< HEAD
-  margin-left:16%;
-  margin-top: .5%;
-=======
   margin-left: 16%;
-  margin-top: -0.1%;
->>>>>>> dd63792c952574e3cbe468e1255c530f38e79b3c
+  margin-top: 0%;
   height: auto;
-  width: 14%
+  width: 14%;
 }
 
 
@@ -80,12 +93,13 @@ header img {
 
 
 .bgmain {
-  background-image: url(assets/WoodGrainBackgroundPage10%lighter.jpeg);
+  background-image: url(assets/Background images/WoodGrainBackgroundPage.jpeg);
   border-top-style: outset;
   border-bottom-style: outset;
   border-top-color: grey;
   border-bottom-color: grey;
   border-width: 12px;
+
 }
 
 
@@ -118,10 +132,10 @@ header img {
   padding-top: 60px;
   padding-bottom: 73px;
   padding-left: 75px;
-  background-image: url("assets/Sq Ice Cube.png");
+  background-image: url("assets/Background images/Sq Ice Cube.png");
   background-size: 100%;
   background-repeat: no-repeat;
-  opacity: 0.8;
+  opacity: .9;
   height: 141px;
   width: 184px;
   margin-left: 7px;
@@ -160,11 +174,12 @@ style {
   margin-top: -6%;
 }
 
+
+
 /* Dropdown Button */
 .navbtn {
   background-color: #5e5d5b;
   color: white;
-
   padding: 11%;
   font-size: 1.5vw;
   border: none;
@@ -184,6 +199,7 @@ style {
   background-color: white;
   width: 56%;
   height: auto;
+
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -220,7 +236,11 @@ style {
 }
 
 .header-container{
-  height: 343px;
+  width: 100%;
+  height: 277px;
+  border-left: none;
+  border-right: none;
+  position: relative;
   background: transparent;
 }
 
@@ -243,48 +263,18 @@ video {
   object-fit: cover;
 }
 .drinkCard{
+
   width: 100%;
   height: 100%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
 }
 .render{
-<<<<<<< HEAD
-  
-=======
->>>>>>> dd63792c952574e3cbe468e1255c530f38e79b3c
+  background: url(assets/silverplatter.png) no-repeat;
   width: 74%;
   height: 100%;
-  margin-left: 14%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-
+  margin-left: 23%;
 }
 
 .cocktailImg {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  width: 76%;
-}
-
-.drinkTitle {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  width: auto;
+  margin-left: 16%;
+  width: 25%;
 }
