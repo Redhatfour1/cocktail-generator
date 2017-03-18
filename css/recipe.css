@@ -1,0 +1,537 @@
+/**{
+border-style: dashed;
+border-color: white;
+}*/
+html{
+  height:100%;
+}
+body {
+  width: 960px%;
+  margin-left: auto;
+  margin-right: auto;
+  /*background-color: #A9A9A9;*/
+  background-image: url(Background images/"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu3kr-G-eh03D2fJFTlsGvwfS9OUX2q5YkDJA4Q9lkD4rBQ2bV");
+}
+header{
+  margin-top: 25px;
+  margin-left: 15px;
+  margin-right: 15px;
+  padding-top: 10px;
+  width:100%;
+  height:110px;
+  padding-bottom: 70px;
+  border-bottom: solid black 2px;
+  background-image: url(Background images/"https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ1L8QIASUyIVcZhK9dvU2dPK9ql9yEkJU1QPAEsByP28fvZm0z");
+
+}
+.header{
+  margin-top: 10px;
+  display: inline-block;
+  width: auto;
+
+}
+
+header img {
+  display: inline-block;
+  float:left;
+
+
+}
+/* Dropdown Button */
+.navbtn {
+
+  background-color: grey;
+  color: white;
+  padding: 16px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  font-family: 'Lobster', cursive;
+  text-transform: uppercase;
+  width: 219px;
+  text-shadow: 1.5px 1.5px grey;
+}
+.navigation{
+  margin-right: %;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropbox {
+  /*position: fixed;*/
+  display: inline-block;
+  padding: 2px;
+  text-align: center;
+  border-style: groove;
+  background-color: white;
+  margin-top: -58px;
+  margin-left: 56%;
+
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropbox-content {
+  display: none;
+  position: absolute;
+  font-family: 'Lobster', cursive;
+  background-color: #f9f9f9;
+  min-width: 225px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropbox-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropbox-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropbox:hover .dropbox-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropbox:hover .navbtn {
+  background-color: grey;
+}
+
+.header-container{
+  width: 100%;
+  height: 277px;
+  border-left: none;
+  border-right: none;
+  position: relative;
+  background: transparent;
+}
+.methods{
+  text-align: center;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+p.colorblack{
+  color: black;
+  /*width: 290px;*/
+  margin-top: 5%;
+  text-align: center;
+}
+
+h1{
+  font-style: italic;
+  font-size: 36px;
+}
+
+h2{
+  color: white;
+}
+
+.maincontainerrecipe{
+  display: inline-block;
+  width: 100%;
+  height: 1257px;
+}
+card-container {
+  cursor: pointer;
+  height: 150px;
+  perspective: 600;
+  width: 175px;
+
+}
+.card1 {
+  height: 85%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+  width: 28%;
+  margin-left: 5%;
+  margin-top: 15px;
+}
+.card1:hover {
+  transform: rotateY(180deg);
+}
+.card1 .side {
+
+  backface-visibility: hidden;
+  border-radius: 10px;
+  height: 100%;
+  position: absolute;
+  /*overflow: hidden;*/
+  width: 100%;
+}
+
+.card1 .back {
+  height:25%;
+  background: #eaeaed;
+  color: black;
+  font-size: 12px;
+  text-decoration: none;
+  line-height: 15px;
+  text-align: center;
+  transform: rotateY(180deg);
+  padding: 0;
+}
+.card2 {
+  height: 85%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+  width: 28%;
+  margin-left: 36%;
+  margin-top: 15px;
+}
+.card2:hover {
+  transform: rotateY(180deg);
+}
+.card2 .side {
+  backface-visibility: hidden;
+  border-radius: 10px;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+.card2 .back {
+  height:25%;
+  background: #eaeaed;
+  color: black;
+  font-size: 12px;
+  text-decoration: none;
+  line-height: 15px;
+  text-align: center;
+  transform: rotateY(180deg);
+  padding: 0;
+}
+
+.card3 {
+  height: 85%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+  width: 28%;
+  margin-left: 68%;
+  margin-top: 15px;
+}
+.card3:hover {
+  transform: rotateY(180deg);
+}
+.card3 .side {
+  backface-visibility: hidden;
+  border-radius: 10px;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+.card3 .back {
+  height:25%;
+  background: #eaeaed;
+  color: black;
+  font-size: 12px;
+  text-decoration: none;
+  line-height: 15px;
+  text-align: center;
+  transform: rotateY(180deg);
+  padding: 0;
+}
+
+.card4 {
+  height: 85%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+  width: 28%;
+  margin-left: 5%;
+  margin-top: 15px;
+}
+
+.card4:hover {
+  transform: rotateY(180deg);
+}
+
+.card4 .side {
+  backface-visibility: hidden;
+  border-radius: 10px;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+.card4 .back {
+  height:25%;
+  background: #eaeaed;
+  color: black;
+  font-size: 12px;
+  text-decoration: none;
+  line-height: 20px;
+  text-align: center;
+  transform: rotateY(180deg);
+  padding: 0;
+}
+
+ul{
+  list-style-type: none;
+  text-align: center;
+  margin-right: 50px;
+}
+.card5 {
+  height: 85%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+  width: 28%;
+  margin-left: 36%;
+  margin-top: 15px;
+}
+.card5:hover {
+  transform: rotateY(180deg);
+}
+.card5 .side {
+  backface-visibility: hidden;
+  border-radius: 10px;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+.card5 .back {
+text-align: center;
+  height:25%;
+  background: #eaeaed;
+  color: black;
+  font-size: 12px;
+  list-style-type: none;
+  line-height: 20px;
+  transform: rotateY(180deg);
+  padding: 0;
+}
+
+.card6 {
+  height: 85%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+  width: 28%;
+  margin-left: 68%;
+  margin-top: 15px;
+}
+.card6:hover {
+  transform: rotateY(180deg);
+}
+.card6 .side {
+  backface-visibility: hidden;
+  border-radius: 10px;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+.card6 .back {
+  height:25%;
+  background: #eaeaed;
+  color: black;
+  font-size: 12px;
+  text-decoration: none;
+  line-height: 20px;
+  text-align: center;
+  transform: rotateY(180deg);
+  padding: 0;
+}
+
+.card7 {
+  height: 85%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+  width: 28%;
+  margin-left: 5%;
+  margin-top: 15px;
+}
+.card7:hover {
+  transform: rotateY(180deg);
+}
+.card7 .side {
+  backface-visibility: hidden;
+  border-radius: 10px;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+.card7 .back {
+  height:25%;
+  background: #eaeaed;
+  color: black;
+  font-size: 12px;
+  text-decoration: none;
+  line-height: 20px;
+  text-align: center;
+  transform: rotateY(180deg);
+  padding: 0;
+}
+
+.card8 {
+  height: 85%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+  width: 28%;
+  margin-left: 36%;
+  margin-top: 15px;
+}
+.card8:hover {
+  transform: rotateY(180deg);
+}
+.card8 .side {
+  backface-visibility: hidden;
+  border-radius: 10px;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+.card8 .back {
+  height:25%;
+  background: #eaeaed;
+  color: black;
+  font-size: 12px;
+  text-decoration: none;
+  line-height: 20px;
+  text-align: center;
+  transform: rotateY(180deg);
+  padding: 0;
+}
+
+.card9 {
+  height: 85%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+  width: 28%;
+  margin-left: 68%;
+  margin-top: 15px;
+}
+.card9:hover {
+  transform: rotateY(180deg);
+}
+.card9 .side {
+  backface-visibility: hidden;
+  border-radius: 10px;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+.card9 .back {
+  height:25%;
+  background: #eaeaed;
+  color: black;
+  font-size: 12px;
+  text-decoration: none;
+  line-height: 20px;
+  text-align: center;
+  transform: rotateY(180deg);
+  padding: 0;
+}
+
+/*.row1 {
+  border-style: dashed;
+  border-color: red;
+
+}*/
+.row2{
+  margin-top: 26%;
+  border-style: solid;
+  border-color: none;
+}
+.row3{
+  margin-top: 26%;
+  border-style: solid;
+  border-color: none;
+}
+.row4{
+  margin-top: 26%;
+  border-style: solid;
+  border-color: none;
+}
+
+
+
+.container {
+	position: relative;
+	overflow: hidden;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.door-left, .door-right {
+	position: absolute;
+	height: 100%;
+	width: 50%;
+	top: 0%;
+	transition: all ease 0.8s;
+	-moz-transition: all ease 0.8s;
+	-webkit-transition: all ease 0.8s;
+	-o-transition: all ease 0.8s;
+	-ms-transition: all ease 0.8;
+}
+.door-left {
+  color: white;
+  text-align: center;
+	left: 0%;
+	/*background-color:  brown;*/
+  z-index: 1;
+
+  background:  url(Background images/"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEz01hHmM6yT1DKQlCE7PAbR2NQw-Y-llOLlgNwTTSNchPzmylVg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*.texture{
+  background: url("https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQEeSdnFcTz96rCdLqrxhTz2BTb_cjU7dNCTZVVWNokRoNAzdfqEwrgb");
+  opacity: 0.8;
+}
+.texture-color{
+  background-color: brown:
+}*/
+.door-right {
+  color: white;
+  text-align: center;
+	left: 50%;
+	background-color: brown;
+  z-index: 1;
+}
+.container:hover .door-left{
+	left: -50%;
+}
+.container:hover .door-right{
+	left: 100%;
+}
+
+
+
+
+
+
+
+
+.codefellows{
+  height:50px;
+  width: 50px;
+  text-align: center;
+  border: inset;
+
+}
+.footer{
+  text-align: center;
+  text-decoration: none;
+  background-color: black;
+  bottom: 0;
+  width: auto;
+  height: 132px;
+  position: relative;
+  clear: both;
+  padding-top: 30px;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 3px;
+  text-shadow: 1.5px 1.5px grey;
+}
+.footer-logo{
+  color: white;
+  text-align: center;
+}
