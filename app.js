@@ -34,7 +34,7 @@ var cocktailRecipeBox = [];
 console.log(cocktailRecipeBox);
 
 
-// Constructor Function to create Cocktail objects
+// Constructor Function to create Cocktail objects 
 function Cocktail(name, imagePath, ingredient1, ingredient2, ingredient3, link){
   this.name = name;
   this.imagePath = imagePath;

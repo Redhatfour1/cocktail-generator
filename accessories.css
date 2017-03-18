@@ -116,11 +116,11 @@ p{
   margin-left: 25px;
   margin-right: 25px;
 }
-img {
+.img_float {
 
   padding-right: 25px;
   padding-left: 25px;
-  /*float: left;*/
+  float: left;
 }
 
 .accessoryshakers{
@@ -130,11 +130,25 @@ img {
 .jiggerbox{
   display: inline-block;
   margin-top: 20px;
-  
+
 }
 .shakerbox{
   display: inline-block;
   margin-top: 20px;
+}
+.shaker-button{
+  float: right;
+  background-color: white;
+  color: black;
+  padding: 16px;
+  font-size: 12px;
+  border: none;
+  cursor: pointer;
+  font-family: 'Lobster';
+  text-transform: uppercase;
+  width: auto;
+  /*text-shadow: 1.5px 1.5px grey;*/
+
 }
 .barspoonbox{
   display: inline-block;
@@ -147,6 +161,7 @@ img {
 }
 
 p.colorwhite{
+  display: inline-block;
   color:white;
   width:950px;
   text-align: center;
