@@ -39,6 +39,7 @@ var linkArray = ['http://www.telegraph.co.uk/food-and-drink/cocktails/10-classic
 'https://www.popsugar.com/food/Salty-Dog-Cocktail-Recipe-2674478',
 'https://www.popsugar.com/food/Coffee-Martini-37944195']
 
+
 var cocktailRecipeBox = [];
 console.log(cocktailRecipeBox);
 
