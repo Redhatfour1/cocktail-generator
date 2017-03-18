@@ -1,10 +1,7 @@
-/**{
-border-style: dashed;
-border-color: white;
-}*/
 html{
   height:100%;
 }
+
 body {
   width: 100%;
   margin-left: auto;
@@ -22,18 +19,20 @@ header{
   padding-bottom: 70px;
   border-bottom: solid black 2px;
   background-image: url("https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ1L8QIASUyIVcZhK9dvU2dPK9ql9yEkJU1QPAEsByP28fvZm0z");
-
 }
 .header{
   margin-top: 10px;
   display: inline-block;
   width: auto;
-
 }
 
 header img {
   display: inline-block;
   float:left;
+}
+
+#fiveoclocksomewhere{
+  padding-left: 20px;
 }
 /* Dropdown Button */
 .navbtn {
@@ -63,7 +62,6 @@ header img {
   background-color: white;
   margin-top: -58px;
   margin-left: 56%;
-
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -109,7 +107,6 @@ header img {
 
 p{
   color: white;
-
 }
 .maincontainer{
   height:1400px;
@@ -130,7 +127,6 @@ p{
 .jiggerbox{
   display: inline-block;
   margin-top: 20px;
-
 }
 .shakerbox{
   display: inline-block;
@@ -147,8 +143,6 @@ p{
   font-family: 'Lobster';
   text-transform: uppercase;
   width: auto;
-  /*text-shadow: 1.5px 1.5px grey;*/
-
 }
 .barspoonbox{
   display: inline-block;
@@ -161,11 +155,8 @@ p{
 }
 
 p.colorwhite{
-  /*display: inline-block;*/
   color:white;
   font-size: 18px;
-  /*width:950px;
-  text-align: center;*/
 }
 h1{
   font-style: italic;
