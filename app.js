@@ -210,7 +210,7 @@ var Tracker = {
   changeIngredientImageIng1: function(){
     var getIngredientOneImageName = document.getElementById('ing1');
     console.log(getIngredientOneImageName);
-    var getImagePath = 'url(assets/' + ing1.options[ing1.selectedIndex].value + '.png)';
+    var getImagePath = 'url(assets/assetspng/' + ing1.options[ing1.selectedIndex].value + '.png)';
     console.log(getImagePath);
     document.getElementById('imageSpot1').style.backgroundImage = getImagePath;
   },
@@ -218,7 +218,7 @@ var Tracker = {
   changeIngredientImageIng2: function(){
     var getIngredienttwoImageName = document.getElementById('ing2');
     console.log(getIngredienttwoImageName);
-    var getImagePath = 'url(assets/' + ing2.options[ing2.selectedIndex].value + '.png)';
+    var getImagePath = 'url(assets/assetspng/' + ing2.options[ing2.selectedIndex].value + '.png)';
     console.log(getImagePath);
     document.getElementById('imageSpot2').style.backgroundImage = getImagePath;
   },
@@ -228,7 +228,7 @@ var Tracker = {
   changeIngredientImageIng3: function(){
     var getIngredientThreeImageName = document.getElementById('ing3');
     console.log(getIngredientThreeImageName);
-    var getImagePath = 'url(assets/' + ing3.options[ing3.selectedIndex].value + '.png)';
+    var getImagePath = 'url(assets/assetspng/' + ing3.options[ing3.selectedIndex].value + '.png)';
     console.log(getImagePath);
     document.getElementById('imageSpot3').style.backgroundImage = getImagePath;
   },
