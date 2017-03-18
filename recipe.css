@@ -462,14 +462,12 @@ text-align: center;
 }
 .door-left, .door-right {
 	position: absolute;
+  line-height: 220px;
 	height: 100%;
 	width: 50%;
 	top: 0%;
 	transition: all ease 0.8s;
-	-moz-transition: all ease 0.8s;
 	-webkit-transition: all ease 0.8s;
-	-o-transition: all ease 0.8s;
-	-ms-transition: all ease 0.8;
 }
 .door-left {
   color: white;

@@ -109,6 +109,7 @@ header img {
 
 p{
   color: white;
+
 }
 .maincontainer{
   height:1400px;
@@ -129,6 +130,7 @@ img {
 .jiggerbox{
   display: inline-block;
   margin-top: 20px;
+  
 }
 .shakerbox{
   display: inline-block;

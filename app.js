@@ -29,7 +29,7 @@ var linkArray = ['http://www.telegraph.co.uk/food-and-drink/cocktails/10-classic
 'http://www.seriouseats.com/recipes/2012/02/drinking-in-season-grapefruit-ginger-sparkling-wine-cocktail-recipe.html',
 'http://www.seriouseats.com/recipes/2014/03/simple-cocktail-blushing-betty-bourbon-grapefruit-easy-drink-recipe.html',
 'http://www.seriouseats.com/recipes/2008/05/daiquiri-recipe.html']
-
+//currently an empty array
 var cocktailRecipeBox = [];
 console.log(cocktailRecipeBox);
 
