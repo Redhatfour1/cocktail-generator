@@ -155,16 +155,17 @@ p{
   margin-top: 20px;
 }
 
-.juicerbox.{
+.juicerbox{
   display: inline-block;
   margin-top: 20px;
 }
 
 p.colorwhite{
-  display: inline-block;
+  /*display: inline-block;*/
   color:white;
-  width:950px;
-  text-align: center;
+  font-size: 18px;
+  /*width:950px;
+  text-align: center;*/
 }
 h1{
   font-style: italic;
@@ -173,6 +174,8 @@ h1{
 
 h2{
   color: white;
+  font-size: 28px;
+  padding-bottom: 15px;
 }
 
 .codefellows{
