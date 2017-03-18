@@ -1,7 +1,3 @@
-/**{
-border-style: dashed;
-border-color: white;
-}*/
 html{
   height:100%;
 }
@@ -22,22 +18,21 @@ header{
   padding-bottom: 70px;
   border-bottom: solid black 2px;
   background-image: url("https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ1L8QIASUyIVcZhK9dvU2dPK9ql9yEkJU1QPAEsByP28fvZm0z");
-
 }
 .header{
   margin-top: 10px;
   display: inline-block;
   width: auto;
-
 }
-
 header img {
   display: inline-block;
   float:left;
 }
+#fiveoclocksomewhere{
+  padding-left: 20px;
+}
 /* Dropdown Button */
 .navbtn {
-
   background-color: grey;
   color: white;
   padding: 16px;
@@ -52,7 +47,6 @@ header img {
 .navigation{
   margin-right: %;
 }
-
 /* The container <div> - needed to position the dropdown content */
 .dropbox {
   /*position: fixed;*/
@@ -63,9 +57,7 @@ header img {
   background-color: white;
   margin-top: -58px;
   margin-left: 56%;
-
 }
-
 /* Dropdown Content (Hidden by Default) */
 .dropbox-content {
   display: none;
@@ -76,7 +68,6 @@ header img {
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
-
 /* Links inside the dropdown */
 .dropbox-content a {
   color: black;
@@ -84,20 +75,16 @@ header img {
   text-decoration: none;
   display: block;
 }
-
 /* Change color of dropdown links on hover */
 .dropbox-content a:hover {background-color: #f1f1f1}
-
 /* Show the dropdown menu on hover */
 .dropbox:hover .dropbox-content {
   display: block;
 }
-
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropbox:hover .navbtn {
   background-color: grey;
 }
-
 .header-container{
   width: 100%;
   height: 277px;
@@ -106,77 +93,77 @@ header img {
   position: relative;
   background: transparent;
 }
-
 p{
   color: white;
-
 }
 .maincontainer{
   height:1400px;
   margin-left: 25px;
   margin-right: 25px;
 }
-img {
-
+.img_float {
   padding-right: 25px;
   padding-left: 25px;
-  /*float: left;*/
+  float: left;
 }
-
 .accessoryshakers{
   display: inline-block;
 }
-
 .jiggerbox{
   display: inline-block;
   margin-top: 20px;
-  
 }
 .shakerbox{
   display: inline-block;
   margin-top: 20px;
 }
+.shaker-button{
+  float: right;
+  background-color: white;
+  color: black;
+  padding: 16px;
+  font-size: 12px;
+  border: none;
+  cursor: pointer;
+  font-family: 'Lobster';
+  text-transform: uppercase;
+  width: auto;
+}
 .barspoonbox{
   display: inline-block;
   margin-top: 20px;
 }
-
-.juicerbox.{
+.juicerbox{
   display: inline-block;
   margin-top: 20px;
 }
-
 p.colorwhite{
   color:white;
-  width:950px;
-  text-align: center;
+  font-size: 18px;
 }
 h1{
   font-style: italic;
   font-size: 36px;
 }
-
 h2{
   color: white;
+  font-size: 28px;
+  padding-bottom: 15px;
 }
-
 .codefellows{
   height:25px;
   width: 25px;
   text-align: center;
 }
-
 ul{
   list-style-type: none;
   text-align: center;
 }
-
 .codefellows{
   height:50px;
   width: 50px;
   text-align: center;
   border: inset;
-
 }
 .footer{
   margin-top: 450px;
