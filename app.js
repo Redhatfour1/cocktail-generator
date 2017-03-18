@@ -69,6 +69,33 @@ var Tracker = {
   cocktailOptionsRound2: [],
   cocktailOptionsRound3: [],
 
+  dynamicallyLoadedIngredients: function(){
+    var getIngredientOne = document.getElementById('ing1');
+    var getIngredientTwo = document.getElementById('ing2');
+    var getIngredientThree = document.getElementById('ing3');
+
+    for (var i in ingredient1Array) {
+      var createOptionsOne = document.createElement('option');
+      createOptionsOne.value = ingredient1Array[i];
+      createOptionsOne.textContent = ingredient1Array[i];
+      getIngredientOne.appendChild(createOptionsOne);
+    };
+
+    for (var i in ingredient2Array) {
+      var createOptionsTwo = document.createElement('option');
+      createOptionsTwo.value = ingredient2Array[i];
+      createOptionsTwo.textContent = ingredient2Array[i];
+      getIngredientTwo.appendChild(createOptionsTwo);
+    };
+
+    for (var i in ingredient3Array) {
+      var createOptionsThree = document.createElement('option');
+      createOptionsThree.value = ingredient3Array[i];
+      createOptionsThree.textContent = ingredient3Array[i];
+      getIngredientThree.appendChild(createOptionsThree);
+    };
+  },
+
 
   // ingredients that the user select get push into an array to be used in the verification process.
 
@@ -204,6 +231,7 @@ var Tracker = {
   },
 };
 // This is where the submit button is being tracked and starts the functionality.
+window.addEventListener("load", Tracker.dynamicallyLoadedIngredients);
 ing1.addEventListener('change', Tracker.changeIngredientImageIng1);
 document.getElementById('submit').addEventListener('click', Tracker.removeDrinkCard);
 document.getElementById('submit').addEventListener('click', Tracker.renderCocktailOptions);
