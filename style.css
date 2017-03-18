@@ -34,13 +34,8 @@ header img {
   float: left;
   position: relative;
   z-index: 3;
-<<<<<<< HEAD
   margin-left:16%;
   margin-top: .5%;
-=======
-  margin-left: 16%;
-  margin-top: -0.1%;
->>>>>>> dd63792c952574e3cbe468e1255c530f38e79b3c
   height: auto;
   width: 14%
 }
@@ -253,10 +248,6 @@ video {
   align-items: center;
 }
 .render{
-<<<<<<< HEAD
-  
-=======
->>>>>>> dd63792c952574e3cbe468e1255c530f38e79b3c
   width: 74%;
   height: 100%;
   margin-left: 14%;

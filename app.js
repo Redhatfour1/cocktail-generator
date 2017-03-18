@@ -6,12 +6,12 @@ var cocktailNames = ['Classic Martini', 'Manhattan', 'Margarita', 'Japanese Cock
 
 //Ingredients have to be in same order as drink
 
-var ingredient1Array = ['Gin', 'Whiskey', 'White Tequila', 'Cognac', 'Vodka', 'Rum', 'Sparkling Wine', 'Amaro Montenegro', 'Bourbon', 'Brandy', 'Peppermint Snapps', 'White Wine', 'Rum', 'Prosecco','Rum', 'Coconut Rum', 'Suze', 'Rye Whiskey', 'Gold Tequila', 'Mezcal', 'Fireball Whiskey', 'Bénédictine', 'Gin', 'Rye Whiskey', 'Rye Whiskey', 'Bourbon', 'Bourbon', 'Ginger Liqueur', 'Bourbon', 'Light Rum', 'Pumpkin Ale', 'Pomegranate Liqueur', 'Gin', 'Vodka', 'Gin'];
+var ingredient1Array = ['Gin', 'Whiskey', 'White-Tequila', 'Cognac', 'Vodka', 'Rum', 'Sparkling-Wine', 'Amaro Montenegro', 'Bourbon', 'Brandy', 'Peppermint-Snapps', 'White-Wine', 'Rum', 'Prosecco','Rum', 'Coconut-Rum', 'Suze', 'Rye-Whiskey', 'Gold-Tequila', 'Mezcal', 'Fireball-Whiskey', 'Bénédictine', 'Gin', 'Rye-Whiskey', 'Rye-Whiskey', 'Bourbon', 'Bourbon', 'Ginger-Liqueur', 'Bourbon', 'Light-Rum', 'Pumpkin Ale', 'Pomegranate-Liqueur', 'Gin', 'Vodka', 'Gin'];
 
-var ingredient2Array = ['White Vermouth', 'Red Vermouth', 'Cointreau', 'Orgeat', 'Lillet Blanc', 'Ginger Beer', 'Campari', 'Aperol', 'Mint Leaves', 'Dark Créme De Liquer', 'Hot Chocolate', 'Calvados', 'Coke', 'Raspberry liqueur', 'Coke', 'Amaretto', 'St Germain\'s', 'Cynar', 'Pineapple Juice', 'Green Chartreuse', 'Hard Cider', 'Absinthe', 'Dry Vermouth', 'Angostura', 'Benedictine', 'Campari', 'Lemon Juice', 'Prosecco', 'Simple Syrup', 'Lime Juice', 'Butterscotch Sauce', 'Lemon', 'Sparkling Water', 'Grapefruit Juice', 'Amaretto Liquor'];
+var ingredient2Array = ['White-Vermouth', 'Red-Vermouth', 'Cointreau', 'Orgeat', 'Lillet-Blanc', 'Ginger-Beer', 'Campari', 'Aperol', 'Mint Leaves', 'Dark-Créme-De-Liquer', 'Hot-Chocolate', 'Calvados', 'Coke', 'Raspberry-liqueur', 'Coke', 'Amaretto', 'St Germain\'s', 'Cynar', 'Pineapple-Juice', 'Green-Chartreuse', 'Hard-Cider', 'Absinthe', 'Dry-Vermouth', 'Angostura', 'Benedictine', 'Campari', 'Lemon-Juice', 'Prosecco', 'Simple-Syrup', 'Lime-Juice', 'Butterscotch-Sauce', 'Lemon', 'Sparkling-Water', 'Grapefruit-Juice', 'Amaretto-Liquor'];
 
 
-var ingredient3Array = ['None', 'Bitters', 'Lime Juice', 'Angostura Bitters', 'Grapefruit Juice', 'Lime', 'Club Soda', 'Orange Juice', 'Sugar', 'Single Cream', 'Whip Cream', 'Fruit', 'Lime', 'Basil', 'None', 'Crème de Cacao', 'Cava', 'Sweet Vermouth', 'Cranberry', 'Tabasco Sauce', 'None', 'Dry Vermouth', 'Absinthe', 'Sugar', 'Lemon Juice', 'Sweet Vermouth', 'Honey', 'Grapefruit Juice', 'Pink Grapefruit', 'Sugar', 'Vanilla Cream Soda', 'None', 'Blood Oranges', 'Salt', 'Coffee'];
+var ingredient3Array = ['None', 'Bitters', 'Lime-Juice', 'Angostura-Bitters', 'Grapefruit-Juice', 'Lime', 'Club-Soda', 'Orange-Juice', 'Sugar', 'Single-Cream', 'Whip-Cream', 'Fruit', 'Lime', 'Basil', 'None', 'Crème-de-Cacao', 'Cava', 'Sweet-Vermouth', 'Cranberry', 'Tabasco-Sauce', 'None', 'Dry-Vermouth', 'Absinthe', 'Sugar', 'Lemon Juice', 'Sweet-Vermouth', 'Honey', 'Grapefruit-Juice', 'Pink Grapefruit', 'Sugar', 'Vanilla-Cream-Soda', 'None', 'Blood-Oranges', 'Salt', 'Coffee'];
 
 var linkArray = ['http://www.telegraph.co.uk/food-and-drink/cocktails/10-classic-mad-men-era-cocktails/martini/', 'http://www.telegraph.co.uk/food-and-drink/cocktails/10-classic-mad-men-era-cocktails/manhattan/', 'http://www.seriouseats.com/recipes/2015/04/classic-margarita-recipe-tequila-cocktail.html', 'http://www.seriouseats.com/recipes/2011/11/japanese-cocktail-recipe.html', 'http://www.seriouseats.com/recipes/2012/01/frank-stitts-great-gatsby-vodka-grapefruit-cocktail-recipe.html', 'http://www.seriouseats.com/recipes/2011/06/dark-and-stormy-cocktail-the-spotted-pig-recipe.html', 'http://www.seriouseats.com/recipes/2011/06/campari-spritz-recipe.html', 'http://www.seriouseats.com/recipes/2012/01/jackson-cannons-adriatique-aperitif-aperol-orange-juice-amaro-cocktail-recipe.html',
 'http://www.telegraph.co.uk/food-and-drink/cocktails/10-classic-mad-men-era-cocktails/mint-julep/', 'http://www.telegraph.co.uk/food-and-drink/cocktails/10-classic-mad-men-era-cocktails/brandy-alexander/',
@@ -68,6 +68,34 @@ var Tracker = {
   cocktailOptionsRound1: [],
   cocktailOptionsRound2: [],
   cocktailOptionsRound3: [],
+
+  dynamicallyLoadedIngredients: function(){
+    var getIngredientOne = document.getElementById('ing1');
+    var getIngredientTwo = document.getElementById('ing2');
+    var getIngredientThree = document.getElementById('ing3');
+
+    for (var i in ingredient1Array) {
+      var createOptionsOne = document.createElement('option');
+      createOptionsOne.value = ingredient1Array[i];
+      createOptionsOne.textContent = ingredient1Array[i];
+      getIngredientOne.appendChild(createOptionsOne);
+      console.log(createOptionsOne);
+    };
+
+    for (var i in ingredient2Array) {
+      var createOptionsTwo = document.createElement('option');
+      createOptionsTwo.value = ingredient2Array[i];
+      createOptionsTwo.textContent = ingredient2Array[i];
+      getIngredientTwo.appendChild(createOptionsTwo);
+    };
+
+    for (var i in ingredient3Array) {
+      var createOptionsThree = document.createElement('option');
+      createOptionsThree.value = ingredient3Array[i];
+      createOptionsThree.textContent = ingredient3Array[i];
+      getIngredientThree.appendChild(createOptionsThree);
+    };
+  },
 
 
   // ingredients that the user select get push into an array to be used in the verification process.
@@ -182,9 +210,27 @@ var Tracker = {
   changeIngredientImageIng1: function(){
     var getIngredientOneImageName = document.getElementById('ing1');
     console.log(getIngredientOneImageName);
-    var getImagePath = 'url(assets/' + ing1.options[ing1.selectedIndex].value + '.png)';
+    var getImagePath = 'url(assets/assetspng/' + ing1.options[ing1.selectedIndex].value + '.png)';
     console.log(getImagePath);
     document.getElementById('imageSpot1').style.backgroundImage = getImagePath;
+  },
+
+  changeIngredientImageIng2: function(){
+    var getIngredienttwoImageName = document.getElementById('ing2');
+    console.log(getIngredienttwoImageName);
+    var getImagePath = 'url(assets/assetspng/' + ing2.options[ing2.selectedIndex].value + '.png)';
+    console.log(getImagePath);
+    document.getElementById('imageSpot2').style.backgroundImage = getImagePath;
+  },
+
+
+
+  changeIngredientImageIng3: function(){
+    var getIngredientThreeImageName = document.getElementById('ing3');
+    console.log(getIngredientThreeImageName);
+    var getImagePath = 'url(assets/assetspng/' + ing3.options[ing3.selectedIndex].value + '.png)';
+    console.log(getImagePath);
+    document.getElementById('imageSpot3').style.backgroundImage = getImagePath;
   },
 
   //method to make selecters go back to default
@@ -197,14 +243,19 @@ var Tracker = {
   //method to change ingredients back to cubes
   changeBackToCubes: function(){
     var getIngredientOneImageName = document.getElementById('ing1');
-    console.log(getIngredientOneImageName);
+    var getIngredientTwoImageName = document.getElementById('ing2');
+    var getIngredientThreeImageName = document.getElementById('ing3');
     var getImagePath = 'url(assets/SqIceCube.png)';
-    console.log('cubes: ', getImagePath);
     document.getElementById('imageSpot1').style.backgroundImage = getImagePath;
+    document.getElementById('imageSpot2').style.backgroundImage = getImagePath;
+    document.getElementById('imageSpot3').style.backgroundImage = getImagePath;
   },
 };
 // This is where the submit button is being tracked and starts the functionality.
+window.addEventListener("load", Tracker.dynamicallyLoadedIngredients);
 ing1.addEventListener('change', Tracker.changeIngredientImageIng1);
+ing2.addEventListener('change', Tracker.changeIngredientImageIng2);
+ing3.addEventListener('change', Tracker.changeIngredientImageIng3);
 document.getElementById('submit').addEventListener('click', Tracker.removeDrinkCard);
 document.getElementById('submit').addEventListener('click', Tracker.renderCocktailOptions);
 document.getElementById('submit').addEventListener('click', Tracker.changeBackToCubes);
