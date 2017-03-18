@@ -1,7 +1,7 @@
 
 'use strict'
 
-//Cocktail Object stored in an array.
+//Cocktail Object stored in an array. Spitfire
 var cocktailNames = ['Classic Martini', 'Manhattan', 'Margarita', 'Japanese Cocktail', 'Great Gatsby', 'Dark & Stormy', 'Campari Spritz', 'Adriatique', 'Mint Julep', 'Brandy Alexander', 'Adult Hot Chocolate', 'White Sangria', 'Cuba Libre', 'Raspberry Prosecco Bellini', 'Rum & Coke', 'Almond Joy Cocktail', 'Sparkling Suze', 'Man About Town', 'Bahia Breeze', 'The Spitfire', 'Angry Balls', 'Chrysanthemum Cocktail', 'The Obituary', 'The Old Fashioned', 'Frisco Sour Recipe', 'Boulevardier', 'Gold Rush', 'Grapefruit & Ginger Sparkler', 'Blushing Betty', 'Daiquiri', 'Butterbeer', 'Pomegranate Champagne Cocktail', 'Blood Orange Rickey', 'Salty Dog', 'Coffee Martini'];
 
 //Ingredients have to be in same order as drink
@@ -140,7 +140,6 @@ var Tracker = {
         makeA.target = '_blank';
         makeImg.src = Tracker.cocktailOptionsRound3[i].imagePath;
         makeImg.className = 'cocktailImg';
-        makeA.textContent = Tracker.cocktailOptionsRound3[i].name;
         makeA.appendChild(makeImg);
         makeDiv.appendChild(makeA);
         getRenderId.appendChild(makeDiv);
@@ -161,7 +160,6 @@ var Tracker = {
         makeA.target = '_blank';
         makeImg.src = Tracker.cocktailOptionsRound2[i].imagePath;
         makeImg.className = 'cocktailImg';
-        makeA.textContent = Tracker.cocktailOptionsRound2[i].name;
         makeA.appendChild(makeImg);
         makeDiv.appendChild(makeA);
         getRenderId.appendChild(makeDiv);
